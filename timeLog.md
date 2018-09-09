@@ -12,7 +12,7 @@
 |09/03/2018|Designing Wedding Dance Builder Database |3 hours 30 min|
 |09/04/2018|Creating GitHub repository for individual project. Setting config 
  on the intellij|1 hour|
- |09/04/2018|Setting up project structure for the project design files, populating 
+|09/04/2018|Setting up project structure for the project design files, populating 
  project design directory|45min
 |09/06/2018|Developing Screen Design| 30min|
 |09/06/2018|Watching log4j video and reading materials |1hour 20min|
@@ -24,3 +24,4 @@
 |09/08/2018|Completing Activities 1-4 Exercise2 Part1|2 hours 40min|
 |09/09/2018|Working on the exercise1|1hour 30min|
 |09/09/2018|Working on jsp pages for the individual project|1 hour|
+|09/09/2018|Working on Exercise2 Par4|2 hour|
