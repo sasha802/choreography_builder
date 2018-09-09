@@ -22,3 +22,5 @@
 |09/08/2018|Watching the rest of the week2 videos|1 hour 15min|
 |09/08/2018|Reading Junit Userguide|1hour 45min|
 |09/08/2018|Completing Activities 1-4 Exercise2 Part1|2 hours 40min|
+|09/09/2018|Working on the exercise1|1hour 30min|
+|09/09/2018|Working on jsp pages for the individual project|1 hour|
