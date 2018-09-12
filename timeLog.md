@@ -25,3 +25,4 @@
 |09/09/2018|Working on the exercise1|1hour 30min|
 |09/09/2018|Working on jsp pages for the individual project|1 hour|
 |09/09/2018|Working on Exercise2 Par4|2 hour|
+|09/11/2018|Watching week3 videos |40 min|
