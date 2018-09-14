@@ -40,4 +40,16 @@ Task Completed:
 
 •	Researched technologies and how they can be used in the project
 
+Week 3
+
+09/12/2018
+
+Task Complete:
+
+•	Refactoring database (roles table)
+
+•	Starting developing jsp pages
+
+
+
 
