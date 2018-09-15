@@ -23,6 +23,7 @@
 
     </div>
 
+    <a href="editProfile.jsp"><span>Test edit profile link</span></a>
 
     <jsp:include page="footer.jsp"/>
     </body>

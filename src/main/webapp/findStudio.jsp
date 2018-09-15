@@ -2,7 +2,7 @@
 <html>
     <jsp:include page="head.jsp"/>
     <body>
-    <jsp:include page="publicMenuPanel.jsp"/>
+    <jsp:include page="internalMenuPanel.jsp"/>
     <div class="container">
 
         <div class="mapouter">
@@ -16,7 +16,7 @@
         </div>
 
     </div>
-    <jsp:include page="footer.jsp"/>
+    <jsp:include page="internalFooter.jsp"/>
     </body>
 
 

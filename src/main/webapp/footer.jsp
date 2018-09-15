@@ -1,6 +1,4 @@
 
-<%@include file="head.jsp"%>
-
 <footer>
     <div id="footerContainer">
         <a href="#">About First Dance</a>
