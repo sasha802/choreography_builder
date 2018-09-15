@@ -1,16 +1,11 @@
-<%@include file="head.jsp"%>
-
+<!DOCTYPE html>
 <html>
+<jsp:include page="head.jsp"/>
     <body>
-        <div id="infoPageContainer">
-            <div id="menuContainer">
-                <a href="#">About First Dance</a>
-                <a href="#">Find Dance Studio</a>
-                <a href="#">Sign Up</a>
-                <a href="#">Log In</a>
-            </div>
-            <h2>About My First Dance</h2>
-            <div id="aboutFirstDanceContainer">
+    <jsp:include page="publicMenuPanel.jsp"/>
+        <div class="container">
+            <div class="col-sm-12">
+                <h3>About My First Dance</h3>
                 <p>
                     The "first dance" of a married couple is a popular element at modern European and American wedding
                     receptions or post-wedding celebrations. The newly married couple, as the guests of honor at a dance,
@@ -28,8 +23,7 @@
                     tuition companies
                 </p>
             </div>
-
-            <div id="topSongsContainer">
+            <div class="col-sm-12">
                 <h3>Top Wedding Dance Songs</h3>
                 <ul>
                     <li>Only You by Joshua Radin</li>
@@ -52,5 +46,8 @@
             </div>
 
         </div>
+        <jsp:include page="footer.jsp"/>
     </body>
 </html>
+
+

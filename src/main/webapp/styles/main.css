@@ -1,41 +1,75 @@
 body {
-    background-color: #ffeed9;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #fff;
 }
 
 #menuContainer {
-
     background-color: #839fed;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
 }
 
-#menuContainer a {
+#pageContainer {
+    min-height: 100%;
+    position: relative;
+    height: 100%;
+}
 
+.container {
+    flex: 1 0 auto;
+    padding: 20px;
+}
+
+#menuContainer a, footer a {
     padding-right: 50px;
     color: #fff;
     font-size: 20px;
 }
 
-h2 {
-
+h3 {
     text-align: center;
 }
 
-#aboutFirstDanceContainer, #topSongsContainer, ol {
-
+p {
     text-align: center;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#aboutFirstDanceContainer p {
-    font-size: 18px;
+    font-size: 17px;
 }
 
 ul {
+    font-size: 15px;
+    text-align: center;
     list-style: none;
+}
+
+#loginContainer, #signupContainer {
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #839fed;
+    flex-shrink: 0;
+    padding: 20px;
+}
+
+.mapouter {
+    text-align: right;
+    height: 500px;
+    width: 600px;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+    height: 500px;
+    width: 600px;
+    marigin: 0 auto;
+
 }
 
 

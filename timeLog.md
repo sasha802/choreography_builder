@@ -26,4 +26,5 @@
 |09/09/2018|Working on jsp pages for the individual project|1 hour|
 |09/09/2018|Working on Exercise2 Par4|2 hour|
 |09/11/2018|Watching week3 videos |40 min|
-|09/11/2018|Working on Exercise 3 Custom Tags| 1 hour 45min|
+|09/11/2018|Working on Exercise 3 Custom Tags| 1 hour 45min
+|09/14/2018|Researching about Dynamic Programming concepts for personal development presentation |2 hours|
