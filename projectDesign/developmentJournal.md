@@ -46,9 +46,11 @@ Week 3
 
 Task Complete:
 
-•	Refactoring database (roles table)
+•	Refactoring database adding view table.
 
-•	Starting developing jsp pages
+•	Developing jsp pages
+
+•	Researching about Email sender for the project 
 
 
 
