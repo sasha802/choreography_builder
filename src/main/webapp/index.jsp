@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<jsp:include page="head.jsp"/>
     <body>
     <jsp:include page="publicMenuPanel.jsp"/>
         <div class="container">
@@ -47,6 +46,7 @@
 
         </div>
         <jsp:include page="footer.jsp"/>
+        <jsp:include page="head.jsp"/>
     </body>
 </html>
 
