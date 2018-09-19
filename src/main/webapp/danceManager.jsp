@@ -100,7 +100,6 @@
                 <a href="buildDance.jsp"><button type="button" class="btn btn-success">Build New Dance</button></a>
             </div>
 
-
         </div>
 
         <jsp:include page="internalFooter.jsp"/>

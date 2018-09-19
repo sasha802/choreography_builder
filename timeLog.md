@@ -29,3 +29,5 @@
 |09/11/2018|Working on Exercise 3 Custom Tags| 1 hour 45min
 |09/14/2018|Researching about Dynamic Programming concepts for personal development presentation |2 hours|
 |09/15/2018|Working on jsp pages for the inde project |7 hours 30min|
+|09/16/2018|Working on the database.| 2 hours|
+|09/18/2018|Watching Week4 Video, Completing indie Project Plan reading about DAO|1 hour 40 min|
