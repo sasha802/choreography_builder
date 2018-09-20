@@ -14,7 +14,7 @@ Project Technologies/Techniques
     •	ORM Framework 
         -	Hibernate
     •	Web Services or APIs
-        -	Google Maps to find local dance studios
+        -	Google Maps to find local dance studios, API gmail 
     •	CSS
         -	Bootstrap
     •	Hosting 

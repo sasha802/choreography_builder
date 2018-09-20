@@ -29,7 +29,7 @@ Week 4
 2. Complete all the tables
 3. Create user dao
 4. Create user dao unit test
-5. Prepare ofr design review
+5. Prepare for design review
 6. weekly journal entry
 7. Set up logging
 

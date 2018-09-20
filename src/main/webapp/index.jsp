@@ -44,6 +44,10 @@
 
             </div>
 
+            <div>
+                <a href="/searchDance">Show All Dances</a>
+            </div>
+
         </div>
         <jsp:include page="footer.jsp"/>
         <jsp:include page="head.jsp"/>
