@@ -1,6 +1,7 @@
 package dance.builder.controller;
 
 import com.sun.net.httpserver.HttpServer;
+import dance.builder.persistence.DanceDAO;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -16,9 +17,15 @@ import java.io.IOException;
 
 public class SearchDance extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-       /* String searchType = req.getParameter("searchType");
+        DanceDAO danceDAO = new DanceDAO();
+        request.setAttribute("dances", danceDAO.getAllDances());
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
+        dispatcher.forward(request, response);
+
+        /* String searchType = req.getParameter("searchType");
 
         String searchValue = req.getParameter("searchValue");
 

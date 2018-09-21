@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <body>
@@ -46,6 +47,15 @@
 
             <div>
                 <a href="/searchDance">Show All Dances</a>
+            </div>
+
+            <div>
+                <c:forEach var="dance" items="${dances}">
+                    <ul>
+                        <li>${dance.danceName}</li>
+                        <li>${dance.beatsPerMinute}</li>
+                    </ul>
+                </c:forEach>
             </div>
 
         </div>

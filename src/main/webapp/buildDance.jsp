@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <body>
@@ -6,7 +7,7 @@
         <div class="container">
 
             <div id="buildDance">
-                <form action="#" method="post">
+                <form action="/searchStep" method="post">
                     <div class="form-group">
                         <label for="beatsNumber">Enter beats per minute</label>
                         <input type="text" class="form-control" id="beatsNumber" name="beatsNumber" placeholder="beats/minute">
@@ -40,11 +41,25 @@
                         </select>
                     </div>
                     <br />
-                    <button type="submit" class="btn btn-success">Build Dance</button>
+                    <button id="buildDanceBtn" type="submit" class="btn btn-success">Build Dance</button>
 
                 </form>
             </div>
 
+        </div>
+
+        <div>
+            <table class="table" id="stepsTable">
+                <tbody>
+                <c:forEach var="steps" items="${steps}">
+                    <tr>
+                        <td>${steps.stepName}</td>
+                        <td>${steps.level}</td>
+                    </tr>
+                </c:forEach>
+
+                </tbody>
+            </table>
         </div>
 
         <jsp:include page="internalFooter.jsp"/>
