@@ -20,7 +20,23 @@ public class SearchStep extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         StepDAO stepDAO = new StepDAO();
-        request.setAttribute("steps", stepDAO.getAllSteps());
+
+        String levelType = request.getParameter("level");
+        String submit = request.getParameter("submit");
+
+        if ( submit.equals("submit") ) {
+
+            if ( levelType.length() > 0 ) {
+
+                request.setAttribute("steps", stepDAO.getStepsByLevel(levelType));
+
+            } else {
+                request.setAttribute("steps", stepDAO.getAllSteps());
+            }
+
+        }
+
+
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/buildDance.jsp");
         dispatcher.forward(request, response);

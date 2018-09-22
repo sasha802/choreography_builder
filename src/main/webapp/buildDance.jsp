@@ -15,12 +15,12 @@
 
                     <div>
                         <label>Choreography Type:&nbsp;</label>
-                        <input type="radio" id="basic"
+                        <input type="radio" id="basic" checked
                                name="level" value="basic">
                         <label for="basic">Basic</label>
 
                         <input type="radio" id="intermediate"
-                               name="level" value="intermediate">
+                               name="level" value="intermidiate">
                         <label for="intermediate">Intermediate</label>
 
                         <input type="radio" id="advanced"
@@ -41,7 +41,7 @@
                         </select>
                     </div>
                     <br />
-                    <button id="buildDanceBtn" type="submit" class="btn btn-success">Build Dance</button>
+                    <button id="buildDanceBtn" type="submit" name="submit" value="submit" class="btn btn-success">Build Dance</button>
 
                 </form>
             </div>
@@ -50,10 +50,12 @@
 
         <div>
             <table class="table" id="stepsTable">
-                <tbody>
+
+                <tbody id="stepData">
                 <c:forEach var="steps" items="${steps}">
                     <tr>
                         <td>${steps.stepName}</td>
+                        <td><img src="images/${steps.leadDescription}"/></td>
                         <td>${steps.level}</td>
                     </tr>
                 </c:forEach>
@@ -66,4 +68,6 @@
         <jsp:include page="head.jsp"/>
     </body>
 </html>
+
+
 

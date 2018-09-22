@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <jsp:include page="head.jsp"/>
@@ -9,7 +10,7 @@
     <div class="container">
         <div id="editProfileContainer">
 
-            <form action="#" method="post">
+            <form action="/updateUser" method="post">
                 <div class="form-group">
                     <label for="editFirstName">First Name:</label>
                     <input type="text" class="form-control" id="editFirstName" placeholder="first name">
@@ -29,6 +30,16 @@
                 <button type="submit" class="btn btn-success">Submit</button>
             </form>
 
+        </div>
+
+        <div>
+            <c:forEach var="users" items="${user}">
+
+                <p>${users.firstName}</p>
+                <p>${users.lastName}</p>
+                <p>${users.id}</p>
+
+            </c:forEach>
         </div>
     </div>
     <jsp:include page="internalFooter.jsp"/>
