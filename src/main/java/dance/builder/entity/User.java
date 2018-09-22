@@ -20,16 +20,16 @@ public class User {
     private String email;
 
     @Column(name = "password")
-    private int password;
+    private String password;
 
     @Column(name = "role_id")
     private int roleId;
 
-    public int getPassword() {
+    public String  getPassword() {
         return password;
     }
 
-    public void setPassword(int password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 
@@ -51,7 +51,7 @@ public class User {
 
     }
 
-    public User(String lastName, String firstName, String email, int password, int roleId) {
+    public User(String lastName, String firstName, String email, String password, int roleId) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.email = email;

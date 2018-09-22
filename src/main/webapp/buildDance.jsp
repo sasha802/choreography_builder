@@ -3,7 +3,8 @@
 <html>
     <body>
         <jsp:include page="internalMenuPanel.jsp"/>
-        <h2>Lets Build Your Dance!</h2>
+        <h2>Lets Build Your Dance ${user}!</h2>
+
         <div class="container">
 
             <div id="buildDance">
