@@ -23,6 +23,9 @@ public class Step {
     @Column(name = "demo_link")
     private String demoLink;
 
+    @Column(name = "dance_type_id")
+    private int danceId;
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
@@ -78,6 +81,14 @@ public class Step {
 
     public int getId() {
         return id;
+    }
+
+    public int getDanceId() {
+        return danceId;
+    }
+
+    public void setDanceId(int danceId) {
+        this.danceId = danceId;
     }
 
 

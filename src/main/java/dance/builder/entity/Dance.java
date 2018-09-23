@@ -25,6 +25,10 @@ public class Dance {
 
     }
 
+    public Dance(String danceName, int beatsPerMinute) {
+        this.danceName = danceName;
+        this.beatsPerMinute = beatsPerMinute;
+    }
 
     public String getDanceName() {
         return danceName;

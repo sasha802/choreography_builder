@@ -1,6 +1,8 @@
 package dance.builder.controller;
 
 
+import dance.builder.entity.Dance;
+import dance.builder.persistence.DanceDAO;
 import dance.builder.persistence.StepDAO;
 
 import javax.servlet.RequestDispatcher;
@@ -20,14 +22,33 @@ public class SearchStep extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         StepDAO stepDAO = new StepDAO();
+        DanceDAO danceDAO = new DanceDAO();
 
+
+        String beatsNumber = request.getParameter("beatsNumber");
+        Integer beatsPerMinute = Integer.valueOf(beatsNumber);
         String levelType = request.getParameter("level");
         String submit = request.getParameter("submit");
 
         if ( submit.equals("submit") ) {
 
-            if ( levelType.length() > 0 ) {
+            if ( beatsPerMinute <= 90 ) {
 
+
+                request.setAttribute("dance", danceDAO.getDanceType("Waltz"));
+
+
+            } else if ( beatsPerMinute > 91 && beatsPerMinute <= 119 ) {
+
+
+                request.setAttribute("dance", danceDAO.getDanceType("Rumba"));
+                request.setAttribute("steps", stepDAO.getStepsByLevel(levelType));
+
+
+            } else if ( beatsPerMinute > 120 && beatsPerMinute <= 250 ) {
+
+
+                request.setAttribute("dance", danceDAO.getDanceType("Swing"));
                 request.setAttribute("steps", stepDAO.getStepsByLevel(levelType));
 
             } else {
@@ -35,8 +56,6 @@ public class SearchStep extends HttpServlet {
             }
 
         }
-
-
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/buildDance.jsp");
         dispatcher.forward(request, response);

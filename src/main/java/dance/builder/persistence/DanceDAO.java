@@ -9,6 +9,7 @@ import org.hibernate.SessionFactory;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
@@ -27,6 +28,29 @@ public class DanceDAO {
 
         session.close();
         return dances;
+
+    }
+
+
+    public List<Dance> getDanceType(String danceType) {
+
+        logger.info("Dance type " + danceType);
+
+        Session session = sessionFactory.openSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<Dance> query = builder.createQuery(Dance.class);
+        Root<Dance> root = query.from(Dance.class);
+        Expression<String> propertyPath = root.get("danceName");
+        query.where(builder.like(propertyPath, "%" + danceType + "%"));
+        List<Dance> steps = session.createQuery(query).getResultList();
+        session.close();
+
+        return steps;
+
+
+
+
 
     }
 }

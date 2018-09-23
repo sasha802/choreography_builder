@@ -47,6 +47,9 @@ public class UserDAO {
      * @param user  User to be inserted or updated
      */
     public int insert(User user) {
+
+        logger.debug("users " + user);
+
         int id = 0;
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();

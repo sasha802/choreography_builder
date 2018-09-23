@@ -47,22 +47,28 @@
                 </form>
             </div>
 
-        </div>
-
-        <div>
-            <table class="table" id="stepsTable">
-
-                <tbody id="stepData">
-                <c:forEach var="steps" items="${steps}">
-                    <tr>
-                        <td>${steps.stepName}</td>
-                        <td><img src="images/${steps.leadDescription}"/></td>
-                        <td>${steps.level}</td>
-                    </tr>
+            <div style="text-align: center">
+                <c:forEach var="dance" items="${dance}">
+                    Your ${dance.danceName} Dance Choreography
                 </c:forEach>
+            </div>
 
-                </tbody>
-            </table>
+            <div>
+                <table class="table" id="stepsTable">
+
+                    <tbody id="stepData">
+                    <c:forEach var="steps" items="${steps}">
+                        <tr>
+                            <td>${steps.stepName}</td>
+                            <td><img src="images/${steps.leadDescription}"/></td>
+                            <td>${steps.level}</td>
+                        </tr>
+                    </c:forEach>
+
+                    </tbody>
+                </table>
+            </div>
+
         </div>
 
         <jsp:include page="internalFooter.jsp"/>

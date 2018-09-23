@@ -45,19 +45,6 @@
 
             </div>
 
-            <div>
-                <a href="/searchDance">Show All Dances</a>
-            </div>
-
-            <div>
-                <c:forEach var="dance" items="${dances}">
-                    <ul>
-                        <li>${dance.danceName}</li>
-                        <li>${dance.beatsPerMinute}</li>
-                    </ul>
-                </c:forEach>
-            </div>
-
         </div>
         <jsp:include page="footer.jsp"/>
         <jsp:include page="head.jsp"/>
