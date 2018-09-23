@@ -57,10 +57,11 @@
                 <table class="table" id="stepsTable">
 
                     <tbody id="stepData">
-                    <c:forEach var="steps" items="${steps}">
+                    <c:forEach var="steps" items="${step}">
                         <tr>
                             <td>${steps.stepName}</td>
                             <td><img src="images/${steps.leadDescription}"/></td>
+                            <td><img src="images/${steps.followerDescription}"/></td>
                             <td>${steps.level}</td>
                         </tr>
                     </c:forEach>

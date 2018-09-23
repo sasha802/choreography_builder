@@ -34,24 +34,25 @@ public class SearchStep extends HttpServlet {
 
             if ( beatsPerMinute <= 90 ) {
 
-
                 request.setAttribute("dance", danceDAO.getDanceType("Waltz"));
+                request.setAttribute("step", stepDAO.getStepByDance(levelType, 2));
 
 
             } else if ( beatsPerMinute > 91 && beatsPerMinute <= 119 ) {
 
 
                 request.setAttribute("dance", danceDAO.getDanceType("Rumba"));
-                request.setAttribute("steps", stepDAO.getStepsByLevel(levelType));
+                request.setAttribute("step", stepDAO.getStepByDance(levelType, 1));
 
 
             } else if ( beatsPerMinute > 120 && beatsPerMinute <= 250 ) {
 
 
                 request.setAttribute("dance", danceDAO.getDanceType("Swing"));
-                request.setAttribute("steps", stepDAO.getStepsByLevel(levelType));
+                request.setAttribute("step", stepDAO.getStepByDance(levelType, 3));
 
             } else {
+
                 request.setAttribute("steps", stepDAO.getAllSteps());
             }
 
