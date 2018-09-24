@@ -26,3 +26,6 @@
 [INFO ] 2018-09-22 22:53:39.124 [http-nio-8080-exec-2] DanceDAO - Dance type Rumba
 [INFO ] 2018-09-22 22:53:49.186 [http-nio-8080-exec-6] DanceDAO - Dance type Rumba
 [INFO ] 2018-09-22 22:55:20.783 [http-nio-8080-exec-13] DanceDAO - Dance type Rumba
+[DEBUG] 2018-09-23 21:23:33.340 [main] UserDAO - Searching for user with lastName = Mike
+[DEBUG] 2018-09-23 21:23:33.700 [main] UserDAO - Searching for user with lastName = J
+[DEBUG] 2018-09-23 21:23:33.791 [main] UserDAO - users dance.builder.entity.User@2b214b94

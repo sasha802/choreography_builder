@@ -35,4 +35,5 @@
 |09/21/2018|Watching video week4. Working on implementing tests for hibernate methods to query db|4 hours|
 |09/22/2018|Watching video week4. Reading week 4 materials. Working on implementing hibernate and test for 
 insert singed up users. Impl hibernate to search for dance steps based on beats and level.|6 hours|
+|09/23/2018|Working on creating query with hibernate to add where and and top clauses|3 hours|
 
