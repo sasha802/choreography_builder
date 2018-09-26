@@ -32,13 +32,13 @@
                     <br />
                     <div class="form-row align-items-center">
                         <label for="numberOfSteps">Number Of Steps:&nbsp;</label>
-                        <select class="custom-select" id="numberOfSteps">
-                            <option selected>Choose...</option>
-                            <option name="1" value="1">One</option>
-                            <option name="2" value="2">Two</option>
-                            <option name="3" value="3">Three</option>
-                            <option name="4" value="3">Four</option>
-                            <option name="5" value="3">Five</option>
+                        <select class="custom-select" id="numberOfSteps" name="numberOfSteps">
+                            <option selected name="numberOfSteps">Choose...</option>
+                            <option name="numberOfSteps" value="1">One</option>
+                            <option name="numberOfSteps" value="2">Two</option>
+                            <option name="numberOfSteps" value="3">Three</option>
+                            <option name="numberOfSteps" value="4">Four</option>
+                            <option name="numberOfSteps" value="5">Five</option>
                         </select>
                     </div>
                     <br />

@@ -64,3 +64,20 @@
 [DEBUG] 2018-09-25 20:48:07.576 [http-nio-8080-exec-3] UserDAO - users dance.builder.entity.User@4d1cdbed
 [INFO ] 2018-09-25 20:48:13.185 [http-nio-8080-exec-4] DanceDAO - Dance type Rumba
 [INFO ] 2018-09-25 20:48:18.238 [http-nio-8080-exec-8] DanceDAO - Dance type Waltz
+[INFO ] 2018-09-25 21:39:02.296 [http-nio-8080-exec-4] DanceDAO - Dance type Rumba
+[INFO ] 2018-09-25 21:45:03.886 [http-nio-8080-exec-3] DanceDAO - Dance type Rumba
+[INFO ] 2018-09-25 21:46:08.673 [http-nio-8080-exec-3] DanceDAO - Dance type Swing
+[INFO ] 2018-09-25 21:48:33.096 [http-nio-8080-exec-2] DanceDAO - Dance type Rumba
+[INFO ] 2018-09-25 21:49:00.317 [http-nio-8080-exec-5] DanceDAO - Dance type Rumba
+[INFO ] 2018-09-25 21:51:48.782 [http-nio-8080-exec-4] DanceDAO - Dance type Rumba
+[INFO ] 2018-09-25 21:52:02.473 [http-nio-8080-exec-5] DanceDAO - Dance type Rumba
+[INFO ] 2018-09-25 21:52:03.801 [http-nio-8080-exec-4] StepDAO - 3
+[INFO ] 2018-09-25 21:52:03.801 [http-nio-8080-exec-4] StepDAO - list of steps [dance.builder.entity.Step@6a18d0fc, dance.builder.entity.Step@6faaebaf, dance.builder.entity.Step@644bc92b]
+[INFO ] 2018-09-25 21:52:03.831 [http-nio-8080-exec-5] StepDAO - 3
+[INFO ] 2018-09-25 21:52:03.831 [http-nio-8080-exec-5] StepDAO - list of steps [dance.builder.entity.Step@3e9084d1, dance.builder.entity.Step@2f659456, dance.builder.entity.Step@1d830a02]
+[INFO ] 2018-09-25 21:52:51.361 [http-nio-8080-exec-4] DanceDAO - Dance type Rumba
+[INFO ] 2018-09-25 21:52:54.970 [http-nio-8080-exec-4] StepDAO - 4
+[INFO ] 2018-09-25 21:52:54.970 [http-nio-8080-exec-4] StepDAO - list of steps [dance.builder.entity.Step@14bd039d, dance.builder.entity.Step@61ed7884, dance.builder.entity.Step@5a529725, dance.builder.entity.Step@31344a21]
+[INFO ] 2018-09-25 21:55:06.670 [http-nio-8080-exec-4] DanceDAO - Dance type Rumba
+[INFO ] 2018-09-25 21:55:07.174 [http-nio-8080-exec-4] StepDAO - 5
+[INFO ] 2018-09-25 21:55:07.174 [http-nio-8080-exec-4] StepDAO - list of steps [dance.builder.entity.Step@2892b955, dance.builder.entity.Step@489844a1, dance.builder.entity.Step@7a6def9f, dance.builder.entity.Step@475ef504, dance.builder.entity.Step@7abba4ab]

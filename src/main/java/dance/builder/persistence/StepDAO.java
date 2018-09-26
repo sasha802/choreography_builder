@@ -46,7 +46,7 @@ public class StepDAO {
     }
 
 
-    public List<Step> getStepByDance(String level, int danceId) {
+    public List<Step> getStepByDance(String level, int danceId, int numberOfSteps) {
 
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
@@ -59,7 +59,9 @@ public class StepDAO {
         );
 
         query.where(predicate);
-        List<Step> steps = session.createQuery(query).getResultList();
+        List<Step> steps = session.createQuery(query).setMaxResults(numberOfSteps).getResultList();
+        logger.info(numberOfSteps);
+        logger.info("list of steps " + steps);
 
         return steps;
 

@@ -28,6 +28,8 @@ public class SearchStep extends HttpServlet {
         String beatsNumber = request.getParameter("beatsNumber");
         Integer beatsPerMinute = Integer.valueOf(beatsNumber);
         String levelType = request.getParameter("level");
+        String numberOfStepsUserInput = request.getParameter("numberOfSteps");
+        Integer numberOfSteps = Integer.valueOf(numberOfStepsUserInput);
         String submit = request.getParameter("submit");
 
         if ( submit.equals("submit") ) {
@@ -35,21 +37,21 @@ public class SearchStep extends HttpServlet {
             if ( beatsPerMinute <= 90 ) {
 
                 request.setAttribute("dance", danceDAO.getDanceType("Waltz"));
-                request.setAttribute("step", stepDAO.getStepByDance(levelType, 2));
+                request.setAttribute("step", stepDAO.getStepByDance(levelType, 2, numberOfSteps));
 
 
             } else if ( beatsPerMinute > 91 && beatsPerMinute <= 119 ) {
 
 
                 request.setAttribute("dance", danceDAO.getDanceType("Rumba"));
-                request.setAttribute("step", stepDAO.getStepByDance(levelType, 1));
+                request.setAttribute("step", stepDAO.getStepByDance(levelType, 1, numberOfSteps));
 
 
             } else if ( beatsPerMinute > 120 && beatsPerMinute <= 250 ) {
 
 
                 request.setAttribute("dance", danceDAO.getDanceType("Swing"));
-                request.setAttribute("step", stepDAO.getStepByDance(levelType, 3));
+                request.setAttribute("step", stepDAO.getStepByDance(levelType, 3, numberOfSteps));
 
             } else {
 
