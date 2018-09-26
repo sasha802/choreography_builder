@@ -29,3 +29,32 @@
 [DEBUG] 2018-09-23 21:23:33.340 [main] UserDAO - Searching for user with lastName = Mike
 [DEBUG] 2018-09-23 21:23:33.700 [main] UserDAO - Searching for user with lastName = J
 [DEBUG] 2018-09-23 21:23:33.791 [main] UserDAO - users dance.builder.entity.User@2b214b94
+[DEBUG] 2018-09-25 19:27:20.174 [main] UserDAO - Searching for user with lastName = Mike
+[DEBUG] 2018-09-25 19:27:20.556 [main] UserDAO - Searching for user with lastName = J
+[DEBUG] 2018-09-25 19:27:20.623 [main] UserDAO - users dance.builder.entity.User@3adbe50f
+[DEBUG] 2018-09-25 19:32:00.212 [main] UserDAO - Searching for user with lastName = Mike
+[DEBUG] 2018-09-25 19:32:00.351 [main] UserDAO - Searching for user with lastName = J
+[DEBUG] 2018-09-25 19:32:00.418 [main] UserDAO - users dance.builder.entity.User@432034a
+[DEBUG] 2018-09-25 19:34:39.971 [main] UserDAO - Searching for user with lastName = Mike
+[DEBUG] 2018-09-25 19:34:40.129 [main] UserDAO - Searching for user with lastName = J
+[DEBUG] 2018-09-25 19:34:40.207 [main] UserDAO - users dance.builder.entity.User@2b214b94
+[DEBUG] 2018-09-25 19:45:05.769 [main] UserDAO - Searching for user with lastName = Mike
+[DEBUG] 2018-09-25 19:45:05.891 [main] UserDAO - Searching for user with lastName = J
+[DEBUG] 2018-09-25 19:45:05.960 [main] UserDAO - users dance.builder.entity.User@2b214b94
+[DEBUG] 2018-09-25 19:45:42.618 [http-nio-8080-exec-4] UserDAO - users dance.builder.entity.User@33ddc9bf
+[INFO ] 2018-09-25 19:47:34.908 [http-nio-8080-exec-9] DanceDAO - Dance type Waltz
+[INFO ] 2018-09-25 19:47:39.854 [http-nio-8080-exec-10] DanceDAO - Dance type Rumba
+[INFO ] 2018-09-25 19:49:37.560 [http-nio-8080-exec-4] DanceDAO - Dance type Waltz
+[INFO ] 2018-09-25 19:50:35.854 [http-nio-8080-exec-7] DanceDAO - Dance type Waltz
+[INFO ] 2018-09-25 19:50:47.498 [http-nio-8080-exec-8] DanceDAO - Dance type Rumba
+[INFO ] 2018-09-25 19:50:54.575 [http-nio-8080-exec-9] DanceDAO - Dance type Waltz
+[INFO ] 2018-09-25 19:51:05.318 [http-nio-8080-exec-10] DanceDAO - Dance type Swing
+[DEBUG] 2018-09-25 20:03:08.041 [main] UserDAO - Searching for user with lastName = Mike
+[DEBUG] 2018-09-25 20:03:08.181 [main] UserDAO - Searching for user with lastName = J
+[DEBUG] 2018-09-25 20:03:08.271 [main] UserDAO - users dance.builder.entity.User@5bcde458
+[DEBUG] 2018-09-25 20:04:56.589 [main] UserDAO - Searching for user with lastName = Mike
+[DEBUG] 2018-09-25 20:05:44.094 [main] UserDAO - Searching for user with lastName = Thomson
+[DEBUG] 2018-09-25 20:06:09.027 [main] UserDAO - Searching for user with lastName = C
+[DEBUG] 2018-09-25 20:06:15.966 [main] UserDAO - Searching for user with lastName = Thomson
+[DEBUG] 2018-09-25 20:06:16.116 [main] UserDAO - Searching for user with lastName = C
+[DEBUG] 2018-09-25 20:06:16.198 [main] UserDAO - users dance.builder.entity.User@70e3f36f

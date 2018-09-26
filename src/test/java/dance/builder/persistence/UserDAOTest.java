@@ -40,7 +40,7 @@ class UserDAOTest {
 
         User retrievedUser = userDAO.getById(1);
         assertNotNull(retrievedUser);
-        assertEquals("Coyne", retrievedUser.getFirstName());
+        assertEquals("Joe", retrievedUser.getFirstName());
 
     }
 
@@ -83,7 +83,7 @@ class UserDAOTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<User> users = userDAO.getByPropertyLike("lastName", "Mike");
+        List<User> users = userDAO.getByPropertyLike("lastName", "Thomson");
         assertEquals(1, users.size());
         assertEquals(2, users.get(0).getId());
     }
@@ -93,7 +93,7 @@ class UserDAOTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<User> users = userDAO.getByPropertyLike("lastName", "J");
+        List<User> users = userDAO.getByPropertyLike("lastName", "C");
         assertEquals(1, users.size());
     }
 }
