@@ -58,3 +58,9 @@
 [DEBUG] 2018-09-25 20:06:15.966 [main] UserDAO - Searching for user with lastName = Thomson
 [DEBUG] 2018-09-25 20:06:16.116 [main] UserDAO - Searching for user with lastName = C
 [DEBUG] 2018-09-25 20:06:16.198 [main] UserDAO - users dance.builder.entity.User@70e3f36f
+[DEBUG] 2018-09-25 20:47:28.392 [main] UserDAO - Searching for user with lastName = Thomson
+[DEBUG] 2018-09-25 20:47:28.669 [main] UserDAO - Searching for user with lastName = C
+[DEBUG] 2018-09-25 20:47:28.758 [main] UserDAO - users dance.builder.entity.User@56303475
+[DEBUG] 2018-09-25 20:48:07.576 [http-nio-8080-exec-3] UserDAO - users dance.builder.entity.User@4d1cdbed
+[INFO ] 2018-09-25 20:48:13.185 [http-nio-8080-exec-4] DanceDAO - Dance type Rumba
+[INFO ] 2018-09-25 20:48:18.238 [http-nio-8080-exec-8] DanceDAO - Dance type Waltz
