@@ -60,8 +60,8 @@
                     <c:forEach var="steps" items="${step}">
                         <tr>
                             <td>${steps.stepName}</td>
-                            <td><img src="images/${steps.leadDescription}"/></td>
-                            <td><img src="images/${steps.followerDescription}"/></td>
+                            <td><img class="descriptionImg" src="images/${steps.leadDescription}"/></td>
+                            <td><img class="descriptionImg" src="images/${steps.followerDescription}"/></td>
                             <td>${steps.level}</td>
                         </tr>
                     </c:forEach>
@@ -76,6 +76,13 @@
         <jsp:include page="head.jsp"/>
     </body>
 </html>
+
+<style>
+    .descriptionImg {
+        width: 200px;
+        height: 100px;
+    }
+</style>
 
 
 

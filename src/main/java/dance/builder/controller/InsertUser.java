@@ -3,7 +3,7 @@ package dance.builder.controller;
 
 
 import dance.builder.entity.User;
-import dance.builder.persistence.UserDAO;
+import dance.builder.persistence.GenericDAO;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -23,7 +23,8 @@ public class InsertUser extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         RequestDispatcher dispatcher;
-        UserDAO userDAO = new UserDAO();
+
+        GenericDAO genericDAO = new GenericDAO(User.class);
 
         int userRole = 1;
         String firstName = request.getParameter("firstName");
@@ -37,9 +38,9 @@ public class InsertUser extends HttpServlet {
             if ( firstName.trim().length() > 0 && lastName.trim().length() > 0 && email.trim().length() > 0 && password.trim().length() > 0 ) {
 
                 User user = new User(lastName, firstName, email, password, userRole);
-                int id = userDAO.insert(user);
+                int id = genericDAO.insert(user);
 
-                User insertedUser = userDAO.getById(id);
+                User insertedUser = (User) genericDAO.getById(id);
 
                 request.setAttribute("user", insertedUser.getFirstName());
 

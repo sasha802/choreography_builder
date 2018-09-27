@@ -1,7 +1,8 @@
 package dance.builder.controller;
 
 
-import dance.builder.persistence.UserDAO;
+import dance.builder.entity.User;
+import dance.builder.persistence.GenericDAO;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -21,8 +22,8 @@ public class UpdateUser extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        UserDAO userDAO = new UserDAO();
-        request.setAttribute("user", userDAO.getUser());
+        GenericDAO genericDAO = new GenericDAO(User.class);
+        request.setAttribute("user", genericDAO.getAll());
 
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/editProfile.jsp");

@@ -2,7 +2,9 @@ package dance.builder.controller;
 
 
 import dance.builder.entity.Dance;
+import dance.builder.entity.Step;
 import dance.builder.persistence.DanceDAO;
+import dance.builder.persistence.GenericDAO;
 import dance.builder.persistence.StepDAO;
 
 import javax.servlet.RequestDispatcher;
@@ -23,6 +25,7 @@ public class SearchStep extends HttpServlet {
 
         StepDAO stepDAO = new StepDAO();
         DanceDAO danceDAO = new DanceDAO();
+        GenericDAO<Dance> genericDAO;
 
 
         String beatsNumber = request.getParameter("beatsNumber");
@@ -37,7 +40,7 @@ public class SearchStep extends HttpServlet {
             if ( beatsPerMinute <= 90 ) {
 
                 request.setAttribute("dance", danceDAO.getDanceType("Waltz"));
-                request.setAttribute("step", stepDAO.getStepByDance(levelType, 2, numberOfSteps));
+                request.setAttribute("step", stepDAO.getStepByDance(levelType, 2 , numberOfSteps));
 
 
             } else if ( beatsPerMinute > 91 && beatsPerMinute <= 119 ) {
@@ -55,7 +58,8 @@ public class SearchStep extends HttpServlet {
 
             } else {
 
-                request.setAttribute("steps", stepDAO.getAllSteps());
+                genericDAO = new GenericDAO(Step.class);
+                request.setAttribute("steps", genericDAO.getAll());
             }
 
         }

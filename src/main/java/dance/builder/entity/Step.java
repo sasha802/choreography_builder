@@ -3,6 +3,7 @@ package dance.builder.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity(name = "Step")
 @Table(name = "step")
@@ -23,8 +24,14 @@ public class Step {
     @Column(name = "demo_link")
     private String demoLink;
 
-    @Column(name = "dance_type_id")
-    private int danceId;
+
+
+    //    @Column(name = "dance_type_id")
+    @ManyToOne
+    @JoinColumn(name = "dance_type_id", foreignKey = @ForeignKey(name = "step_pk"))
+    private Dance dance;
+
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
@@ -34,6 +41,7 @@ public class Step {
     public Step() {
 
     }
+
 
     public void setStepName(String stepName) {
         this.stepName = stepName;
@@ -83,22 +91,32 @@ public class Step {
         return id;
     }
 
-    public int getDanceId() {
-        return danceId;
+    public Dance getDance() {
+        return dance;
     }
 
-    public void setDanceId(int danceId) {
-        this.danceId = danceId;
+    public void setDance(Dance dance) {
+        this.dance = dance;
     }
 
 
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Step step = (Step) o;
+        return dance.getId() == step.dance.getId() &&
+                id == step.id &&
+                Objects.equals(stepName, step.stepName) &&
+                Objects.equals(level, step.level) &&
+                Objects.equals(followerDescription, step.followerDescription) &&
+                Objects.equals(leadDescription, step.leadDescription) &&
+                Objects.equals(demoLink, step.demoLink);
+    }
 
-
-
-
-
-
-
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(stepName, level, followerDescription, leadDescription, demoLink, dance.getId(), id);
+    }
 }

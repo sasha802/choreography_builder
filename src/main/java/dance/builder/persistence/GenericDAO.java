@@ -1,11 +1,8 @@
 package dance.builder.persistence;
 
-
-import dance.builder.entity.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
 import javax.persistence.criteria.CriteriaBuilder;
@@ -14,46 +11,66 @@ import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
-public class UserDAO {
+public class GenericDAO<T> {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
-    SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
+    private Class<T> type;
 
-    public List<User> getUser() {
+    public GenericDAO(Class<T> type) {
 
-        Session session = sessionFactory.openSession();
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<User> query = builder.createQuery(User.class);
-        Root<User> root = query.from(User.class);
-        List<User> users = session.createQuery(query).getResultList();
-
-        session.close();
-        return users;
+        this.type = type;
 
     }
 
-    public User getById(int id) {
+    public <T>T getById(int id) {
 
-        Session session = sessionFactory.openSession();
-        User user = session.get(User.class, id);
+        Session session = getSession();
+        T entity = (T)session.get(type, id);
         session.close();
 
-        return user;
+        return entity;
+
+    }
+
+    /**
+     * Delete a entity
+     * @param entity User to be deleted
+     */
+    public void delete(T entity) {
+        Session session = getSession();
+        Transaction transaction = session.beginTransaction();
+        session.delete(entity);
+        transaction.commit();
+        session.close();
+    }
+
+
+    public List<T> getAll() {
+
+        Session session = getSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+
+        CriteriaQuery<T> query = builder.createQuery(type);
+        Root<T> root = query.from(type);
+        List<T> list = session.createQuery(query).getResultList();
+
+        session.close();
+        return list;
 
     }
 
     /**
      * update user
-     * @param user  User to be inserted or updated
+     * @param entity  User to be inserted or updated
      */
-    public int insert(User user) {
+    public int insert(T entity) {
 
-        logger.debug("users " + user);
+        logger.debug("users " + entity);
 
         int id = 0;
-        Session session = sessionFactory.openSession();
+        Session session = getSession();
         Transaction transaction = session.beginTransaction();
-        id = (int)session.save(user);
+        id = (int)session.save(entity);
         transaction.commit();
         session.close();
         return id;
@@ -61,24 +78,12 @@ public class UserDAO {
 
     /**
      * update user
-     * @param user  User to be inserted or updated
+     * @param entity  User to be inserted or updated
      */
-     public void saveOrUpdate(User user) {
-        Session session = sessionFactory.openSession();
+    public void saveOrUpdate(T entity) {
+        Session session = getSession();
         Transaction transaction = session.beginTransaction();
-        session.saveOrUpdate(user);
-        transaction.commit();
-        session.close();
-    }
-
-    /**
-     * Delete a user
-     * @param user User to be deleted
-     */
-    public void delete(User user) {
-        Session session = sessionFactory.openSession();
-        Transaction transaction = session.beginTransaction();
-        session.delete(user);
+        session.saveOrUpdate(entity);
         transaction.commit();
         session.close();
     }
@@ -91,20 +96,21 @@ public class UserDAO {
      * @param value value of the property to search for
      * @return list of users meeting the criteria search
      */
-    public List<User> getByPropertyEqual(String propertyName, String value) {
-        Session session = sessionFactory.openSession();
+    public List<T> getByPropertyEqual(String propertyName, String value) {
+        Session session = getSession();
 
         logger.debug("Searching for user with " + propertyName + " = " + value);
 
         CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<User> query = builder.createQuery( User.class );
-        Root<User> root = query.from( User.class );
+        CriteriaQuery<T> query = builder.createQuery( type );
+        Root<T> root = query.from( type );
         query.select(root).where(builder.equal(root.get(propertyName), value));
-        List<User> users = session.createQuery( query ).getResultList();
+        List<T> entity = session.createQuery( query ).getResultList();
 
         session.close();
-        return users;
+        return entity;
     }
+
 
     /**
      * Get user by property (like)
@@ -114,22 +120,29 @@ public class UserDAO {
      * @param value value of the property to search for
      * @return list of users meeting the criteria search
      */
-    public List<User> getByPropertyLike(String propertyName, String value) {
-        Session session = sessionFactory.openSession();
+    public List<T> getByPropertyLike(String propertyName, String value) {
+        Session session = getSession();
 
         logger.debug("Searching for user with {} = {}", propertyName, value);
 
         CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<User> query = builder.createQuery(User.class);
-        Root<User> root = query.from(User.class);
+        CriteriaQuery<T> query = builder.createQuery(type);
+        Root<T> root = query.from(type);
         Expression<String> propertyPath = root.get(propertyName);
 
         query.where(builder.like(propertyPath, "%" + value + "%"));
 
-        List<User> users = session.createQuery(query).getResultList();
+        List<T> entity = session.createQuery(query).getResultList();
         session.close();
-        return users;
+        return entity;
     }
 
+
+
+    private Session getSession() {
+
+        return SessionFactoryProvider.getSessionFactory().openSession();
+
+    }
 
 }

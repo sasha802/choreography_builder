@@ -1,5 +1,6 @@
 package dance.builder.persistence;
 
+import dance.builder.entity.Dance;
 import dance.builder.entity.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -14,7 +15,7 @@ public class StepDAO {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
-
+/*
     public List<Step> getAllSteps() {
 
         Session session = sessionFactory.openSession();
@@ -27,8 +28,8 @@ public class StepDAO {
 
         return steps;
 
-    }
-
+    }*/
+/*
     public List<Step> getStepsByLevel(String level) {
 
         Session session = sessionFactory.openSession();
@@ -43,18 +44,21 @@ public class StepDAO {
 
         return steps;
 
-    }
+    }*/
 
 
     public List<Step> getStepByDance(String level, int danceId, int numberOfSteps) {
+
+
 
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery query = builder.createQuery(Step.class);
 
         Root<Step> root = query.from(Step.class);
+
         Predicate predicate = builder.and(
-                builder.equal(root.get("danceId"), danceId),
+                builder.equal(root.get("dance").get("id"), danceId),
                 builder.equal(root.get("level"), level)
         );
 

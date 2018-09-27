@@ -11,14 +11,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class UserDAOTest {
 
-    UserDAO userDAO;
+
+    GenericDAO genericDAO;
 
     /**
      * Create the user dao.
      */
     @BeforeEach
     void setUp() {
-        userDAO = new UserDAO();
+
+        genericDAO = new GenericDAO(User.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
     }
@@ -28,7 +30,7 @@ class UserDAOTest {
      */
     @Test
     void getUserSuccess() {
-        List<User> users = userDAO.getUser();
+        List<User> users = genericDAO.getAll();
         assertEquals(2, users.size());
     }
 
@@ -38,7 +40,7 @@ class UserDAOTest {
     @Test
     void getByIdSuccess() {
 
-        User retrievedUser = userDAO.getById(1);
+        User retrievedUser = (User)genericDAO.getById(1);
         assertNotNull(retrievedUser);
         assertEquals("Joe", retrievedUser.getFirstName());
 
@@ -51,9 +53,9 @@ class UserDAOTest {
     void insertSuccess() {
 
         User newUser = new User("Fred", "Flintstone", "fflintstone", "123", 2);
-        int id = userDAO.insert(newUser);
+        int id = genericDAO.insert(newUser);
         assertNotEquals(0,id);
-        User insertedUser = userDAO.getById(id);
+        User insertedUser = (User) genericDAO.getById(id);
         assertEquals("Fred", insertedUser.getLastName());
 
     }
@@ -63,19 +65,19 @@ class UserDAOTest {
      */
     @Test
     void deleteSuccess() {
-        userDAO.delete(userDAO.getById(1));
-        assertNull(userDAO.getById(1));
+        genericDAO.delete(genericDAO.getById(1));
+        assertNull(genericDAO.getById(1));
     }
 
 
     @Test
     void updateSuccess() {
-        String newLastName = "Kisik";
-        User userToUpdate = userDAO.getById(1);
+        String newLastName = "Mikels";
+        User userToUpdate = (User) genericDAO.getById(1);
         userToUpdate.setLastName(newLastName);
-        userDAO.saveOrUpdate(userToUpdate);
-        User retrievedUser = userDAO.getById(1);
-        assertEquals(newLastName, retrievedUser.getLastName());
+        genericDAO.saveOrUpdate(userToUpdate);
+        User retrievedUser = (User) genericDAO.getById(1);
+        assertEquals(userToUpdate, retrievedUser);
     }
 
     /**
@@ -83,7 +85,7 @@ class UserDAOTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<User> users = userDAO.getByPropertyLike("lastName", "Thomson");
+        List<User> users = genericDAO.getByPropertyLike("lastName", "Thomson");
         assertEquals(1, users.size());
         assertEquals(2, users.get(0).getId());
     }
@@ -93,7 +95,7 @@ class UserDAOTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<User> users = userDAO.getByPropertyLike("lastName", "C");
+        List<User> users = genericDAO.getByPropertyLike("lastName", "C");
         assertEquals(1, users.size());
     }
 }
