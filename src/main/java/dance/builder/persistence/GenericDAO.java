@@ -65,7 +65,7 @@ public class GenericDAO<T> {
      */
     public int insert(T entity) {
 
-        logger.debug("users " + entity);
+        logger.debug("type " + entity);
 
         int id = 0;
         Session session = getSession();

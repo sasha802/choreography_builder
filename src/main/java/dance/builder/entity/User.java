@@ -2,7 +2,6 @@ package dance.builder.entity;
 
 
 import lombok.Data;
-import org.apache.logging.log4j.core.tools.picocli.CommandLine;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;

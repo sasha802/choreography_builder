@@ -1,5 +1,6 @@
 package dance.builder.entity;
 
+import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -7,6 +8,7 @@ import java.util.Objects;
 
 @Entity(name = "Step")
 @Table(name = "step")
+@Data
 public class Step {
 
     @Column(name = "name")
@@ -25,8 +27,6 @@ public class Step {
     private String demoLink;
 
 
-
-    //    @Column(name = "dance_type_id")
     @ManyToOne
     @JoinColumn(name = "dance_type_id", foreignKey = @ForeignKey(name = "step_pk"))
     private Dance dance;
@@ -41,64 +41,6 @@ public class Step {
     public Step() {
 
     }
-
-
-    public void setStepName(String stepName) {
-        this.stepName = stepName;
-    }
-
-    public String getStepName() {
-        return stepName;
-    }
-
-    public void setLevel(String level) {
-        this.level = level;
-    }
-
-    public String getLevel() {
-        return level;
-    }
-
-    public void setFollowerDescription(String followerDescription) {
-        this.followerDescription = followerDescription;
-    }
-
-    public String getFollowerDescription() {
-        return followerDescription;
-    }
-
-    public void setLeadDescription(String leadDescription) {
-        this.leadDescription = leadDescription;
-    }
-
-    public String getLeadDescription() {
-        return leadDescription;
-    }
-
-    public void setDemoLink(String demoLink) {
-        this.demoLink = demoLink;
-    }
-
-    public String getDemoLink() {
-        return demoLink;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public Dance getDance() {
-        return dance;
-    }
-
-    public void setDance(Dance dance) {
-        this.dance = dance;
-    }
-
 
 
     @Override

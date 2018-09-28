@@ -87,3 +87,20 @@
 [INFO ] 2018-09-27 18:39:29.087 [http-nio-8080-exec-5] DanceDAO - Dance type Rumba
 [INFO ] 2018-09-27 18:39:29.465 [http-nio-8080-exec-5] StepDAO - 3
 [INFO ] 2018-09-27 18:39:29.466 [http-nio-8080-exec-5] StepDAO - list of steps [dance.builder.entity.Step@45379c4f, dance.builder.entity.Step@aafcffad, dance.builder.entity.Step@d6e81996]
+[INFO ] 2018-09-27 20:09:54.787 [http-nio-8080-exec-5] DanceDAO - Dance type Rumba
+[INFO ] 2018-09-27 20:09:55.159 [http-nio-8080-exec-5] StepDAO - 3
+[INFO ] 2018-09-27 20:09:55.159 [http-nio-8080-exec-5] StepDAO - list of steps [dance.builder.entity.Step@d9cbab1c, dance.builder.entity.Step@e2083990, dance.builder.entity.Step@5a0e6785]
+[DEBUG] 2018-09-27 21:00:47.168 [main] GenericDAO - users CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic)
+[DEBUG] 2018-09-27 21:01:25.333 [main] GenericDAO - users CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic)
+[DEBUG] 2018-09-27 21:09:15.651 [http-nio-8080-exec-5] GenericDAO - users User(lastName=Kisik, firstName=Mini, email=minini, password=112, roleId=1, id=0)
+[DEBUG] 2018-09-27 21:15:05.513 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic)
+[DEBUG] 2018-09-27 21:20:22.894 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-27 21:25:09.712 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-27 21:25:09.718 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-27 21:26:07.622 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-27 21:26:07.628 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-27 21:27:39.537 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[level], user_id)' at line 1
+[DEBUG] 2018-09-27 21:27:39.543 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[INFO ] 2018-09-27 21:28:39.118 [http-nio-8080-exec-8] DanceDAO - Dance type Rumba
+[INFO ] 2018-09-27 21:28:39.304 [http-nio-8080-exec-8] StepDAO - 3
+[INFO ] 2018-09-27 21:28:39.304 [http-nio-8080-exec-8] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
