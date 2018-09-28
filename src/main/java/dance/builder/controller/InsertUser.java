@@ -43,6 +43,7 @@ public class InsertUser extends HttpServlet {
                 User insertedUser = (User) genericDAO.getById(id);
 
                 request.setAttribute("user", insertedUser.getFirstName());
+                request.setAttribute("userId", insertedUser.getId());
 
                 dispatcher = request.getRequestDispatcher("buildDance.jsp");
                 dispatcher.forward(request, response);

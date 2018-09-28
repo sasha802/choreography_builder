@@ -63,6 +63,8 @@
                             <td><img class="descriptionImg" src="images/${steps.leadDescription}"/></td>
                             <td><img class="descriptionImg" src="images/${steps.followerDescription}"/></td>
                             <td>${steps.level}</td>
+                            <td><a href="/saveStep?stepName=${steps.stepName}&leadDescription=${steps.leadDescription}
+                            &followerDescription=${steps.followerDescription}&level=${steps.level}&userId=2">Save Step</a></td>
                         </tr>
                     </c:forEach>
 
