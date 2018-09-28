@@ -81,3 +81,9 @@
 [INFO ] 2018-09-25 21:55:06.670 [http-nio-8080-exec-4] DanceDAO - Dance type Rumba
 [INFO ] 2018-09-25 21:55:07.174 [http-nio-8080-exec-4] StepDAO - 5
 [INFO ] 2018-09-25 21:55:07.174 [http-nio-8080-exec-4] StepDAO - list of steps [dance.builder.entity.Step@2892b955, dance.builder.entity.Step@489844a1, dance.builder.entity.Step@7a6def9f, dance.builder.entity.Step@475ef504, dance.builder.entity.Step@7abba4ab]
+[DEBUG] 2018-09-27 18:39:07.970 [main] GenericDAO - Searching for user with lastName = Thomson
+[DEBUG] 2018-09-27 18:39:08.113 [main] GenericDAO - Searching for user with lastName = C
+[DEBUG] 2018-09-27 18:39:08.207 [main] GenericDAO - users User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[INFO ] 2018-09-27 18:39:29.087 [http-nio-8080-exec-5] DanceDAO - Dance type Rumba
+[INFO ] 2018-09-27 18:39:29.465 [http-nio-8080-exec-5] StepDAO - 3
+[INFO ] 2018-09-27 18:39:29.466 [http-nio-8080-exec-5] StepDAO - list of steps [dance.builder.entity.Step@45379c4f, dance.builder.entity.Step@aafcffad, dance.builder.entity.Step@d6e81996]

@@ -1,12 +1,14 @@
 package dance.builder.entity;
 
+import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
+import javax.annotation.sql.DataSourceDefinition;
 import javax.persistence.*;
 
 @Entity(name = "Dance")
 @Table(name = "dance_type")
-
+@Data
 public class Dance {
 
     @Column(name = "name")
@@ -30,29 +32,6 @@ public class Dance {
         this.beatsPerMinute = beatsPerMinute;
     }
 
-    public String getDanceName() {
-        return danceName;
-    }
-
-    public void setDanceName(String danceName) {
-        this.danceName = danceName;
-    }
-
-    public int getBeatsPerMinute() {
-        return beatsPerMinute;
-    }
-
-    public void setBeatsPerMinute(int beatsPerMinute) {
-        this.beatsPerMinute = beatsPerMinute;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
 
 
