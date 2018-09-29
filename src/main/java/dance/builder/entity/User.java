@@ -5,7 +5,9 @@ import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity(name = "User")
 @Table(name = "users")
@@ -31,6 +33,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
+
 
     public User() {
 
@@ -62,4 +65,6 @@ public class User {
     public int hashCode() {
         return Objects.hash(lastName, firstName, email, password, roleId, id);
     }
+
+
 }

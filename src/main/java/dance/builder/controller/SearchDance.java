@@ -1,7 +1,7 @@
 package dance.builder.controller;
 
-import com.sun.net.httpserver.HttpServer;
-import dance.builder.persistence.DanceDAO;
+import dance.builder.entity.Dance;
+import dance.builder.persistence.GenericDAO;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -19,8 +19,9 @@ public class SearchDance extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        DanceDAO danceDAO = new DanceDAO();
-        request.setAttribute("dances", danceDAO.getAllDances());
+
+        GenericDAO<Dance> danceGenericDAO = new GenericDAO<>(Dance.class);
+        request.setAttribute("dances", danceGenericDAO.getAll());
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
         dispatcher.forward(request, response);

@@ -3,15 +3,13 @@
 
     <body>
         <jsp:include page="internalMenuPanel.jsp"/>
-        <h2>My "Dance_Name" Dance Choreography</h2>
+        <h2></h2>
 
         <div class="container">
+            <div>
+                <a href="/customSteps"><button type="button" class="btn btn-info">Display My Steps</button></a>
+            </div>
             <div id="danceDetails">
-                <p>
-                    Number Of Steps: 7 <br/>
-                    Beats Per Minute: 90 <br/>
-                    Choreography Level: Basic <br/>
-                </p>
             </div>
             <div class="scrollbar" id="style-1">
                 <div class="force-overflow">

@@ -153,3 +153,657 @@
 [INFO ] 2018-09-27 22:27:21.482 [http-nio-8080-exec-6] StepDAO - 3
 [INFO ] 2018-09-27 22:27:21.482 [http-nio-8080-exec-6] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
 [DEBUG] 2018-09-27 22:27:23.039 [http-nio-8080-exec-18] GenericDAO - type CustomSteps(id=0, stepName=Box Step, danceName=Rumba, leadDescription=boxstep.gif, followerDescription=boxstepF.png, level=basic, userId=2)
+[INFO ] 2018-09-28 18:05:38.519 [http-nio-8080-exec-40] DanceDAO - Dance type Rumba
+[INFO ] 2018-09-28 18:05:38.858 [http-nio-8080-exec-40] StepDAO - 2
+[INFO ] 2018-09-28 18:05:38.858 [http-nio-8080-exec-40] StepDAO - list of steps [Step(stepName=Cuban Wrap, level=intermidiate, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=6), Step(stepName=Forward Spot Turn, level=intermidiate, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=7)]
+[DEBUG] 2018-09-28 18:05:40.331 [http-nio-8080-exec-43] GenericDAO - type CustomSteps(id=0, stepName=Cuban Wrap, danceName=Rumba, leadDescription=test, followerDescription=test, level=intermidiate, userId=2)
+[DEBUG] 2018-09-28 18:26:08.940 [http-nio-8080-exec-4] GenericDAO - Searching for user with users_id = 2
+[INFO ] 2018-09-28 18:28:19.877 [http-nio-8080-exec-4] DanceDAO - Dance type Rumba
+[INFO ] 2018-09-28 18:28:20.193 [http-nio-8080-exec-4] StepDAO - 2
+[INFO ] 2018-09-28 18:28:20.194 [http-nio-8080-exec-4] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2)]
+[DEBUG] 2018-09-28 18:28:21.736 [http-nio-8080-exec-8] GenericDAO - type CustomSteps(id=0, stepName=Box Step, danceName=Rumba, leadDescription=boxstep.gif, followerDescription=boxstepF.png, level=basic, userId=2)
+[DEBUG] 2018-09-28 18:28:24.514 [http-nio-8080-exec-10] GenericDAO - Searching for user with users_id = 2
+[DEBUG] 2018-09-28 18:28:36.281 [http-nio-8080-exec-1] GenericDAO - type CustomSteps(id=0, stepName=Underarm Rurn, danceName=Rumba, leadDescription=underarmTurn.png, followerDescription=underarmTurn.png, level=basic, userId=2)
+[DEBUG] 2018-09-28 18:29:58.769 [http-nio-8080-exec-5] GenericDAO - Searching for user with users_id = 2
+[DEBUG] 2018-09-28 18:34:21.239 [http-nio-8080-exec-5] GenericDAO - Searching for user with step_name = Box
+[ERROR] 2018-09-28 18:37:38.664 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[level], user_id)' at line 1
+[DEBUG] 2018-09-28 18:37:38.670 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-28 18:38:46.540 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[level], user_id)' at line 1
+[DEBUG] 2018-09-28 18:38:47.609 [main] GenericDAO - Searching for user with step_name = Box
+[ERROR] 2018-09-28 18:40:01.165 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[level], user_id)' at line 1
+[DEBUG] 2018-09-28 18:40:02.252 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 18:40:32.548 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[level], user_id)' at line 1
+[DEBUG] 2018-09-28 18:40:33.596 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 18:40:33.782 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[level], user_id)' at line 1
+[DEBUG] 2018-09-28 18:40:33.783 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-28 18:41:56.458 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-28 18:41:57.547 [main] GenericDAO - Searching for user with lastName = C
+[ERROR] 2018-09-28 18:42:54.946 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[level], user_id)' at line 1
+[DEBUG] 2018-09-28 18:42:55.915 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 18:42:56.132 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[level], user_id)' at line 1
+[DEBUG] 2018-09-28 18:42:56.133 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-28 18:45:38.389 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-28 18:45:39.397 [main] GenericDAO - Searching for user with stepName = Box
+[DEBUG] 2018-09-28 18:46:42.536 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[DEBUG] 2018-09-28 18:46:47.820 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[DEBUG] 2018-09-28 18:46:53.481 [main] GenericDAO - Searching for user with stepName = Box
+[DEBUG] 2018-09-28 18:47:11.658 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 18:48:16.074 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-28 18:48:17.145 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 18:48:57.679 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-28 18:48:58.763 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 18:49:48.837 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-28 18:49:49.900 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 18:51:23.027 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-28 18:51:24.038 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 18:51:24.224 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-28 18:51:24.225 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-28 18:52:07.961 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-28 18:52:09.359 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 18:52:09.546 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-28 18:52:09.546 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[DEBUG] 2018-09-28 18:52:49.573 [http-nio-8080-exec-4] GenericDAO - Searching for user with stepName = Box
+[DEBUG] 2018-09-28 18:54:20.825 [http-nio-8080-exec-10] GenericDAO - Searching for user with userId = 2
+[DEBUG] 2018-09-28 19:04:10.070 [http-nio-8080-exec-2] GenericDAO - Searching for user with userId = 2
+[DEBUG] 2018-09-28 19:05:37.562 [http-nio-8080-exec-5] GenericDAO - Searching for user with userId = 2
+[ERROR] 2018-09-28 19:42:17.982 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:42:19.299 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-28 19:42:19.299 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-28 19:42:19.429 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-28 19:42:19.430 [main] GenericDAO - Searching for user with lastName = C
+[ERROR] 2018-09-28 19:42:19.441 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:42:19.452 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:42:19.459 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:42:19.515 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-28 19:42:19.515 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-28 19:43:40.072 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:43:54.921 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:44:02.458 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:44:36.513 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:44:57.927 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:45:14.170 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-28 19:45:15.295 [main] GenericDAO - Searching for user with lastName = C
+[ERROR] 2018-09-28 19:45:45.477 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-28 19:45:46.634 [main] GenericDAO - Searching for user with lastName = T
+[ERROR] 2018-09-28 19:47:11.727 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-28 19:47:12.801 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-28 19:47:25.944 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:47:27.044 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-28 19:47:27.045 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-28 19:47:27.181 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-28 19:47:27.181 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-28 19:47:27.199 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:47:27.207 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:47:27.269 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:47:27.277 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-28 19:47:27.277 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-28 19:48:13.097 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:48:23.039 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:48:36.888 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:50:03.741 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:52:59.760 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:54:15.162 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:57:24.292 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:58:03.162 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:58:04.219 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-28 19:58:04.219 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-28 19:58:04.367 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-28 19:58:04.367 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-28 19:58:04.392 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:58:04.402 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:58:04.473 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-28 19:58:04.483 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-28 19:58:04.483 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-28 20:02:17.468 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-28 20:02:18.504 [main] GenericDAO - Searching for user with stepName = Box
+[DEBUG] 2018-09-28 20:04:23.975 [http-nio-8080-exec-4] GenericDAO - type User(lastName=test, firstName=test, email=test, password=3333, roleId=1, id=0)
+[INFO ] 2018-09-28 20:04:35.955 [http-nio-8080-exec-8] DanceDAO - Dance type Rumba
+[INFO ] 2018-09-28 20:04:36.193 [http-nio-8080-exec-8] StepDAO - 4
+[INFO ] 2018-09-28 20:04:36.193 [http-nio-8080-exec-8] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3), Step(stepName=New York, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=4)]
+[DEBUG] 2018-09-28 20:04:38.543 [http-nio-8080-exec-1] GenericDAO - type CustomSteps(id=0, stepName=Underarm Rurn, danceName=Rumba, leadDescription=underarmTurn.png, followerDescription=underarmTurn.png, level=basic, userId=2, user=null)
+[DEBUG] 2018-09-28 20:05:52.359 [http-nio-8080-exec-9] GenericDAO - type CustomSteps(id=0, stepName=Underarm Rurn, danceName=Rumba, leadDescription=underarmTurn.png, followerDescription=underarmTurn.png, level=basic, userId=2, user=null)
+[INFO ] 2018-09-28 20:07:51.748 [http-nio-8080-exec-5] DanceDAO - Dance type Rumba
+[INFO ] 2018-09-28 20:07:52.121 [http-nio-8080-exec-5] StepDAO - 3
+[INFO ] 2018-09-28 20:07:52.121 [http-nio-8080-exec-5] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[DEBUG] 2018-09-28 20:08:07.227 [http-nio-8080-exec-7] GenericDAO - type CustomSteps(id=0, stepName=Box Step, danceName=Rumba, leadDescription=boxstep.gif, followerDescription=boxstepF.png, level=basic, userId=2)
+[DEBUG] 2018-09-28 20:08:27.343 [http-nio-8080-exec-8] GenericDAO - Searching for user with userId = 2
+[ERROR] 2018-09-28 20:08:44.105 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-28 20:08:56.066 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-28 20:09:09.712 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-28 20:09:22.316 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-28 20:09:23.432 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-28 20:09:23.432 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-28 20:09:23.583 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-28 20:09:23.584 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-28 20:09:23.602 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-28 20:09:23.621 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-28 20:09:23.654 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-28 20:09:23.688 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-28 20:09:23.689 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-28 20:09:51.795 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-28 20:09:52.923 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-28 20:09:52.923 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-28 20:09:53.082 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-28 20:09:53.083 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-28 20:09:53.099 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-28 20:09:53.123 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-28 20:09:53.162 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-28 20:09:53.181 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-28 20:09:53.182 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-28 20:10:22.808 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-28 20:10:41.584 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-28 20:10:42.742 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-28 20:10:42.743 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-28 20:10:42.883 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-28 20:10:42.883 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-28 20:10:42.902 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-28 20:10:42.920 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-28 20:10:42.942 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-28 20:10:42.958 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-28 20:10:42.958 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-28 20:11:56.960 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-28 20:11:58.011 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 20:12:43.657 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-28 20:12:44.651 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 20:13:35.924 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-28 20:13:37.132 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 20:14:46.019 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-28 20:14:46.024 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-28 20:14:54.020 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-28 20:14:55.030 [main] GenericDAO - Searching for user with stepName = Box
+[DEBUG] 2018-09-28 20:15:17.547 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[DEBUG] 2018-09-28 20:15:25.923 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 20:16:18.731 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-28 20:16:19.849 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 20:18:31.925 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-28 20:18:33.035 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 20:18:33.202 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-28 20:18:33.202 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-28 20:18:49.290 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-28 20:18:50.441 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 20:18:50.618 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-28 20:18:50.618 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-28 20:19:29.119 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/*delete from users' at line 1
+[DEBUG] 2018-09-28 20:19:30.195 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 20:19:30.363 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/*delete from users' at line 1
+[DEBUG] 2018-09-28 20:19:30.363 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-28 20:20:06.973 [main] Database - java.lang.NullPointerException
+[DEBUG] 2018-09-28 20:20:08.481 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 20:20:08.639 [main] Database - java.lang.NullPointerException
+[DEBUG] 2018-09-28 20:20:08.640 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-28 20:21:06.596 [main] Database - java.lang.NullPointerException
+[DEBUG] 2018-09-28 20:21:07.892 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 20:22:41.106 [main] Database - java.lang.NullPointerException
+[DEBUG] 2018-09-28 20:22:42.511 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 20:22:42.658 [main] Database - java.lang.NullPointerException
+[DEBUG] 2018-09-28 20:22:42.659 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-28 20:27:10.302 [main] Database - java.lang.NullPointerException
+[DEBUG] 2018-09-28 20:27:11.573 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 20:27:22.872 [main] Database - java.lang.NullPointerException
+[DEBUG] 2018-09-28 20:27:24.187 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 20:27:52.420 [main] Database - java.lang.NullPointerException
+[DEBUG] 2018-09-28 20:27:53.809 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-28 20:28:23.009 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-28 20:28:24.323 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-28 20:28:24.323 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-28 20:28:24.457 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-28 20:28:24.457 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-28 20:28:24.473 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-28 20:28:24.489 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-28 20:28:24.508 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-28 20:28:24.523 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-28 20:28:24.523 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-29 15:02:49.527 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-29 15:02:52.382 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-29 15:03:13.649 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ERROR] 2018-09-29 15:03:14.856 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-29 15:03:14.856 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-29 15:03:14.992 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-29 15:03:14.992 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-29 15:03:15.017 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ERROR] 2018-09-29 15:03:15.041 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ERROR] 2018-09-29 15:03:15.070 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ERROR] 2018-09-29 15:03:15.094 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-29 15:03:15.094 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-29 15:05:12.856 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-29 15:05:13.860 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 15:05:26.992 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-29 15:05:27.960 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 15:05:28.119 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-29 15:05:28.119 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-29 15:06:07.211 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-29 15:06:08.223 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 15:06:08.427 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-29 15:06:08.427 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-29 15:06:44.162 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-29 15:06:45.238 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-29 15:06:45.239 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-29 15:06:45.428 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-29 15:06:45.429 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-29 15:06:45.443 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-29 15:06:45.454 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-29 15:06:45.467 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-29 15:06:45.479 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-29 15:06:45.479 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-29 15:07:51.884 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-29 15:08:59.370 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-29 15:10:04.889 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[ERROR] 2018-09-29 15:10:23.305 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-29 15:10:24.243 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 15:10:24.427 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-29 15:10:24.427 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-29 15:10:52.888 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-29 15:10:53.877 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-29 15:10:54.042 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-29 15:10:54.043 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-29 15:11:56.917 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2018-09-29 15:11:57.959 [main] GenericDAO - Searching for user with stepName = Box
+[ERROR] 2018-09-29 15:13:37.764 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:13:38.736 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 15:13:44.487 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:13:45.441 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 15:13:45.612 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:13:45.613 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-29 15:14:06.227 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:14:07.311 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:14:07.311 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-29 15:14:07.466 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:14:07.466 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-29 15:14:07.489 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:14:07.516 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:14:07.544 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:14:07.567 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:14:07.567 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-29 15:14:49.223 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:15:37.869 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:15:45.450 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:16:40.207 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:18:06.517 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/*alter table user_custom_steps auto_increment = 1' at line 1
+[ERROR] 2018-09-29 15:18:22.213 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/*alter table user_custom_steps auto_increment = 1' at line 1
+[ERROR] 2018-09-29 15:18:23.281 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/*alter table user_custom_steps auto_increment = 1' at line 1
+[DEBUG] 2018-09-29 15:18:23.282 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-29 15:18:23.424 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/*alter table user_custom_steps auto_increment = 1' at line 1
+[DEBUG] 2018-09-29 15:18:23.424 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-29 15:18:23.440 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/*alter table user_custom_steps auto_increment = 1' at line 1
+[ERROR] 2018-09-29 15:18:23.456 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/*alter table user_custom_steps auto_increment = 1' at line 1
+[ERROR] 2018-09-29 15:18:23.475 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/*alter table user_custom_steps auto_increment = 1' at line 1
+[ERROR] 2018-09-29 15:18:23.490 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/*alter table user_custom_steps auto_increment = 1' at line 1
+[DEBUG] 2018-09-29 15:18:23.491 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-29 15:19:04.121 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-29 15:19:05.212 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-29 15:19:05.212 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-29 15:19:05.365 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-29 15:19:05.365 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-29 15:19:05.375 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-29 15:19:05.390 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-29 15:19:05.399 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[ERROR] 2018-09-29 15:19:05.409 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`test_dance_builder`.`user_custom_steps`, CONSTRAINT `user_custom_steps_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`))
+[DEBUG] 2018-09-29 15:19:05.409 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-29 15:19:30.287 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:19:31.325 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:19:31.325 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-29 15:19:31.561 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:19:31.562 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-29 15:19:31.579 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:19:31.593 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:19:31.655 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:19:31.671 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:19:31.672 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-29 15:20:57.525 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/*alter table user_custom_steps auto_increment = 1' at line 1
+[ERROR] 2018-09-29 15:20:58.591 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/*alter table user_custom_steps auto_increment = 1' at line 1
+[DEBUG] 2018-09-29 15:20:58.592 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-29 15:20:58.728 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/*alter table user_custom_steps auto_increment = 1' at line 1
+[DEBUG] 2018-09-29 15:20:58.728 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-29 15:20:58.745 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/*alter table user_custom_steps auto_increment = 1' at line 1
+[ERROR] 2018-09-29 15:20:58.764 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/*alter table user_custom_steps auto_increment = 1' at line 1
+[ERROR] 2018-09-29 15:20:58.784 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/*alter table user_custom_steps auto_increment = 1' at line 1
+[ERROR] 2018-09-29 15:20:58.799 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/*alter table user_custom_steps auto_increment = 1' at line 1
+[DEBUG] 2018-09-29 15:20:58.800 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-29 15:21:30.955 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:21:31.996 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 15:21:32.167 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:21:32.168 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-29 15:24:08.935 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:24:09.990 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:24:09.991 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-29 15:24:10.141 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:24:10.142 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-29 15:24:10.158 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:24:10.171 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:24:10.192 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:24:10.207 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:24:10.207 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[DEBUG] 2018-09-29 15:24:22.077 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-09-29 15:24:22.293 [main] StepDAO - 3
+[INFO ] 2018-09-29 15:24:22.293 [main] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[ERROR] 2018-09-29 15:24:41.516 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:24:42.433 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 15:24:42.624 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:24:42.624 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[DEBUG] 2018-09-29 15:24:42.697 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-09-29 15:24:42.743 [main] StepDAO - 3
+[INFO ] 2018-09-29 15:24:42.743 [main] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[ERROR] 2018-09-29 15:24:42.769 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:24:42.804 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:24:42.804 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-29 15:24:42.827 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:24:42.828 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-29 15:24:42.841 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:24:42.853 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:24:42.872 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:24:42.889 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:24:42.889 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-29 15:24:56.796 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:24:57.824 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:24:57.824 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-29 15:24:58.008 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:24:58.008 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-29 15:24:58.026 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:24:58.043 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:24:58.086 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:24:58.101 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:24:58.102 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-29 15:27:45.849 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:27:46.839 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-29 15:28:04.046 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:28:05.138 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:28:05.138 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-29 15:28:05.350 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:28:05.350 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-29 15:28:05.373 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:28:05.389 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:28:05.412 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:28:05.427 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:28:05.427 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-29 15:28:59.869 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:29:00.941 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:29:00.942 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-29 15:29:01.130 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:29:01.130 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-29 15:29:01.148 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:29:01.163 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:29:01.183 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 15:29:01.197 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:29:01.197 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-29 15:29:50.145 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:29:51.155 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 15:29:51.355 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:29:51.356 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[DEBUG] 2018-09-29 15:30:27.913 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-09-29 15:30:28.134 [main] StepDAO - 3
+[INFO ] 2018-09-29 15:30:28.135 [main] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[DEBUG] 2018-09-29 15:37:00.759 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-09-29 15:37:15.927 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-09-29 15:37:24.465 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-09-29 15:37:24.624 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-09-29 15:37:24.651 [main] StepDAO - 3
+[INFO ] 2018-09-29 15:37:24.651 [main] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[DEBUG] 2018-09-29 15:37:40.706 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-09-29 15:37:40.890 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-09-29 15:37:40.918 [main] StepDAO - 3
+[INFO ] 2018-09-29 15:37:40.919 [main] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[DEBUG] 2018-09-29 15:37:45.570 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-09-29 15:37:45.790 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-09-29 15:37:45.808 [main] StepDAO - 3
+[INFO ] 2018-09-29 15:37:45.808 [main] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[DEBUG] 2018-09-29 15:38:42.527 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-09-29 15:38:42.742 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-09-29 15:38:42.759 [main] StepDAO - 3
+[INFO ] 2018-09-29 15:38:42.759 [main] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[DEBUG] 2018-09-29 15:49:21.754 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-09-29 15:49:21.917 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-09-29 15:49:21.937 [main] StepDAO - 3
+[INFO ] 2018-09-29 15:49:21.938 [main] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[ERROR] 2018-09-29 15:50:24.089 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:50:25.108 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 15:50:25.389 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 15:50:25.390 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[DEBUG] 2018-09-29 16:00:03.286 [http-nio-8080-exec-4] GenericDAO - Searching for user with name = Waltz
+[DEBUG] 2018-09-29 16:00:58.598 [http-nio-8080-exec-7] GenericDAO - Searching for user with danceName = Waltz
+[INFO ] 2018-09-29 16:00:58.821 [http-nio-8080-exec-7] StepDAO - 3
+[INFO ] 2018-09-29 16:00:58.821 [http-nio-8080-exec-7] StepDAO - list of steps []
+[DEBUG] 2018-09-29 16:03:13.076 [http-nio-8080-exec-17] GenericDAO - Searching for user with danceName = Rumba
+[INFO ] 2018-09-29 16:03:13.265 [http-nio-8080-exec-17] StepDAO - 3
+[INFO ] 2018-09-29 16:03:13.265 [http-nio-8080-exec-17] StepDAO - list of steps [Step(stepName=Cuban Wrap, level=intermidiate, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=6), Step(stepName=Forward Spot Turn, level=intermidiate, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=7), Step(stepName=Circling Cuban Walks, level=intermidiate, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=8)]
+[DEBUG] 2018-09-29 16:03:19.261 [http-nio-8080-exec-15] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-09-29 16:03:19.268 [http-nio-8080-exec-15] StepDAO - 4
+[INFO ] 2018-09-29 16:03:19.268 [http-nio-8080-exec-15] StepDAO - list of steps []
+[DEBUG] 2018-09-29 16:03:24.583 [http-nio-8080-exec-16] GenericDAO - Searching for user with danceName = Waltz
+[INFO ] 2018-09-29 16:03:24.589 [http-nio-8080-exec-16] StepDAO - 2
+[INFO ] 2018-09-29 16:03:24.589 [http-nio-8080-exec-16] StepDAO - list of steps []
+[DEBUG] 2018-09-29 16:06:42.523 [http-nio-8080-exec-25] GenericDAO - Searching for user with danceName = Rumba
+[INFO ] 2018-09-29 16:06:42.725 [http-nio-8080-exec-25] StepDAO - 3
+[INFO ] 2018-09-29 16:06:42.726 [http-nio-8080-exec-25] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[DEBUG] 2018-09-29 16:06:44.152 [http-nio-8080-exec-20] GenericDAO - type CustomSteps(id=0, stepName=Box Step, danceName=Rumba, leadDescription=boxstep.gif, followerDescription=boxstepF.png, level=basic, userId=2)
+[DEBUG] 2018-09-29 16:06:46.305 [http-nio-8080-exec-29] GenericDAO - Searching for user with userId = 2
+[DEBUG] 2018-09-29 16:07:58.499 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-09-29 16:07:58.710 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-09-29 16:07:58.727 [main] StepDAO - 3
+[INFO ] 2018-09-29 16:07:58.727 [main] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[ERROR] 2018-09-29 16:08:42.367 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:08:43.503 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:08:43.504 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-29 16:08:43.704 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:08:43.705 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-29 16:08:43.722 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:08:43.738 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:08:43.761 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:08:43.786 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:08:43.786 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[INFO ] 2018-09-29 16:12:19.864 [main] StepDAO - 3
+[INFO ] 2018-09-29 16:12:19.865 [main] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[ERROR] 2018-09-29 16:12:57.896 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:12:58.858 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 16:12:59.088 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:12:59.089 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[DEBUG] 2018-09-29 16:12:59.114 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-09-29 16:12:59.132 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-09-29 16:12:59.152 [main] StepDAO - 3
+[INFO ] 2018-09-29 16:12:59.152 [main] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[ERROR] 2018-09-29 16:12:59.177 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:12:59.204 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:12:59.205 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-29 16:12:59.221 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:12:59.221 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-29 16:12:59.236 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:12:59.250 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:12:59.270 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:12:59.285 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:12:59.285 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-29 16:13:56.450 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:13:57.488 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 16:13:57.669 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:13:57.670 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[DEBUG] 2018-09-29 16:13:57.743 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-09-29 16:13:57.758 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-09-29 16:13:57.775 [main] StepDAO - 3
+[INFO ] 2018-09-29 16:13:57.776 [main] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[ERROR] 2018-09-29 16:13:57.795 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:13:57.824 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:13:57.825 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-29 16:13:57.841 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:13:57.841 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-29 16:13:57.856 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:13:57.870 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:13:57.889 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:13:57.903 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:13:57.904 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-29 16:14:06.127 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:14:07.072 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 16:14:07.300 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:14:07.300 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[DEBUG] 2018-09-29 16:14:07.325 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-09-29 16:14:07.349 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-09-29 16:14:07.367 [main] StepDAO - 3
+[INFO ] 2018-09-29 16:14:07.367 [main] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[ERROR] 2018-09-29 16:14:07.388 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:14:07.413 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:14:07.414 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-29 16:14:07.431 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:14:07.431 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-29 16:14:07.449 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:14:07.463 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:14:07.482 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:14:07.497 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:14:07.497 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-09-29 16:17:21.359 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:17:35.900 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:17:36.934 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:17:36.935 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 16:17:37.073 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:17:37.073 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-29 16:17:43.955 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:17:45.034 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:17:45.035 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 16:17:45.256 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:17:45.257 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-29 16:19:37.469 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:19:43.129 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:19:44.216 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:19:44.217 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 16:19:44.359 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:19:44.374 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:19:44.374 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-29 16:22:38.391 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:22:51.754 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:22:52.888 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:22:52.889 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 16:22:53.042 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:22:53.068 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:22:53.093 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:22:53.093 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-29 16:23:12.658 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:23:13.828 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:23:13.830 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 16:23:13.971 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:23:13.996 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:23:14.017 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:23:14.017 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-29 16:23:17.386 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:23:18.479 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:23:18.480 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 16:23:18.663 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:23:18.679 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:23:18.705 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:23:18.705 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-29 16:26:37.135 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:26:38.144 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-09-29 16:27:07.629 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:27:08.587 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-09-29 16:27:17.680 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:27:18.646 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-09-29 16:27:23.855 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:27:25.081 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:27:25.082 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-09-29 16:27:25.236 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:27:25.236 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 16:27:25.269 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:27:25.286 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:27:25.310 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:27:25.311 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-29 16:28:11.374 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:28:12.442 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:28:12.442 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-09-29 16:28:12.627 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:28:12.628 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 16:28:12.646 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:28:12.660 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:28:12.682 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:28:12.682 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-29 16:30:07.378 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:30:07.514 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:30:07.515 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-09-29 16:30:07.659 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:30:07.660 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 16:30:07.679 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2018-09-29 16:30:07.698 [main] StepDAO - 3
+[INFO ] 2018-09-29 16:30:07.698 [main] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[ERROR] 2018-09-29 16:30:07.710 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:30:07.725 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:30:07.749 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:30:07.749 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-29 16:30:13.020 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:30:13.183 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:30:13.183 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-09-29 16:30:13.383 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:30:13.383 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 16:30:13.400 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2018-09-29 16:30:13.408 [main] StepDAO - 3
+[INFO ] 2018-09-29 16:30:13.408 [main] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[ERROR] 2018-09-29 16:30:13.420 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:30:13.436 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:30:13.457 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:30:13.457 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-29 16:31:44.017 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2018-09-29 16:31:44.226 [main] StepDAO - 5
+[INFO ] 2018-09-29 16:31:44.227 [main] StepDAO - list of steps [Step(stepName=Rope Spin, level=Advanced, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=11), Step(stepName=Checked 8, level=Advanced, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=12), Step(stepName=Fifth Side Break, level=Advanced, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=13), Step(stepName=Openning Out, level=Advanced, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=14), Step(stepName=Promenade Walks, level=Advanced, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=15)]
+[ERROR] 2018-09-29 16:31:53.414 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:31:53.555 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:31:53.555 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-09-29 16:31:53.734 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:31:53.734 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 16:31:53.750 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2018-09-29 16:31:53.760 [main] StepDAO - 5
+[INFO ] 2018-09-29 16:31:53.760 [main] StepDAO - list of steps [Step(stepName=Rope Spin, level=Advanced, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=11), Step(stepName=Checked 8, level=Advanced, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=12), Step(stepName=Fifth Side Break, level=Advanced, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=13), Step(stepName=Openning Out, level=Advanced, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=14), Step(stepName=Promenade Walks, level=Advanced, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=15)]
+[ERROR] 2018-09-29 16:31:53.770 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:31:53.786 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:31:53.806 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:31:53.807 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[ERROR] 2018-09-29 16:32:09.907 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:32:10.195 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:32:10.195 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-09-29 16:32:10.423 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:32:10.424 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 16:32:10.442 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2018-09-29 16:32:10.455 [main] StepDAO - 5
+[INFO ] 2018-09-29 16:32:10.456 [main] StepDAO - list of steps [Step(stepName=Rope Spin, level=Advanced, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=11), Step(stepName=Checked 8, level=Advanced, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=12), Step(stepName=Fifth Side Break, level=Advanced, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=13), Step(stepName=Openning Out, level=Advanced, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=14), Step(stepName=Promenade Walks, level=Advanced, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=15)]
+[ERROR] 2018-09-29 16:32:10.467 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:32:10.484 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:32:10.511 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:32:10.511 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[DEBUG] 2018-09-29 16:32:10.528 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-09-29 16:32:10.549 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-09-29 16:32:10.561 [main] StepDAO - 3
+[INFO ] 2018-09-29 16:32:10.561 [main] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[ERROR] 2018-09-29 16:32:10.580 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:32:10.615 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:32:10.616 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-29 16:32:10.633 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:32:10.634 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-29 16:32:10.651 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:32:10.667 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:32:10.691 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:32:10.709 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:32:10.710 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[DEBUG] 2018-09-29 16:35:23.770 [http-nio-8080-exec-1] GenericDAO - type User(lastName=Hello, firstName=Test, email=test, password=3k3k, roleId=1, id=0)
+[DEBUG] 2018-09-29 16:35:34.519 [http-nio-8080-exec-2] GenericDAO - Searching for user with danceName = Rumba
+[INFO ] 2018-09-29 16:35:34.704 [http-nio-8080-exec-2] StepDAO - 3
+[INFO ] 2018-09-29 16:35:34.705 [http-nio-8080-exec-2] StepDAO - list of steps [Step(stepName=Cuban Wrap, level=intermidiate, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=6), Step(stepName=Forward Spot Turn, level=intermidiate, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=7), Step(stepName=Circling Cuban Walks, level=intermidiate, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=8)]
+[DEBUG] 2018-09-29 16:35:36.480 [http-nio-8080-exec-5] GenericDAO - type CustomSteps(id=0, stepName=Cuban Wrap, danceName=Rumba, leadDescription=test, followerDescription=test, level=intermidiate, userId=2)
+[DEBUG] 2018-09-29 16:35:39.963 [http-nio-8080-exec-4] GenericDAO - Searching for user with userId = 2
+[ERROR] 2018-09-29 16:36:33.457 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:36:33.619 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:36:33.619 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-09-29 16:36:33.802 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:36:33.803 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-09-29 16:36:33.827 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2018-09-29 16:36:33.836 [main] StepDAO - 5
+[INFO ] 2018-09-29 16:36:33.836 [main] StepDAO - list of steps [Step(stepName=Rope Spin, level=Advanced, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=11), Step(stepName=Checked 8, level=Advanced, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=12), Step(stepName=Fifth Side Break, level=Advanced, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=13), Step(stepName=Openning Out, level=Advanced, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=14), Step(stepName=Promenade Walks, level=Advanced, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=15)]
+[ERROR] 2018-09-29 16:36:33.851 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:36:33.868 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:36:33.893 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:36:33.893 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, userId=2)
+[DEBUG] 2018-09-29 16:36:33.905 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-09-29 16:36:33.919 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-09-29 16:36:33.930 [main] StepDAO - 3
+[INFO ] 2018-09-29 16:36:33.930 [main] StepDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[ERROR] 2018-09-29 16:36:33.951 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:36:34.001 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:36:34.001 [main] GenericDAO - Searching for user with lastName = Thomson
+[ERROR] 2018-09-29 16:36:34.015 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:36:34.016 [main] GenericDAO - Searching for user with firstName = M
+[ERROR] 2018-09-29 16:36:34.032 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:36:34.045 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:36:34.061 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-09-29 16:36:34.076 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-09-29 16:36:34.076 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
