@@ -40,7 +40,7 @@ public class SaveCustomSteps extends HttpServlet {
         request.setAttribute("customSteps", genericDAO.getAll());
 
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/searchStep.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/buildDance.jsp");
         dispatcher.forward(request, response);
     }
 
