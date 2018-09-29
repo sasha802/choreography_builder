@@ -55,6 +55,17 @@ class StepDAOTest {
         assertEquals(3, steps.size());
     }
 
+    @Test
+    void updateSuccess() {
+
+        String newStep = "My New Step";
+        Step stepToUpdate = (Step) genericDAO.getById(1);
+        stepToUpdate.setStepName(newStep);
+        genericDAO.saveOrUpdate(stepToUpdate);
+        Step retrievedCustomStep = (Step) genericDAO.getById(1);
+        assertEquals(stepToUpdate, retrievedCustomStep);
+    }
+
 
 
 }

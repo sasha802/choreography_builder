@@ -2,6 +2,7 @@ package dance.builder.persistence;
 
 import dance.builder.entity.CustomSteps;
 import dance.builder.entity.Step;
+import dance.builder.entity.User;
 import dance.builder.test.util.Database;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -19,12 +20,14 @@ class CustomStepsDAOTest {
 
     GenericDAO genericDAO;
     StepDAO stepDAO;
+    User user;
 
     @BeforeEach
     void setUp() {
 
         genericDAO = new GenericDAO(CustomSteps.class);
         stepDAO = new StepDAO();
+        user = new User();
         Database database = Database.getInstance();
         database.runSQL("customStepsCleandb.sql");
 
@@ -39,7 +42,10 @@ class CustomStepsDAOTest {
     @Test
     void insertSuccess() {
 
-        CustomSteps newCustomStep = new CustomSteps("Box", "Rumba", "test", "test", "basic", 2);
+        GenericDAO genericDAOUser = new GenericDAO(User.class);
+        User user = (User)genericDAOUser.getById(2);
+
+        CustomSteps newCustomStep = new CustomSteps("Box", "Rumba", "test", "test", "basic", user);
 
         int id = genericDAO.insert(newCustomStep);
         assertNotEquals(id, 0);

@@ -2,6 +2,7 @@ package dance.builder.controller;
 
 
 import dance.builder.entity.CustomSteps;
+import dance.builder.entity.User;
 import dance.builder.persistence.GenericDAO;
 
 import javax.servlet.RequestDispatcher;
@@ -21,6 +22,8 @@ public class SaveCustomSteps extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         GenericDAO genericDAO = new GenericDAO(CustomSteps.class);
+        GenericDAO genericDAOUser = new GenericDAO(User.class);
+
 
         String stepName = request.getParameter("stepName").trim();
         String leadDescription = request.getParameter("leadDescription").trim();
@@ -29,13 +32,15 @@ public class SaveCustomSteps extends HttpServlet {
         String userIdInput = request.getParameter("userId").trim();
         Integer userId = Integer.valueOf(userIdInput);
 
-        CustomSteps customSteps = new CustomSteps(stepName, "Rumba", leadDescription, followerDescription, level, userId);
+        User user = (User)genericDAOUser.getById(userId);
+
+        CustomSteps customSteps = new CustomSteps(stepName, "Rumba", leadDescription, followerDescription, level, user);
         genericDAO.insert(customSteps);
 
         request.setAttribute("customSteps", genericDAO.getAll());
 
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/danceManager.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/searchStep.jsp");
         dispatcher.forward(request, response);
     }
 
