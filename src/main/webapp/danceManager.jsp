@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 
@@ -6,91 +7,34 @@
         <h2></h2>
 
         <div class="container">
-            <div>
-                <a href="/customSteps"><button type="button" class="btn btn-info">Display My Steps</button></a>
-            </div>
             <div id="danceDetails">
             </div>
             <div class="scrollbar" id="style-1">
                 <div class="force-overflow">
-                    <table class="table">
+                    <table class="table" id="customStepTable">
                         <thead>
-                        <th>Order Number</th>
                         <th>Step Name</th>
                         <th>Lead Description</th>
                         <th>Follower Description</th>
+                        <th>Dance Type</th>
                         <ht></ht>
                         </thead>
-                        <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Box Step</td>
-                            <td>Fwd with left foot
-                                Side with right foot
-                                Close left foot to right foot
-                                Back with right foot
-                                Side with left foot
-                                Close right foot to left foot
-                            </td>
-                            <td>
-                                Back with right foot
-                                Side with left foot
-                                Close right foot to left foot
-                                Fwd with left foot
-                                Side with right foot
-                                Close left foot to right foot
-                            </td>
-                            <td>
-                                <a class="step" href="#deleteStepServlet&step=..."><span style="font-size:20px" class="glyphicon glyphicon-trash"></span></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Box Step</td>
-                            <td>Fwd with left foot
-                                Side with right foot
-                                Close left foot to right foot
-                                Back with right foot
-                                Side with left foot
-                                Close right foot to left foot
-                            </td>
-                            <td>
-                                Back with right foot
-                                Side with left foot
-                                Close right foot to left foot
-                                Fwd with left foot
-                                Side with right foot
-                                Close left foot to right foot
-                            </td>
-                            <td>
-                                <a class="step" href="#deleteStepServlet&step=..."><span style="font-size:20px" class="glyphicon glyphicon-trash"></span></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Box Step</td>
-                            <td>Fwd with left foot
-                                Side with right foot
-                                Close left foot to right foot
-                                Back with right foot
-                                Side with left foot
-                                Close right foot to left foot
-                            </td>
-                            <td>
-                                Back with right foot
-                                Side with left foot
-                                Close right foot to left foot
-                                Fwd with left foot
-                                Side with right foot
-                                Close left foot to right foot
-                            </td>
-                            <td>
-                                <a class="step" href="#deleteStepServlet&step=..."><span style="font-size:20px" class="glyphicon glyphicon-trash"></span></a>
-                            </td>
-                        </tr>
+                        <tbody id="customStepsTbody">
+                        <c:forEach var="customStep" items="${customSteps}">
+                            <tr>
+                                <td>${customStep.stepName}</td>
+                                <td>${customStep.leadDescription}</td>
+                                <td>${customStep.followerDescription}</td>
+                                <td>${customStep.followerDescription}</td>
+                                <td>${customStep.level}</td>
+                                <td>${customStep.danceName}</td>
+                                <td><a class="step" href="#deleteStepServlet&step=..."><span style="font-size:20px" class="glyphicon glyphicon-trash"></span></a></td>
+                            </tr>
+                        </c:forEach>
                         </tbody>
                     </table>
                 </div>
+
 
             </div>
 
@@ -104,6 +48,22 @@
         <jsp:include page="head.jsp"/>
     </body>
 </html>
+
+<%--<script>
+    $(document).ready(function () {
+
+        var customStepsTbody = $('#customStepsTbody tbody');
+
+        if (customStepsTbody.length == 0) {
+
+            console.log('empty');
+
+            $('#customStepTable').css('display', 'none');
+            $('#style-1').css('display', 'none');
+            $('#danceDetails').html('<h2>You have no steps in your selection.<br/>Please build your dance to select steps.</h2>');
+        }
+    });
+</script>--%>
 
 
 

@@ -93,6 +93,19 @@ class CustomStepsDAOTest {
         assertEquals(5, steps.size());
     }
 
+    @Test
+    void getByCustomStepsPropertyEqualSuccess() {
+
+        CustomStepsDAO customStepsDAO = new CustomStepsDAO();
+        GenericDAO genericDAOUser = new GenericDAO(User.class);
+        User user = (User)genericDAOUser.getById(2);
+
+        List<CustomSteps> customSteps = customStepsDAO.getByCustomStepsPropertyEqual("user", user);
+        assertEquals(1, customSteps.size());
+
+
+    }
+
 
 
 

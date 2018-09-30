@@ -2,6 +2,8 @@ package dance.builder.controller;
 
 
 import dance.builder.entity.CustomSteps;
+import dance.builder.entity.User;
+import dance.builder.persistence.CustomStepsDAO;
 import dance.builder.persistence.GenericDAO;
 
 import javax.servlet.RequestDispatcher;
@@ -14,14 +16,18 @@ import java.io.IOException;
 import java.util.List;
 
 @WebServlet(
-        urlPatterns = {"/customSteps"}
+        urlPatterns = {"/displayCustomSteps"}
 )
 public class DisplayCustomSteps extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        GenericDAO genericDAO = new GenericDAO(CustomSteps.class);
-        List<CustomSteps> customSteps = genericDAO.getByPropertyEqual("userId", "2");
+
+        CustomStepsDAO customStepsDAO = new CustomStepsDAO();
+        GenericDAO genericDAOUser = new GenericDAO(User.class);
+        User user = (User)genericDAOUser.getById(2);
+        List<CustomSteps> customSteps = customStepsDAO.getByCustomStepsPropertyEqual("user", user);
+
         request.setAttribute("customSteps", customSteps);
 
 

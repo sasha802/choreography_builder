@@ -11,7 +11,8 @@
                 <form action="/searchStep" method="post">
                     <div class="form-group">
                         <label for="beatsNumber">Enter beats per minute</label>
-                        <input type="text" class="form-control" id="beatsNumber" name="beatsNumber" placeholder="beats/minute">
+                        <input type="text" class="form-control" id="beatsNumber" name="beatsNumber" placeholder="beats/minute"
+                               value="${beats}">
                     </div>
 
                     <div>
@@ -63,8 +64,10 @@
                             <td><img class="descriptionImg" src="images/${steps.leadDescription}"/></td>
                             <td><img class="descriptionImg" src="images/${steps.followerDescription}"/></td>
                             <td>${steps.level}</td>
-                            <td><a href="/saveStep?stepName=${steps.stepName}&leadDescription=${steps.leadDescription}
-                            &followerDescription=${steps.followerDescription}&level=${steps.level}&userId=2">Save Step</a></td>
+                            <c:forEach var="dance" items="${dance}">
+                                <td><a href="/saveStep?stepName=${steps.stepName}&danceName=${dance.danceName}&leadDescription=${steps.leadDescription}
+                            &followerDescription=${steps.followerDescription}&level=${steps.level}&beats=${beats}&userId=2">Save Step</a></td>
+                            </c:forEach>
                         </tr>
                     </c:forEach>
 
@@ -86,5 +89,14 @@
     }
 </style>
 
+<%--<script>
+    $(document).ready(function () {
 
+        $('#buildDanceBtn').click(function () {
+
+            console.log($('#beatsNumber').val());
+        })
+
+    });
+</script>--%>
 

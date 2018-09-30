@@ -26,18 +26,22 @@ public class SaveCustomSteps extends HttpServlet {
 
 
         String stepName = request.getParameter("stepName").trim();
+        String danceName = request.getParameter("danceName").trim();
         String leadDescription = request.getParameter("leadDescription").trim();
         String followerDescription = request.getParameter("followerDescription").trim();
         String level = request.getParameter("level").trim();
+        String beatsNumber = request.getParameter("beats");
         String userIdInput = request.getParameter("userId").trim();
         Integer userId = Integer.valueOf(userIdInput);
 
         User user = (User)genericDAOUser.getById(userId);
 
-        CustomSteps customSteps = new CustomSteps(stepName, "Rumba", leadDescription, followerDescription, level, user);
+        CustomSteps customSteps = new CustomSteps(stepName, danceName, leadDescription, followerDescription, level, user);
         genericDAO.insert(customSteps);
 
         request.setAttribute("customSteps", genericDAO.getAll());
+        request.setAttribute("beats", beatsNumber);
+
 
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/buildDance.jsp");

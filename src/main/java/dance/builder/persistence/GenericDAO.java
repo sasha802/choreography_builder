@@ -1,5 +1,7 @@
 package dance.builder.persistence;
 
+import dance.builder.entity.CustomSteps;
+import dance.builder.entity.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
@@ -110,7 +112,6 @@ public class GenericDAO<T> {
         session.close();
         return entity;
     }
-
 
     /**
      * Get user by property (like)
