@@ -39,6 +39,7 @@ insert singed up users. Impl hibernate to search for dance steps based on beats 
 |09/25/2018|Working on the database|2 hours|
 |09/27/2018|Working on adding table for custom steps. Creating custom steps entity, servlet, storing entered steps in to 
 the custom steps table.|3hours 30min|
-|09/28/2018|Reading week5 documentation, watching videos, implementing many to one into my project.
+|09/28/2018|Reading week5 documentation, watching videos, implementing many-to-one with dance_type and step into my project.
 |3 hours|
-|09/29/2918|Reading hibernate doc. creating unit test to test implemented many to one with hibernate in the project| 2 hours|
+|09/29/2018|Reading hibernate doc. creating unit test to test implemented many-to-one (users-custom_steps) with hibernate in the project| 2 hours|
+|09/30/2018|Researching about dynamic programming to prepare for the presentation |1 hour 30 min |
