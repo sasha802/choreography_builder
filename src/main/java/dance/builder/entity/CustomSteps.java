@@ -33,6 +33,9 @@ public class CustomSteps {
     @Column(name = "level")
     private String level;
 
+    @Column(name = "deleted")
+    private int deleted;
+
 
     @ManyToOne
     @JoinColumn(name = "users_id", foreignKey = @ForeignKey(name = "user_custom_steps_pk"))

@@ -36,7 +36,7 @@ class CustomStepsDAOTest {
     @Test
     void getAllCustomStepsSuccess() {
         List<CustomSteps> users = genericDAO.getAll();
-        assertEquals(1, users.size());
+        assertEquals(2, users.size());
     }
 
     @Test
@@ -62,6 +62,18 @@ class CustomStepsDAOTest {
         stepToUpdate.setStepName(newCustomStep);
         genericDAO.saveOrUpdate(stepToUpdate);
         CustomSteps retrievedCustomStep = (CustomSteps) genericDAO.getById(1);
+        assertEquals(stepToUpdate, retrievedCustomStep);
+    }
+
+
+    @Test
+    void removeCustomStepSuccess() {
+
+        int deleted = 1;
+        CustomSteps stepToUpdate = (CustomSteps) genericDAO.getById(2);
+        stepToUpdate.setDeleted(deleted);
+        genericDAO.saveOrUpdate(stepToUpdate);
+        CustomSteps retrievedCustomStep = (CustomSteps) genericDAO.getById(2);
         assertEquals(stepToUpdate, retrievedCustomStep);
     }
 
@@ -102,9 +114,8 @@ class CustomStepsDAOTest {
 
         List<CustomSteps> customSteps = customStepsDAO.getByCustomStepsPropertyEqual("user", user);
         assertEquals(1, customSteps.size());
-
-
     }
+
 
 
 

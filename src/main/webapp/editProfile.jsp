@@ -10,27 +10,29 @@
     <div class="container">
         <div id="editProfileContainer">
 
-            <form action="/updateUser" method="post">
+            <form action="/editUserProfile" method="post">
                 <div class="form-group">
                     <label for="editFirstName">First Name:</label>
-                    <input type="text" class="form-control" id="editFirstName" placeholder="first name">
+                    <input type="text" class="form-control" id="editFirstName" placeholder="first name" name="firstName" value="${user.firstName}">
                 </div>
                 <div class="form-group">
                     <label for="editLastName">Last Name:</label>
-                    <input type="text" class="form-control" id="editLastName" placeholder="last name">
+                    <input type="text" class="form-control" id="editLastName" placeholder="last name" name="lastName" value="${user.lastName}">
                 </div>
                 <div class="form-group">
                     <label for="editUserEmail">First Name:</label>
-                    <input type="text" class="form-control" id="editUserEmail" placeholder="email">
+                    <input type="text" class="form-control" id="editUserEmail" placeholder="email" name="email" value="${user.email}">
                 </div>
                 <div class="form-group">
                     <label for="editUserPassword">Password</label>
-                    <input type="password" class="form-control" id="editUserPassword" placeholder="password">
+                    <input type="password" class="form-control" id="editUserPassword" name="password" placeholder="password">
                 </div>
-                <button type="submit" class="btn btn-success">Submit</button>
+                <button type="submit" class="btn btn-success" name="submit">Submit</button>
             </form>
 
         </div>
+
+
 
         <%--<div>
             <c:forEach var="users" items="${user}">

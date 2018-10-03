@@ -22,13 +22,14 @@
                         <tbody id="customStepsTbody">
                         <c:forEach var="customStep" items="${customSteps}">
                             <tr>
+                                <td>${customStep.id}</td>
                                 <td>${customStep.stepName}</td>
                                 <td>${customStep.leadDescription}</td>
                                 <td>${customStep.followerDescription}</td>
                                 <td>${customStep.followerDescription}</td>
                                 <td>${customStep.level}</td>
                                 <td>${customStep.danceName}</td>
-                                <td><a class="step" href="#deleteStepServlet&step=..."><span style="font-size:20px" class="glyphicon glyphicon-trash"></span></a></td>
+                                <td><a class="step" href="/removeCustomStep?step=${customStep.id}"><span style="font-size:20px" class="glyphicon glyphicon-trash"></span></a></td>
                             </tr>
                         </c:forEach>
                         </tbody>

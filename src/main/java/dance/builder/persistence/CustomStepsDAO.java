@@ -10,12 +10,14 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.List;
+import javax.persistence.criteria.*;
 
 public class CustomStepsDAO {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     public List<CustomSteps> getByCustomStepsPropertyEqual(String propertyName, User value) {
+
         Session session = getSession();
 
         logger.debug("Searching for user with " + propertyName + " = " + value);
@@ -23,12 +25,20 @@ public class CustomStepsDAO {
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<CustomSteps> query = builder.createQuery(CustomSteps.class);
         Root<CustomSteps> root = query.from( CustomSteps.class );
-        query.select(root).where(builder.equal(root.get(propertyName), value));
-        List<CustomSteps> entity = session.createQuery( query ).getResultList();
+
+        Predicate predicate = builder.and(
+                builder.equal(root.get(propertyName), value),
+                builder.equal(root.get("deleted"), 0)
+        );
+
+        query.where(predicate);
+        List<CustomSteps> customSteps = session.createQuery(query).getResultList();
 
         session.close();
-        return entity;
+        return customSteps;
+
     }
+
 
     private Session getSession() {
 

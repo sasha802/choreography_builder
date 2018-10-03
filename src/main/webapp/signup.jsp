@@ -7,13 +7,14 @@
             <div id="signupContainer">
                 <form action="/insertUser" method="post">
                     <div class="form-group">
-                        <label for="lastName">Last Name:</label>
-                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="last name">
-                    </div>
-                    <div class="form-group">
                         <label for="firstName">First Name:</label>
                         <input type="text" class="form-control" id="firstName" name="firstName" placeholder="first name">
                     </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="last name">
+                    </div>
+
                     <div class="form-group">
                         <label for="userEmail">Email:</label>
                         <input type="text" class="form-control" id="userEmail" name="email" placeholder="email">
