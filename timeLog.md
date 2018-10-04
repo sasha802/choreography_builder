@@ -10,10 +10,8 @@
 |09/02/2018|Working on Problem Statement and Screen Design | 2 hours 30 min|
 |09/02/2018|Working on the Application Flow | 1 hour 45 min |
 |09/03/2018|Designing Wedding Dance Builder Database |3 hours 30 min|
-|09/04/2018|Creating GitHub repository for individual project. Setting config 
- on the intellij|1 hour|
-|09/04/2018|Setting up project structure for the project design files, populating 
- project design directory|45min
+|09/04/2018|Creating GitHub repository for individual project. Setting config on the intellij|1 hour|
+|09/04/2018|Setting up project structure for the project design files, populating project design directory|45min
 |09/06/2018|Developing Screen Design| 30min|
 |09/06/2018|Watching log4j video and reading materials |1hour 20min|
 |09/06/2018|Practising to run log4j Act 2 |30min|
@@ -33,14 +31,11 @@
 |09/18/2018|Watching Week4 Video, Completing indie Project Plan reading about DAO|1 hour 40 min|
 |09/20/2018|Watching video week4. Working on implementing hibernate to the project.|3 hours|
 |09/21/2018|Watching video week4. Working on implementing tests for hibernate methods to query db|4 hours|
-|09/22/2018|Watching video week4. Reading week 4 materials. Working on implementing hibernate and test for 
-insert singed up users. Impl hibernate to search for dance steps based on beats and level.|6 hours|
+|09/22/2018|Watching video week4. Reading week 4 materials. Working on implementing hibernate and test for insert singed up users. Impl hibernate to search for dance steps based on beats and level.|6 hours|
 |09/23/2018|Working on creating query with hibernate to add where and and top clauses|3 hours|
 |09/25/2018|Working on the database|2 hours|
-|09/27/2018|Working on adding table for custom steps. Creating custom steps entity, servlet, storing entered steps in to 
-the custom steps table.|3hours 30min|
-|09/28/2018|Reading week5 documentation, watching videos, implementing many-to-one with dance_type and step into my project.
-|3 hours|
+|09/27/2018|Working on adding table for custom steps. Creating custom steps entity, servlet, storing entered steps in to the custom steps table.|3hours 30min|
+|09/28/2018|Reading week5 documentation, watching videos, implementing many-to-one with dance_type and step into my project.|3 hours|
 |09/29/2018|Reading hibernate doc. creating unit test to test implemented many-to-one (users-custom_steps) with hibernate in the project| 2 hours|
 |09/30/2018|Researching about dynamic programming to prepare for the presentation |1 hour 30 min |
 |10/02/2018|Creating option to delete custom step and update user profile.|2 hours 30 min|
