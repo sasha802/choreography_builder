@@ -36,9 +36,9 @@ class StepDAOTest {
     @Test
     void getByIdSuccess() {
 
-        Step retrievedUser = (Step) genericDAO.getById(9);
-        assertNotNull(retrievedUser);
-        assertEquals("Curl", retrievedUser.getStepName());
+        Step retrievedStep = (Step) genericDAO.getById(9);
+        assertNotNull(retrievedStep);
+        assertEquals("Curl", retrievedStep.getStepName());
 
     }
 
@@ -67,6 +67,19 @@ class StepDAOTest {
         genericDAO.saveOrUpdate(stepToUpdate);
         Step retrievedCustomStep = (Step) genericDAO.getById(1);
         assertEquals(stepToUpdate, retrievedCustomStep);
+    }
+
+    @Test
+    void getStepByDanceGenericSuccess() {
+
+        List<String> properties = new ArrayList<>();
+        properties.add("dance");
+        properties.add("level");
+
+        List<Step> step = genericDAO.getStepByDanceGeneric(properties, "basic", 1, 3);
+
+        assertEquals(3, step.size());
+
     }
 
 

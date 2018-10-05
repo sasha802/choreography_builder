@@ -135,6 +135,30 @@ public class GenericDAO<T> {
         return entity;
     }
 
+    public List<T> getStepByDanceGeneric(List<String> properties, String value, int id, int numberOfSteps) {
+
+        Session session = getSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery query = builder.createQuery(type);
+
+
+        Root<T> root = query.from(type);
+
+        Predicate predicate = builder.and(
+                builder.equal(root.get(properties.get(0)).get("id"), id),
+                builder.equal(root.get(properties.get(1)), value)
+        );
+
+        query.where(predicate);
+        List<T> steps = session.createQuery(query).setMaxResults(numberOfSteps).getResultList();
+        logger.info(numberOfSteps);
+        logger.info("list of steps " + steps);
+
+        return steps;
+
+    }
+
 
     private Session getSession() {
 
