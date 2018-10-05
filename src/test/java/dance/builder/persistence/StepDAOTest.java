@@ -4,6 +4,7 @@ import dance.builder.entity.Step;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -51,7 +52,7 @@ class StepDAOTest {
     @Test
     void getStepByDanceSuccess() {
 
-        List<Step> steps = stepDAO.getStepByDance("basic", 1,3);
+        List<Step> steps = stepDAO.getStepByDance("dance", "level", "basic", 1, 3);
         assertEquals(3, steps.size());
     }
 

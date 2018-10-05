@@ -51,6 +51,12 @@ class CustomStepsDAOTest {
         assertNotEquals(id, 0);
         CustomSteps customSteps = (CustomSteps) genericDAO.getById(id);
         assertEquals("Box", customSteps.getStepName());
+        assertEquals("Rumba", customSteps.getDanceName());
+        assertEquals("test", customSteps.getLeadDescription());
+        assertEquals("test", customSteps.getFollowerDescription());
+        assertEquals("basic", customSteps.getLevel());
+        assertEquals(3, customSteps.getId());
+
 
     }
 
@@ -96,13 +102,6 @@ class CustomStepsDAOTest {
     void getByPropertyLikeSuccess() {
         List<CustomSteps> customSteps = genericDAO.getByPropertyLike("stepName", "Turn");
         assertEquals(1, customSteps.size());
-    }
-
-    @Test
-    void getStepByDanceSuccess() {
-
-        List<Step> steps = stepDAO.getStepByDance("Advanced", 1,5);
-        assertEquals(5, steps.size());
     }
 
     @Test

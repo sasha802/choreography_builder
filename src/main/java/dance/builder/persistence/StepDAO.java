@@ -15,18 +15,18 @@ public class StepDAO {
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
 
-    public List<Step> getStepByDance(String level, int danceId, int numberOfSteps) {
-
+    public List<Step> getStepByDance(String propertyOne, String propertyTwo, String value, int id, int numberOfSteps) {
 
         Session session = sessionFactory.openSession();
+
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery query = builder.createQuery(Step.class);
 
         Root<Step> root = query.from(Step.class);
 
         Predicate predicate = builder.and(
-                builder.equal(root.get("dance").get("id"), danceId),
-                builder.equal(root.get("level"), level)
+                builder.equal(root.get(propertyOne).get("id"), id),
+                builder.equal(root.get(propertyTwo), value)
         );
 
         query.where(predicate);
@@ -36,8 +36,8 @@ public class StepDAO {
 
         return steps;
 
-
     }
+
 
 
 
