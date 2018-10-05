@@ -41,6 +41,8 @@ public class SaveCustomSteps extends HttpServlet {
 
         request.setAttribute("customSteps", genericDAO.getAll());
         request.setAttribute("beats", beatsNumber);
+        request.setAttribute("level", level);
+       // request.setAttribute("numberOfSteps", );
 
 
 

@@ -18,16 +18,16 @@
                     <div>
                         <label>Choreography Type:&nbsp;</label>
                         <input type="radio" id="basic" checked
-                               name="level" value="basic">
+                               name="level" <c:if test="${level == 'basic'}">checked</c:if> value="basic">
                         <label for="basic">Basic</label>
 
                         <input type="radio" id="intermediate"
-                               name="level" value="intermidiate">
+                               name="level" <c:if test="${level == 'intermidiate'}">checked</c:if> value="intermidiate">
                         <label for="intermediate">Intermediate</label>
 
                         <input type="radio" id="advanced"
-                               name="level" value="advanced">
-                        <label for="advanced">Advanced</label>
+                               name="level" <c:if test="${level == 'advanced'}">checked</c:if> value="advanced">
+                        <label for="advanced">advanced</label>
                     </div>
 
                     <br />

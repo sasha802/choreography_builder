@@ -1,5 +1,6 @@
 package dance.builder.persistence;
 
+import dance.builder.entity.Dance;
 import dance.builder.entity.Step;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -55,6 +56,7 @@ class StepDAOTest {
         List<Step> steps = stepDAO.getStepByDance("dance", "level", "basic", 1, 3);
         assertEquals(3, steps.size());
     }
+
 
     @Test
     void updateSuccess() {

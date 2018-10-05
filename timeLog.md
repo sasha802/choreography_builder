@@ -39,3 +39,4 @@
 |09/29/2018|Reading hibernate doc. creating unit test to test implemented many-to-one (users-custom_steps) with hibernate in the project| 2 hours|
 |09/30/2018|Researching about dynamic programming to prepare for the presentation |1 hour 30 min |
 |10/02/2018|Creating option to delete custom step and update user profile.|2 hours 30 min|
+|10/03/2018|Working on the week 5 issues. |2 hours| 
