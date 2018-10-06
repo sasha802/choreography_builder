@@ -29,7 +29,7 @@
                                 <td>${customStep.followerDescription}</td>
                                 <td>${customStep.level}</td>
                                 <td>${customStep.danceName}</td>
-                                <td><a class="step" href="/removeCustomStep?step=${customStep.id}"><span style="font-size:20px" class="glyphicon glyphicon-trash"></span></a></td>
+                                <td><a class="step" href="/choreographybuilder/removeCustomStep?step=${customStep.id}"><span style="font-size:20px" class="glyphicon glyphicon-trash"></span></a></td>
                             </tr>
                         </c:forEach>
                         </tbody>

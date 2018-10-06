@@ -5,7 +5,7 @@
         <div class="container">
 
             <div id="signupContainer">
-                <form action="/insertUser" method="post">
+                <form action="/choreographybuilder/insertUser" method="post">
                     <div class="form-group">
                         <label for="firstName">First Name:</label>
                         <input type="text" class="form-control" id="firstName" name="firstName" placeholder="first name">

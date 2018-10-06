@@ -10,7 +10,7 @@
     <div class="container">
         <div id="editProfileContainer">
 
-            <form action="/editUserProfile" method="post">
+            <form action="/choreographybuilder/editUserProfile" method="post">
                 <div class="form-group">
                     <label for="editFirstName">First Name:</label>
                     <input type="text" class="form-control" id="editFirstName" placeholder="first name" name="firstName" value="${user.firstName}">

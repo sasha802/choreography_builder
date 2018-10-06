@@ -8,7 +8,7 @@
         <div class="container">
 
             <div id="buildDance">
-                <form action="/searchStep" method="post">
+                <form action="/choreographybuilder/searchStep" method="post">
                     <div class="form-group">
                         <label for="beatsNumber">Enter beats per minute</label>
                         <input type="text" class="form-control" id="beatsNumber" name="beatsNumber" placeholder="beats/minute"
@@ -65,7 +65,7 @@
                             <td><img class="descriptionImg" src="images/${steps.followerDescription}"/></td>
                             <td>${steps.level}</td>
                             <c:forEach var="dance" items="${dance}">
-                                <td><a href="/saveStep?stepName=${steps.stepName}&danceName=${dance.danceName}&leadDescription=${steps.leadDescription}
+                                <td><a href="/choreographybuilder/saveStep?stepName=${steps.stepName}&danceName=${dance.danceName}&leadDescription=${steps.leadDescription}
                             &followerDescription=${steps.followerDescription}&level=${steps.level}&beats=${beats}&userId=2">Save Step</a></td>
                             </c:forEach>
                         </tr>
