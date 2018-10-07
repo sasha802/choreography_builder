@@ -57,6 +57,7 @@ public class SearchStep extends HttpServlet {
                 request.setAttribute("beats", beatsNumber);
                 request.setAttribute("stepsNumber", numberOfSteps);
                 request.setAttribute("level", levelType);
+                request.setAttribute("numberOfSteps", numberOfSteps);
 
             } else if ( beatsPerMinute > 120 && beatsPerMinute <= 250 ) {
 

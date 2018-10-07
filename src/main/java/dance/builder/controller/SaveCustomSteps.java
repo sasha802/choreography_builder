@@ -31,6 +31,7 @@ public class SaveCustomSteps extends HttpServlet {
         String followerDescription = request.getParameter("followerDescription").trim();
         String level = request.getParameter("level").trim();
         String beatsNumber = request.getParameter("beats");
+        String numberOfSteps = request.getParameter("numberOfSteps");
         String userIdInput = request.getParameter("userId").trim();
         Integer userId = Integer.valueOf(userIdInput);
 
@@ -42,7 +43,8 @@ public class SaveCustomSteps extends HttpServlet {
         request.setAttribute("customSteps", genericDAO.getAll());
         request.setAttribute("beats", beatsNumber);
         request.setAttribute("level", level);
-       // request.setAttribute("numberOfSteps", );
+        request.setAttribute("numberOfSteps", Integer.valueOf(numberOfSteps));
+        request.setAttribute("saved", "saved");
 
 
 

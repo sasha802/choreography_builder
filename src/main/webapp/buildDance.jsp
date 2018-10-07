@@ -8,7 +8,7 @@
         <div class="container">
 
             <div id="buildDance">
-                <form action="/choreographybuilder/searchStep" method="post">
+                <form action="/choreographybuilder/searchStep" method="post" id="buildDanceForm">
                     <div class="form-group">
                         <label for="beatsNumber">Enter beats per minute</label>
                         <input type="text" class="form-control" id="beatsNumber" name="beatsNumber" placeholder="beats/minute"
@@ -31,20 +31,30 @@
                     </div>
 
                     <br />
-                    <div class="form-row align-items-center">
+
+                    <div class="form-row align-items-center" style="padding-bottom: 20px">
                         <label for="numberOfSteps">Number Of Steps:&nbsp;</label>
                         <select class="custom-select" id="numberOfSteps" name="numberOfSteps">
-                            <option name="numberOfSteps" selected value="1">One</option>
-                            <option name="numberOfSteps" value="2">Two</option>
-                            <option name="numberOfSteps" value="3">Three</option>
-                            <option name="numberOfSteps" value="4">Four</option>
-                            <option name="numberOfSteps" value="5">Five</option>
+                            <option name="numberOfSteps" <c:if test="${numberOfSteps == 1}">selected</c:if> value="1">One</option>
+                            <option name="numberOfSteps" <c:if test="${numberOfSteps == 2}">selected</c:if> value="2">Two</option>
+                            <option name="numberOfSteps" <c:if test="${numberOfSteps == 3}">selected</c:if> value="3">Three</option>
+                            <option name="numberOfSteps" <c:if test="${numberOfSteps == 4}">selected</c:if> value="4">Four</option>
+                            <option name="numberOfSteps" <c:if test="${numberOfSteps == 5}">selected</c:if> value="5">Five</option>
                         </select>
                     </div>
-                    <br />
+
+                    <c:if test="${saved == 'saved'}">
+                        <div>
+                            <h5>Yor step was successful saved. <a href="/choreographybuilder/displayCustomSteps">View My Steps</a></h5>
+
+                        </div>
+                    </c:if>
+
                     <button id="buildDanceBtn" type="submit" name="submit" value="submit" class="btn btn-success">Build Dance</button>
 
                 </form>
+
+
             </div>
 
             <div style="text-align: center">
@@ -65,7 +75,7 @@
                             <td>${steps.level}</td>
                             <c:forEach var="dance" items="${dance}">
                                 <td><a href="/choreographybuilder/saveStep?stepName=${steps.stepName}&danceName=${dance.danceName}&leadDescription=${steps.leadDescription}
-                            &followerDescription=${steps.followerDescription}&level=${steps.level}&beats=${beats}&userId=2">Save Step</a></td>
+                            &followerDescription=${steps.followerDescription}&level=${steps.level}&beats=${beats}&numberOfSteps=${numberOfSteps}&userId=2">Save Step</a></td>
                             </c:forEach>
                         </tr>
                     </c:forEach>
@@ -75,6 +85,7 @@
             </div>
 
         </div>
+
 
         <jsp:include page="internalFooter.jsp"/>
         <jsp:include page="head.jsp"/>
@@ -88,14 +99,4 @@
     }
 </style>
 
-<%--<script>
-    $(document).ready(function () {
-
-        $('#buildDanceBtn').click(function () {
-
-            console.log($('#beatsNumber').val());
-        })
-
-    });
-</script>--%>
 

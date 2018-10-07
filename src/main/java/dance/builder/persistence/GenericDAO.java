@@ -1,18 +1,16 @@
 package dance.builder.persistence;
 
-import dance.builder.entity.CustomSteps;
-import dance.builder.entity.User;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import javax.persistence.Entity;
 import javax.persistence.criteria.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
+
 
 public class GenericDAO<T> {
 

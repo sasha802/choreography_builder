@@ -81,7 +81,7 @@ footer {
 .scrollbar {
     background-color: #F5F5F5;
     float: left;
-    height: 300px;
+    height: 500px;
     margin-bottom: 25px;
     margin-left: 22px;
     margin-top: 40px;
@@ -101,5 +101,7 @@ footer {
 .descriptionImg {
     width: 30%;
 }
+
+
 
 

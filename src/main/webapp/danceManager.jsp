@@ -7,8 +7,6 @@
         <h2></h2>
 
         <div class="container">
-            <div id="danceDetails">
-            </div>
             <div class="scrollbar" id="style-1">
                 <div class="force-overflow">
                     <table class="table" id="customStepTable">
@@ -16,30 +14,31 @@
                         <th>Step Name</th>
                         <th>Lead Description</th>
                         <th>Follower Description</th>
+                        <th>Level</th>
                         <th>Dance Type</th>
                         <ht></ht>
                         </thead>
                         <tbody id="customStepsTbody">
                         <c:forEach var="customStep" items="${customSteps}">
                             <tr>
-                                <td>${customStep.id}</td>
                                 <td>${customStep.stepName}</td>
                                 <td>${customStep.leadDescription}</td>
                                 <td>${customStep.followerDescription}</td>
-                                <td>${customStep.followerDescription}</td>
                                 <td>${customStep.level}</td>
                                 <td>${customStep.danceName}</td>
-                                <td><a class="step" href="/choreographybuilder/removeCustomStep?step=${customStep.id}"><span style="font-size:20px" class="glyphicon glyphicon-trash"></span></a></td>
+                                <td>
+                                    <a class="step" href="/choreographybuilder/removeCustomStep?step=${customStep.id}">
+                                    <span style="font-size:20px" class="glyphicon glyphicon-trash"></span>
+                                    </a>
+                                </td>
                             </tr>
                         </c:forEach>
                         </tbody>
                     </table>
                 </div>
-
-
             </div>
 
-            <div style="text-align: center">
+            <div style="text-align: center" id="buildDanceBtnContainer">
                 <a href="buildDance.jsp"><button type="button" class="btn btn-success">Build New Dance</button></a>
             </div>
 
@@ -50,21 +49,23 @@
     </body>
 </html>
 
-<%--<script>
+<script>
     $(document).ready(function () {
 
-        var customStepsTbody = $('#customStepsTbody tbody');
+        var tbody = $('#customStepTable tbody');
 
-        if (customStepsTbody.length == 0) {
+        if ( tbody.children().length == 0 ) {
 
-            console.log('empty');
-
-            $('#customStepTable').css('display', 'none');
             $('#style-1').css('display', 'none');
-            $('#danceDetails').html('<h2>You have no steps in your selection.<br/>Please build your dance to select steps.</h2>');
+
+            $('<div><h4>You have no custom steps available</h4></div>').insertBefore('#buildDanceBtnContainer a');
         }
+
+
     });
-</script>--%>
+</script>
+
+
 
 
 
