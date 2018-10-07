@@ -7,8 +7,11 @@ import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import javax.persistence.Entity;
 import javax.persistence.criteria.*;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class GenericDAO<T> {
 
@@ -135,30 +138,46 @@ public class GenericDAO<T> {
         return entity;
     }
 
-    public List<T> getStepByDanceGeneric(List<String> properties, String value, int id, int numberOfSteps) {
+    public List<T> getByMultiplePropertiesTopClause(Map<String, Map<String, String>> entities, int limit) {
 
         Session session = getSession();
 
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery query = builder.createQuery(type);
 
-
         Root<T> root = query.from(type);
 
-
-        Predicate predicate = builder.and(
-                builder.equal(root.get(properties.get(0)).get("id"), id),
-                builder.equal(root.get(properties.get(1)), value)
-        );
-
-        query.where(predicate);
+        List<Predicate> predicates = new ArrayList<>();
 
 
-        List<T> steps = session.createQuery(query).setMaxResults(numberOfSteps).getResultList();
-        logger.info(numberOfSteps);
-        logger.info("list of steps " + steps);
+        for (Map.Entry<String, Map<String, String>> firstEntry : entities.entrySet()) {
 
-        return steps;
+            String entity = firstEntry.getKey();
+            Map<String, String> properties = firstEntry.getValue();
+
+            for (Map.Entry<String, String> secondEntry : properties.entrySet()) {
+
+                if (entity.isEmpty()) {
+
+                    predicates.add(builder.equal(root.get(secondEntry.getKey()), secondEntry.getValue()));
+                    break;
+
+                }
+
+                predicates.add(builder.equal(root.get(entity).get(secondEntry.getKey()), secondEntry.getValue()));
+
+            }
+
+        }
+
+
+        query.select(root).where(predicates.toArray(new Predicate[]{}));
+
+        List<T> result = session.createQuery(query).setMaxResults(limit).getResultList();
+        logger.info(limit);
+        logger.info("list of steps " + result);
+
+        return result;
 
     }
 

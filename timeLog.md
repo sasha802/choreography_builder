@@ -40,3 +40,6 @@
 |09/30/2018|Researching about dynamic programming to prepare for the presentation |1 hour 30 min |
 |10/02/2018|Creating option to delete custom step and update user profile.|2 hours 30 min|
 |10/03/2018|Working on the week 5 issues. |2 hours| 
+|10/05/2018|Watching video week 6. Setting up the environment on AWS | 2 hours 40 min|
+|10/06/2018|Deploying week 1 exercise using AWS. Deploying dance_builder project using AWS |2 hours|
+|10/06/2018|Working on week 5 issue |3 hours|

@@ -1,12 +1,12 @@
 package dance.builder.persistence;
 
-import dance.builder.entity.Dance;
 import dance.builder.entity.Step;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -70,13 +70,20 @@ class StepDAOTest {
     }
 
     @Test
-    void getStepByDanceGenericSuccess() {
+    void getByMultiplePropertiesTopClauseSuccess() {
 
-        List<String> properties = new ArrayList<>();
-        properties.add("dance");
-        properties.add("level");
+        Map<String, Map<String, String>> entities = new HashMap<>();
+        Map<String, String> propertiesOne = new HashMap<>();
+        Map<String, String> propertiesTwo = new HashMap<>();
 
-        List<Step> step = genericDAO.getStepByDanceGeneric(properties, "basic", 1, 3);
+        propertiesOne.put("id", "1");
+        propertiesTwo.put("level", "basic");
+
+        entities.put("dance", propertiesOne);
+        entities.put("", propertiesTwo);
+
+
+        List<Step> step = genericDAO.getByMultiplePropertiesTopClause(entities, 3);
 
         assertEquals(3, step.size());
 

@@ -34,8 +34,7 @@
                     <div class="form-row align-items-center">
                         <label for="numberOfSteps">Number Of Steps:&nbsp;</label>
                         <select class="custom-select" id="numberOfSteps" name="numberOfSteps">
-                            <option selected name="numberOfSteps">Choose...</option>
-                            <option name="numberOfSteps" value="1">One</option>
+                            <option name="numberOfSteps" selected value="1">One</option>
                             <option name="numberOfSteps" value="2">Two</option>
                             <option name="numberOfSteps" value="3">Three</option>
                             <option name="numberOfSteps" value="4">Four</option>
