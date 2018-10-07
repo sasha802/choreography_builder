@@ -9,7 +9,10 @@ import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
@@ -19,14 +22,12 @@ class CustomStepsDAOTest {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     GenericDAO genericDAO;
-    StepDAO stepDAO;
     User user;
 
     @BeforeEach
     void setUp() {
 
         genericDAO = new GenericDAO(CustomSteps.class);
-        stepDAO = new StepDAO();
         user = new User();
         Database database = Database.getInstance();
         database.runSQL("customStepsCleandb.sql");
@@ -105,16 +106,20 @@ class CustomStepsDAOTest {
     }
 
     @Test
-    void getByCustomStepsPropertyEqualSuccess() {
+    void getByMultiplePropertiesTopClauseSuccess() {
 
-        CustomStepsDAO customStepsDAO = new CustomStepsDAO();
-        GenericDAO genericDAOUser = new GenericDAO(User.class);
-        User user = (User)genericDAOUser.getById(2);
+        Map<String,  Map<String, String>> entity = new HashMap<>();
+        Map<String, String> propertyOne = new HashMap<>();
+        Map<String, String> propertyTwo = new HashMap<>();
+        propertyOne.put("id", "2");
+        propertyTwo.put("deleted", "0");
+        entity.put("user", propertyOne);
+        entity.put("", propertyTwo);
 
-        List<CustomSteps> customSteps = customStepsDAO.getByCustomStepsPropertyEqual("user", user);
+
+        List<CustomSteps> customSteps = genericDAO.getByMultiplePropertiesTopClause(entity, 0);
         assertEquals(1, customSteps.size());
     }
-
 
 
 

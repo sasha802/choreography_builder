@@ -12,12 +12,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class StepDAOTest {
 
-    StepDAO stepDAO;
     GenericDAO genericDAO;
 
     @BeforeEach
     void setUp() {
-        stepDAO = new StepDAO();
         genericDAO = new GenericDAO(Step.class);
     }
 
@@ -49,14 +47,6 @@ class StepDAOTest {
         assertEquals(1, steps.get(0).getId());
 
     }
-
-    @Test
-    void getStepByDanceSuccess() {
-
-        List<Step> steps = stepDAO.getStepByDance("dance", "level", "basic", 1, 3);
-        assertEquals(3, steps.size());
-    }
-
 
     @Test
     void updateSuccess() {

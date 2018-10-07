@@ -12,11 +12,13 @@ import javax.persistence.criteria.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 public class GenericDAO<T> {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     private Class<T> type;
+    private Class<T> entity;
 
     public GenericDAO(Class<T> type) {
 
@@ -138,6 +140,7 @@ public class GenericDAO<T> {
         return entity;
     }
 
+
     public List<T> getByMultiplePropertiesTopClause(Map<String, Map<String, String>> entities, int limit) {
 
         Session session = getSession();
@@ -148,6 +151,7 @@ public class GenericDAO<T> {
         Root<T> root = query.from(type);
 
         List<Predicate> predicates = new ArrayList<>();
+        List<T> result;
 
 
         for (Map.Entry<String, Map<String, String>> firstEntry : entities.entrySet()) {
@@ -173,13 +177,24 @@ public class GenericDAO<T> {
 
         query.select(root).where(predicates.toArray(new Predicate[]{}));
 
-        List<T> result = session.createQuery(query).setMaxResults(limit).getResultList();
+        if (limit == 0) {
+
+            result = session.createQuery(query).getResultList();
+
+        } else {
+
+            result = session.createQuery(query).setMaxResults(limit).getResultList();
+        }
+
+
         logger.info(limit);
         logger.info("list of steps " + result);
 
         return result;
 
     }
+
+
 
 
     private Session getSession() {
