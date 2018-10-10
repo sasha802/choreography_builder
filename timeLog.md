@@ -43,3 +43,4 @@
 |10/05/2018|Watching video week 6. Setting up the environment on AWS | 2 hours 40 min|
 |10/06/2018|Deploying week 1 exercise using AWS. Deploying dance_builder project using AWS |2 hours|
 |10/06/2018|Working on week 5 issue |3 hours|
+|10/07/2018|Watching video about testable code. Writing jquery to validate custom steps. Creating sticky forms for dance builder.|2 hours 30 min|
