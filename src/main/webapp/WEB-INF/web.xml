@@ -18,7 +18,9 @@
       <web-resource-name>manager</web-resource-name>
       <url-pattern>/searchStep</url-pattern>
       <url-pattern>/editProfile.jsp</url-pattern>
+      <url-pattern>/editUserProfile</url-pattern>
       <url-pattern>/displayCustomSteps</url-pattern>
+      <url-pattern>/buildDance.jsp</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>user</role-name>

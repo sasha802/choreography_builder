@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <body>
@@ -25,6 +26,9 @@
                     </div>
                     <button type="submit" name="submit" class="btn btn-success">Submit</button>
                 </form>
+                <c:if test="${not empty user}">
+                    Welcome ${user}. You may log in now.
+                </c:if>
             </div>
 
         </div>
@@ -33,3 +37,13 @@
     <jsp:include page="head.jsp"/>
     </body>
 </html>
+
+<script>
+    $(document).ready(function () {
+
+        <c:if test="${not empty user}">
+            $('form').hide();
+        </c:if>
+
+    });
+</script>
