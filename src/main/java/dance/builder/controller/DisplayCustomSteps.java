@@ -24,6 +24,8 @@ public class DisplayCustomSteps extends HttpServlet {
 
         GenericDAO genericDAOCustomSteps = new GenericDAO(CustomSteps.class);
 
+        String username = request.getUserPrincipal().getName();
+
         String userId = "2";
 
         Map<String, Map<String, String>> entity = new HashMap<>();

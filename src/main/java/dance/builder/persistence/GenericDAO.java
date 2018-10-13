@@ -34,6 +34,16 @@ public class GenericDAO<T> {
 
     }
 
+    public <T>T getByEmail(String email) {
+
+        Session session = getSession();
+        T entity = (T)session.get(type, email);
+        session.close();
+
+        return entity;
+
+    }
+
     /**
      * Delete a entity
      * @param entity User to be deleted

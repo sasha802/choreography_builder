@@ -1,0 +1,8 @@
+<Context docBase="choreographybuilder" path="/choreographybuilder" reloadable="true">
+    <Realm className="org.apache.catalina.realm.JDBCRealm"
+           driverName="com.mysql.jdbc.Driver"
+           connectionURL="jdbc:mysql://localhost:3306/dance_builder?user=tomcat&amp;password=student"
+           userTable="users" userNameCol="email" userCredCol="password"
+           userRoleTable="user_role_view" roleNameCol="name" >
+    </Realm>
+</Context>
