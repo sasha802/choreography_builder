@@ -95,6 +95,7 @@ public class SearchStep extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         RequestDispatcher dispatcher;
+
         request.setAttribute("userFirstName", getUser(request).get(0).getFirstName());
         dispatcher = request.getRequestDispatcher("/buildDance.jsp");
         dispatcher.include(request, response);

@@ -368,3 +368,42 @@
 [INFO ] 2018-10-13 14:12:07.735 [http-nio-8080-exec-40] GenericDAO - 0
 [INFO ] 2018-10-13 14:12:07.735 [http-nio-8080-exec-40] GenericDAO - list of steps [CustomSteps(id=127, stepName=Hand to Hand, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, deleted=0, user=User(lastName=Smith, firstName=John, email=get, password=get, roleId=1, id=31)), CustomSteps(id=128, stepName=Hand to Hand, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, deleted=0, user=User(lastName=Smith, firstName=John, email=get, password=get, roleId=1, id=31)), CustomSteps(id=129, stepName=Forward Spot Turn, danceName=Rumba, leadDescription=test, followerDescription=test, level=intermidiate, deleted=0, user=User(lastName=Smith, firstName=John, email=get, password=get, roleId=1, id=31))]
 [DEBUG] 2018-10-13 14:13:44.173 [http-nio-8080-exec-43] GenericDAO - Searching for user with email = get
+[ERROR] 2018-10-13 14:16:34.337 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-13 14:16:36.348 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-13 14:16:36.374 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-13 14:16:36.374 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-10-13 14:16:36.629 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-13 14:16:36.630 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-10-13 14:16:36.658 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-13 14:16:36.680 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2018-10-13 14:16:36.694 [main] GenericDAO - 0
+[INFO ] 2018-10-13 14:16:36.694 [main] GenericDAO - list of steps [CustomSteps(id=1, stepName=Turn, danceName=Swing, leadDescription=some description, followerDescription=screenshot, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))]
+[ERROR] 2018-10-13 14:16:36.709 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-13 14:16:36.733 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-13 14:16:36.736 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))
+[DEBUG] 2018-10-13 14:16:36.753 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-10-13 14:16:36.778 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-10-13 14:16:36.816 [main] GenericDAO - 3
+[INFO ] 2018-10-13 14:16:36.816 [main] GenericDAO - list of steps [Step(stepName=My New Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[ERROR] 2018-10-13 14:16:36.864 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-13 14:16:36.895 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-13 14:16:36.895 [main] GenericDAO - Searching for user with email = thomson
+[ERROR] 2018-10-13 14:16:36.913 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-13 14:16:36.913 [main] GenericDAO - Searching for user with email = jcoyne
+[ERROR] 2018-10-13 14:16:36.933 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-13 14:16:36.949 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-13 14:16:36.972 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-13 14:16:36.990 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-13 14:16:36.990 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[DEBUG] 2018-10-13 14:23:13.256 [http-nio-8080-exec-2] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-13 14:24:48.907 [http-nio-8080-exec-2] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-13 14:24:53.657 [http-nio-8080-exec-3] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-13 14:24:53.660 [http-nio-8080-exec-3] GenericDAO - Searching for user with danceName = Rumba
+[INFO ] 2018-10-13 14:24:53.679 [http-nio-8080-exec-3] GenericDAO - 1
+[INFO ] 2018-10-13 14:24:53.679 [http-nio-8080-exec-3] GenericDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1)]
+[DEBUG] 2018-10-13 14:24:54.849 [http-nio-8080-exec-4] GenericDAO - type CustomSteps(id=0, stepName=Box Step, danceName=Rumba, leadDescription=boxstep.gif, followerDescription=boxstepF.png, level=basic, deleted=0, user=User(lastName=Smith, firstName=John, email=get, password=get, roleId=1, id=31))
+[DEBUG] 2018-10-13 14:24:56.820 [http-nio-8080-exec-10] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-13 14:24:56.827 [http-nio-8080-exec-10] GenericDAO - 0
+[INFO ] 2018-10-13 14:24:56.827 [http-nio-8080-exec-10] GenericDAO - list of steps [CustomSteps(id=127, stepName=Hand to Hand, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, deleted=0, user=User(lastName=Smith, firstName=John, email=get, password=get, roleId=1, id=31)), CustomSteps(id=128, stepName=Hand to Hand, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, deleted=0, user=User(lastName=Smith, firstName=John, email=get, password=get, roleId=1, id=31)), CustomSteps(id=129, stepName=Forward Spot Turn, danceName=Rumba, leadDescription=test, followerDescription=test, level=intermidiate, deleted=0, user=User(lastName=Smith, firstName=John, email=get, password=get, roleId=1, id=31)), CustomSteps(id=130, stepName=Box Step, danceName=Rumba, leadDescription=boxstep.gif, followerDescription=boxstepF.png, level=basic, deleted=0, user=User(lastName=Smith, firstName=John, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-13 14:25:01.748 [http-nio-8080-exec-11] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-13 14:25:09.583 [http-nio-8080-exec-8] GenericDAO - Searching for user with email = get
