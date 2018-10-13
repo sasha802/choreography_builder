@@ -35,11 +35,11 @@
                     <div class="form-row align-items-center" style="padding-bottom: 20px">
                         <label for="numberOfSteps">Number Of Steps:&nbsp;</label>
                         <select class="custom-select" id="numberOfSteps" name="numberOfSteps">
-                            <option name="numberOfSteps" <c:if test="${numberOfSteps == 1}">selected</c:if> value="1">One</option>
-                            <option name="numberOfSteps" <c:if test="${numberOfSteps == 2}">selected</c:if> value="2">Two</option>
-                            <option name="numberOfSteps" <c:if test="${numberOfSteps == 3}">selected</c:if> value="3">Three</option>
-                            <option name="numberOfSteps" <c:if test="${numberOfSteps == 4}">selected</c:if> value="4">Four</option>
-                            <option name="numberOfSteps" <c:if test="${numberOfSteps == 5}">selected</c:if> value="5">Five</option>
+                            <option <c:if test="${numberOfSteps == 1}">selected</c:if> value="1">One</option>
+                            <option <c:if test="${numberOfSteps == 2}">selected</c:if> value="2">Two</option>
+                            <option <c:if test="${numberOfSteps == 3}">selected</c:if> value="3">Three</option>
+                            <option <c:if test="${numberOfSteps == 4}">selected</c:if> value="4">Four</option>
+                            <option <c:if test="${numberOfSteps == 5}">selected</c:if> value="5">Five</option>
                         </select>
                     </div>
 
