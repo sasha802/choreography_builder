@@ -1,3 +1,4 @@
+/*
 package dance.builder.controller;
 
 import dance.builder.entity.Dance;
@@ -26,7 +27,8 @@ public class SearchDance extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
         dispatcher.forward(request, response);
 
-        /* String searchType = req.getParameter("searchType");
+        */
+/* String searchType = req.getParameter("searchType");
 
         String searchValue = req.getParameter("searchValue");
 
@@ -36,7 +38,9 @@ public class SearchDance extends HttpServlet {
 
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
-        dispatcher.forward(req, resp);*/
+        dispatcher.forward(req, resp);*//*
+
     }
 }
 
+*/

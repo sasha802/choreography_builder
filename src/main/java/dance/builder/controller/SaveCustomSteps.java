@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 @WebServlet(
         urlPatterns = {"/saveStep"}
@@ -30,9 +31,9 @@ public class SaveCustomSteps extends HttpServlet {
         String leadDescription = request.getParameter("leadDescription").trim();
         String followerDescription = request.getParameter("followerDescription").trim();
         String level = request.getParameter("level").trim();
-        String beatsNumber = request.getParameter("beats");
-        String numberOfSteps = request.getParameter("numberOfSteps");
-        String userIdInput = request.getParameter("userId").trim();
+        String beatsNumber = request.getParameter("beats").trim();
+        String numberOfSteps = request.getParameter("numberOfSteps").trim();
+        String userIdInput = request.getParameter("user").trim();
         Integer userId = Integer.valueOf(userIdInput);
 
         User user = (User)genericDAOUser.getById(userId);
@@ -45,7 +46,6 @@ public class SaveCustomSteps extends HttpServlet {
         request.setAttribute("level", level);
         request.setAttribute("numberOfSteps", Integer.valueOf(numberOfSteps));
         request.setAttribute("saved", "saved");
-
 
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/buildDance.jsp");

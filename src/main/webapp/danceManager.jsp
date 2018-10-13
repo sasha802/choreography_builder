@@ -39,7 +39,7 @@
             </div>
 
             <div style="text-align: center" id="buildDanceBtnContainer">
-                <a href="buildDance.jsp"><button type="button" class="btn btn-success">Build New Dance</button></a>
+                <a href="searchStep"><button type="button" class="btn btn-success">Build New Dance</button></a>
             </div>
 
         </div>

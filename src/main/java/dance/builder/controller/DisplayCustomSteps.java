@@ -2,8 +2,10 @@ package dance.builder.controller;
 
 
 import dance.builder.entity.CustomSteps;
+import dance.builder.entity.User;
 import dance.builder.persistence.GenericDAO;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @WebServlet(
@@ -21,18 +24,18 @@ public class DisplayCustomSteps extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-
-        GenericDAO genericDAOCustomSteps = new GenericDAO(CustomSteps.class);
-
         String username = request.getUserPrincipal().getName();
+        GenericDAO genericDAOCustomSteps = new GenericDAO(CustomSteps.class);
+        GenericDAO genericDAOUser = new GenericDAO(User.class);
+        List<User> user = genericDAOUser.getByPropertyEqual("email", username);
+        int userId = user.get(0).getId();
 
-        String userId = "2";
 
         Map<String, Map<String, String>> entity = new HashMap<>();
         Map<String, String> userProperty = new HashMap<>();
         Map<String, String> customStepProperty = new HashMap<>();
 
-        userProperty.put("id", userId);
+        userProperty.put("id", Integer.toString(userId));
         customStepProperty.put("deleted", "0");
         entity.put("user", userProperty);
         entity.put("", customStepProperty);

@@ -1,8 +1,10 @@
 package dance.builder.controller;
 
 
+import dance.builder.entity.CustomSteps;
 import dance.builder.entity.Dance;
 import dance.builder.entity.Step;
+import dance.builder.entity.User;
 import dance.builder.persistence.GenericDAO;
 
 import javax.servlet.RequestDispatcher;
@@ -13,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @WebServlet(
@@ -22,6 +25,9 @@ public class SearchStep extends HttpServlet {
     @Override
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+
+        int userId = getUser(request).get(0).getId();
 
         GenericDAO<Dance> danceGenericDAO = new GenericDAO<>(Dance.class);
         GenericDAO genericDAO = new GenericDAO(Step.class);
@@ -49,6 +55,7 @@ public class SearchStep extends HttpServlet {
                 request.setAttribute("beats", beatsNumber);
                 request.setAttribute("stepsNumber", numberOfSteps);
                 request.setAttribute("level", levelType);
+                request.setAttribute("userId", Integer.toString(userId));
 
             } else if ( beatsPerMinute > 91 && beatsPerMinute <= 119 ) {
 
@@ -58,6 +65,7 @@ public class SearchStep extends HttpServlet {
                 request.setAttribute("stepsNumber", numberOfSteps);
                 request.setAttribute("level", levelType);
                 request.setAttribute("numberOfSteps", numberOfSteps);
+                request.setAttribute("userId", Integer.toString(userId));
 
             } else if ( beatsPerMinute > 120 && beatsPerMinute <= 250 ) {
 
@@ -66,6 +74,7 @@ public class SearchStep extends HttpServlet {
                 request.setAttribute("beats", beatsNumber);
                 request.setAttribute("stepsNumber", numberOfSteps);
                 request.setAttribute("level", levelType);
+                request.setAttribute("userId", Integer.toString(userId));
 
             }
 
@@ -75,12 +84,30 @@ public class SearchStep extends HttpServlet {
         } else {
 
             request.setAttribute("invalidForm", true);
+            request.setAttribute("user", getUser(request).get(0).getFirstName());
             dispatcher = request.getRequestDispatcher("/buildDance.jsp");
             dispatcher.include(request, response);
 
         }
 
+    }
 
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        RequestDispatcher dispatcher;
+        request.setAttribute("userFirstName", getUser(request).get(0).getFirstName());
+        dispatcher = request.getRequestDispatcher("/buildDance.jsp");
+        dispatcher.include(request, response);
+
+    }
+
+
+    private List<User> getUser(HttpServletRequest request) {
+
+        String username = request.getUserPrincipal().getName();
+        GenericDAO genericDAOUser = new GenericDAO(User.class);
+        List<User> user = genericDAOUser.getByPropertyEqual("email", username);
+        return user;
 
     }
 

@@ -3,7 +3,7 @@
 <html>
     <body>
         <jsp:include page="internalMenuPanel.jsp"/>
-        <h2>Lets Build Your Dance ${user}!</h2>
+        <h2>Lets Build Your Dance ${userFirstName}!</h2>
 
         <div class="container">
 
@@ -75,7 +75,7 @@
                             <td>${steps.level}</td>
                             <c:forEach var="dance" items="${dance}">
                                 <td><a href="/choreographybuilder/saveStep?stepName=${steps.stepName}&danceName=${dance.danceName}&leadDescription=${steps.leadDescription}
-                            &followerDescription=${steps.followerDescription}&level=${steps.level}&beats=${beats}&numberOfSteps=${numberOfSteps}&userId=2">Save Step</a></td>
+                            &followerDescription=${steps.followerDescription}&level=${steps.level}&beats=${beats}&numberOfSteps=${numberOfSteps}&user=${userId}">Save Step</a></td>
                             </c:forEach>
                         </tr>
                     </c:forEach>

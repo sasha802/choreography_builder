@@ -20,7 +20,7 @@
                     <input type="text" class="form-control" id="editLastName" placeholder="last name" name="lastName" value="${user.lastName}">
                 </div>
                 <div class="form-group">
-                    <label for="editUserEmail">First Name:</label>
+                    <label for="editUserEmail">Email:</label>
                     <input type="text" class="form-control" id="editUserEmail" placeholder="email" name="email" value="${user.email}">
                 </div>
                 <div class="form-group">
