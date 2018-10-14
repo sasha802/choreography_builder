@@ -35,24 +35,22 @@ Week 4
 
 Week 5 
 1. Complete the template for all jsps using bootstrap, jquery
-2. Create the role dao 
-3. Add the role entity
-4. Create the role dao unit test
+2. Create user_role_view for tomcat authentication.
+3. Implement hibernate into the project
+4. Generate Step, Dance, CustomSteps entities (test, dev)
 
 Week 6 
 1. Create db on AWS 
 2. Weekly journal entry
 3. Deploy to AWS for first time
-4. Create dance_type entity (test, dev)
-5. Prepare for Checkpoint2
+4. Prepare for Checkpoint2
 
 Week 7
 1. Set up authentication locally
 2. Weekly journal entry
-3. Populate Step table with data
-4. Set up authentication on AWS
-5. Create Step entities
-6. Create Step dao
+3. Set up authentication on AWS
+4. Create Generic dao that will serve all the needs.
+5. Test Generic dao.
 
 Week 8
 1. Weekly journal entry
