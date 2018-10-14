@@ -111,6 +111,7 @@ class CustomStepsDAOTest {
         Map<String,  Map<String, String>> entity = new HashMap<>();
         Map<String, String> propertyOne = new HashMap<>();
         Map<String, String> propertyTwo = new HashMap<>();
+
         propertyOne.put("id", "2");
         propertyTwo.put("deleted", "0");
         entity.put("user", propertyOne);
