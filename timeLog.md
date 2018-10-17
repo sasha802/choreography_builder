@@ -47,5 +47,6 @@
 |10/11/2018|Watching video week 7. Tomcat authentication| 1 hour |
 |10/12/2018|Implementing tomcat authentication in my project| 3 hour|
 |10/13/2018|Implementing logout and tomcat authentication in the project. Reading week 7 materials.| 4 hours 40 min|
-|10/14/2018|Peppering Power Point presentation for the personal development presentation on Dynamic Programming|2 hours 40 |
+|10/14/2018|Peppering Power Point presentation for the personal development presentation on Dynamic Programming|2 hours 40 min|
 |10/14/2018|Peppering for Checkpoint 2. Developing UML |1 hour 30 min|
+|10/16/2018|Creating option for the user to add user dinned dance step. Using Modal. Form validation | 2 hours 30 min |

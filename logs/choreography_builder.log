@@ -818,3 +818,109 @@
 [DEBUG] 2018-10-16 20:20:43.083 [http-nio-8080-exec-112] GenericDAO - Searching for user with email = get
 [INFO ] 2018-10-16 20:20:43.086 [http-nio-8080-exec-112] GenericDAO - 0
 [INFO ] 2018-10-16 20:20:43.086 [http-nio-8080-exec-112] GenericDAO - list of steps []
+[DEBUG] 2018-10-16 20:24:00.410 [http-nio-8080-exec-118] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:24:54.484 [http-nio-8080-exec-120] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:25:00.369 [http-nio-8080-exec-121] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:25:41.488 [http-nio-8080-exec-119] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:25:45.980 [http-nio-8080-exec-126] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:30:26.761 [http-nio-8080-exec-132] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:30:28.387 [http-nio-8080-exec-135] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:31:15.496 [http-nio-8080-exec-139] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:31:48.103 [http-nio-8080-exec-148] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:31:49.986 [http-nio-8080-exec-146] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:32:22.058 [http-nio-8080-exec-154] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:33:44.847 [http-nio-8080-exec-158] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:34:35.493 [http-nio-8080-exec-167] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:36:31.941 [http-nio-8080-exec-168] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:37:08.193 [http-nio-8080-exec-170] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:38:48.034 [http-nio-8080-exec-180] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:40:13.688 [http-nio-8080-exec-192] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:44:33.554 [http-nio-8080-exec-201] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:45:04.706 [http-nio-8080-exec-205] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:48:18.356 [http-nio-8080-exec-216] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:49:55.081 [http-nio-8080-exec-217] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:50:43.207 [http-nio-8080-exec-221] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:52:53.354 [http-nio-8080-exec-232] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:53:32.789 [http-nio-8080-exec-234] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:55:09.011 [http-nio-8080-exec-2] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:55:10.849 [http-nio-8080-exec-5] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:56:31.242 [http-nio-8080-exec-2] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:57:27.061 [http-nio-8080-exec-6] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:58:23.836 [http-nio-8080-exec-20] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 20:58:37.329 [http-nio-8080-exec-15] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:01:53.242 [http-nio-8080-exec-30] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:01:55.581 [http-nio-8080-exec-25] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:02:12.211 [http-nio-8080-exec-28] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:07:00.383 [http-nio-8080-exec-31] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:07:07.823 [http-nio-8080-exec-38] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:07:13.285 [http-nio-8080-exec-36] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:07:31.682 [http-nio-8080-exec-40] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:07:47.803 [http-nio-8080-exec-41] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:07:54.228 [http-nio-8080-exec-42] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:07:56.848 [http-nio-8080-exec-43] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:09:23.960 [http-nio-8080-exec-42] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-16 21:09:25.736 [http-nio-8080-exec-34] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-16 21:09:30.721 [http-nio-8080-exec-48] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-16 21:09:37.324 [http-nio-8080-exec-51] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-16 21:12:24.230 [http-nio-8080-exec-55] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-16 21:12:39.259 [http-nio-8080-exec-58] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-16 21:12:42.302 [http-nio-8080-exec-59] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-16 21:13:02.500 [http-nio-8080-exec-60] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-16 21:14:13.709 [http-nio-8080-exec-69] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:14:15.523 [http-nio-8080-exec-70] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:14:24.710 [http-nio-8080-exec-71] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:14:34.801 [http-nio-8080-exec-66] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:15:03.958 [http-nio-8080-exec-70] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:15:12.436 [http-nio-8080-exec-73] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:15:20.219 [http-nio-8080-exec-77] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:16:08.285 [http-nio-8080-exec-81] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:16:10.067 [http-nio-8080-exec-78] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:16:12.843 [http-nio-8080-exec-80] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:16:19.449 [http-nio-8080-exec-84] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:16:24.238 [http-nio-8080-exec-69] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:20:22.072 [http-nio-8080-exec-94] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:20:23.996 [http-nio-8080-exec-84] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:21:52.502 [http-nio-8080-exec-97] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:21:54.080 [http-nio-8080-exec-104] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:28:21.299 [http-nio-8080-exec-3] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:28:27.109 [http-nio-8080-exec-4] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:28:27.112 [http-nio-8080-exec-4] GenericDAO - Searching for user with danceName = Rumba
+[INFO ] 2018-10-16 21:28:27.133 [http-nio-8080-exec-4] GenericDAO - 4
+[INFO ] 2018-10-16 21:28:27.133 [http-nio-8080-exec-4] GenericDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3), Step(stepName=New York, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=4)]
+[DEBUG] 2018-10-16 21:28:28.538 [http-nio-8080-exec-7] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:28:28.540 [http-nio-8080-exec-7] GenericDAO - type CustomSteps(id=0, stepName=Underarm Rurn, danceName=Rumba, leadDescription=underarmTurn.png, followerDescription=underarmTurn.png, level=basic, deleted=0, user=User(lastName=Smith, firstName=Mike, email=get, password=, roleId=1, id=31))
+[DEBUG] 2018-10-16 21:28:30.166 [http-nio-8080-exec-9] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-16 21:28:30.173 [http-nio-8080-exec-9] GenericDAO - 0
+[INFO ] 2018-10-16 21:28:30.173 [http-nio-8080-exec-9] GenericDAO - list of steps [CustomSteps(id=154, stepName=Underarm Rurn, danceName=Rumba, leadDescription=underarmTurn.png, followerDescription=underarmTurn.png, level=basic, deleted=0, user=User(lastName=Smith, firstName=Mike, email=get, password=, roleId=1, id=31))]
+[DEBUG] 2018-10-16 21:28:31.848 [http-nio-8080-exec-10] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-16 21:28:31.851 [http-nio-8080-exec-10] GenericDAO - 0
+[INFO ] 2018-10-16 21:28:31.851 [http-nio-8080-exec-10] GenericDAO - list of steps []
+[DEBUG] 2018-10-16 21:28:33.350 [http-nio-8080-exec-2] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:28:36.892 [http-nio-8080-exec-5] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:28:36.894 [http-nio-8080-exec-5] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:28:41.318 [http-nio-8080-exec-3] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:28:41.320 [http-nio-8080-exec-3] GenericDAO - Searching for user with danceName = Rumba
+[INFO ] 2018-10-16 21:28:41.324 [http-nio-8080-exec-3] GenericDAO - 1
+[INFO ] 2018-10-16 21:28:41.324 [http-nio-8080-exec-3] GenericDAO - list of steps [Step(stepName=Box Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1)]
+[DEBUG] 2018-10-16 21:28:42.707 [http-nio-8080-exec-4] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:28:42.708 [http-nio-8080-exec-4] GenericDAO - type CustomSteps(id=0, stepName=Box Step, danceName=Rumba, leadDescription=boxstep.gif, followerDescription=boxstepF.png, level=basic, deleted=0, user=User(lastName=Smith, firstName=Mike, email=get, password=, roleId=1, id=31))
+[DEBUG] 2018-10-16 21:28:47.888 [http-nio-8080-exec-6] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-16 21:28:47.892 [http-nio-8080-exec-6] GenericDAO - 0
+[INFO ] 2018-10-16 21:28:47.892 [http-nio-8080-exec-6] GenericDAO - list of steps [CustomSteps(id=155, stepName=Box Step, danceName=Rumba, leadDescription=boxstep.gif, followerDescription=boxstepF.png, level=basic, deleted=0, user=User(lastName=Smith, firstName=Mike, email=get, password=, roleId=1, id=31))]
+[DEBUG] 2018-10-16 21:28:49.744 [http-nio-8080-exec-7] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:29:05.699 [http-nio-8080-exec-9] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:29:05.701 [http-nio-8080-exec-9] GenericDAO - type CustomSteps(id=0, stepName=my step, danceName=myst, leadDescription=jm, followerDescription=jjjjjs, level=basic, deleted=0, user=User(lastName=Smith, firstName=Mike, email=get, password=, roleId=1, id=31))
+[DEBUG] 2018-10-16 21:29:07.250 [http-nio-8080-exec-10] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-16 21:29:07.254 [http-nio-8080-exec-10] GenericDAO - 0
+[INFO ] 2018-10-16 21:29:07.255 [http-nio-8080-exec-10] GenericDAO - list of steps [CustomSteps(id=155, stepName=Box Step, danceName=Rumba, leadDescription=boxstep.gif, followerDescription=boxstepF.png, level=basic, deleted=0, user=User(lastName=Smith, firstName=Mike, email=get, password=, roleId=1, id=31)), CustomSteps(id=156, stepName=my step, danceName=myst, leadDescription=jm, followerDescription=jjjjjs, level=basic, deleted=0, user=User(lastName=Smith, firstName=Mike, email=get, password=, roleId=1, id=31))]
+[DEBUG] 2018-10-16 21:29:10.284 [http-nio-8080-exec-1] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-16 21:29:10.287 [http-nio-8080-exec-1] GenericDAO - 0
+[INFO ] 2018-10-16 21:29:10.287 [http-nio-8080-exec-1] GenericDAO - list of steps [CustomSteps(id=155, stepName=Box Step, danceName=Rumba, leadDescription=boxstep.gif, followerDescription=boxstepF.png, level=basic, deleted=0, user=User(lastName=Smith, firstName=Mike, email=get, password=, roleId=1, id=31))]
+[DEBUG] 2018-10-16 21:29:11.932 [http-nio-8080-exec-5] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:29:26.334 [http-nio-8080-exec-3] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:29:31.648 [http-nio-8080-exec-6] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-16 21:30:01.530 [http-nio-8080-exec-2] GenericDAO - type User(lastName=Misik, firstName=Kisik, email=kiss, password=111, roleId=1, id=0)
+[DEBUG] 2018-10-16 21:30:12.443 [http-nio-8080-exec-6] GenericDAO - Searching for user with email = kiss
+[DEBUG] 2018-10-16 21:30:16.204 [http-nio-8080-exec-7] GenericDAO - Searching for user with email = kiss
+[INFO ] 2018-10-16 21:30:16.209 [http-nio-8080-exec-7] GenericDAO - 0
+[INFO ] 2018-10-16 21:30:16.209 [http-nio-8080-exec-7] GenericDAO - list of steps []

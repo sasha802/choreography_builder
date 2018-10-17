@@ -9,7 +9,6 @@ $(document).ready(function () {
 
 function addCustomStepModalForm() {
 
-    console.log('here');
     $('#popModal').click(function () {
 
         $('#personalStepModal').show();
