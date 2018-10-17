@@ -41,13 +41,14 @@
             <div style="text-align: center" id="buildDanceBtnContainer">
                 <a href="searchStep"><button type="button" class="btn btn-success">Build New Dance</button></a>
             </div>
-
         </div>
 
         <jsp:include page="internalFooter.jsp"/>
         <jsp:include page="head.jsp"/>
     </body>
 </html>
+
+
 
 
 

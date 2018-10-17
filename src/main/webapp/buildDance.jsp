@@ -51,6 +51,7 @@
                     </c:if>
 
                     <button id="buildDanceBtn" type="submit" name="submit" value="submit" class="btn btn-success">Build Dance</button>
+                    <button data-toggle="modal" data-target="#personalStepModal" type="button" class="btn btn-primary">Add Personal Step</button>
 
                 </form>
 
@@ -75,7 +76,7 @@
                             <td>${steps.level}</td>
                             <c:forEach var="dance" items="${dance}">
                                 <td><a href="/choreographybuilder/saveStep?stepName=${steps.stepName}&danceName=${dance.danceName}&leadDescription=${steps.leadDescription}
-                            &followerDescription=${steps.followerDescription}&level=${steps.level}&beats=${beats}&numberOfSteps=${numberOfSteps}&user=${userId}">Save Step</a></td>
+                            &followerDescription=${steps.followerDescription}&level=${steps.level}&beats=${beats}&numberOfSteps=${numberOfSteps}">Save Step</a></td>
                             </c:forEach>
                         </tr>
                     </c:forEach>
@@ -86,11 +87,56 @@
 
         </div>
 
+        <!-- User defined steps Modal -->
+        <div class="modal fade" id="personalStepModal" tabindex="-1" role="dialog" aria-label="personalStepModal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Personal Step</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form action="/choreographybuilder/saveStep" method="POST">
+                        <div class="modal-body">
+
+                            <div class="form-group">
+                                <label for="stepName">Step Name:</label>
+                                <input type="text" class="form-control" placeholder="step name" name="stepName" />
+                            </div>
+                            <div class="form-group">
+                                <label for="danceName">Dance Name:</label>
+                                <input type="text" class="form-control" placeholder="dance name" name="danceName" />
+                            </div>
+                            <div class="form-group">
+                                <label for="leadDescription">Lead Description:</label>
+                                <input type="text" class="form-control" placeholder="lead description" name="lDescription" />
+                            </div>
+                            <div class="form-group">
+                                <label for="followerDescription">Follower Description:</label>
+                                <input type="text" class="form-control" placeholder="follower description" name="fDescription" />
+                            </div>
+                            <div class="form-group">
+                                <label for="levelType">Level Type:</label>
+                                <input type="text" class="form-control" placeholder="level" name="level" />
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer" style="text-align: center">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-success">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
 
         <jsp:include page="internalFooter.jsp"/>
         <jsp:include page="head.jsp"/>
     </body>
 </html>
+
 
 <style>
     .descriptionImg {

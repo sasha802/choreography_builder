@@ -1,6 +1,26 @@
 
 $(document).ready(function () {
 
+    addCustomStepModalForm();
+    removeEmptyTebleCustomSteps();
+
+});
+
+
+function addCustomStepModalForm() {
+
+    console.log('here');
+    $('#popModal').click(function () {
+
+        $('#personalStepModal').show();
+
+    });
+
+}
+
+
+function removeEmptyTebleCustomSteps() {
+
     var tbody = $('#customStepTable tbody');
 
     if ( tbody.children().length == 0 ) {
@@ -13,8 +33,8 @@ $(document).ready(function () {
 
     $('.step').click(function () {
 
-      $(this).closest('tr').remove();
+        $(this).closest('tr').remove();
         location.reload();
     });
 
-});
+}

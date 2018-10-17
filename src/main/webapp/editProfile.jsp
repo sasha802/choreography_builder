@@ -32,18 +32,11 @@
 
         </div>
 
-
-
-        <%--<div>
-            <c:forEach var="users" items="${user}">
-
-                <p>${users.firstName}</p>
-                <p>${users.lastName}</p>
-                <p>${users.id}</p>
-
-            </c:forEach>
-        </div>--%>
     </div>
     <jsp:include page="internalFooter.jsp"/>
     </body>
 </html>
+
+<script>
+
+</script>
