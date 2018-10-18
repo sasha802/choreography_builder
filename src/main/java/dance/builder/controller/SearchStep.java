@@ -53,26 +53,25 @@ public class SearchStep extends HttpServlet {
                 request.setAttribute("dance", danceGenericDAO.getByPropertyLike("danceName","Waltz"));
                 request.setAttribute("step", genericDAO.getByMultiplePropertiesTopClause(generateEntitiesMap(waltzId, levelType), numberOfSteps));
                 request.setAttribute("beats", beatsNumber);
-                request.setAttribute("stepsNumber", numberOfSteps);
+                request.setAttribute("numberOfSteps", numberOfSteps);
                 request.setAttribute("level", levelType);
                 request.setAttribute("userId", Integer.toString(userId));
 
-            } else if ( beatsPerMinute > 91 && beatsPerMinute <= 119 ) {
+            } else if ( beatsPerMinute >= 91 && beatsPerMinute <= 119 ) {
 
                 request.setAttribute("dance", danceGenericDAO.getByPropertyLike("danceName", "Rumba"));
                 request.setAttribute("step", genericDAO.getByMultiplePropertiesTopClause(generateEntitiesMap(rumbaId, levelType), numberOfSteps));
                 request.setAttribute("beats", beatsNumber);
-                request.setAttribute("stepsNumber", numberOfSteps);
-                request.setAttribute("level", levelType);
                 request.setAttribute("numberOfSteps", numberOfSteps);
+                request.setAttribute("level", levelType);
                 request.setAttribute("userId", Integer.toString(userId));
 
-            } else if ( beatsPerMinute > 120 && beatsPerMinute <= 250 ) {
+            } else if ( beatsPerMinute >= 120 && beatsPerMinute <= 250 ) {
 
                 request.setAttribute("dance", danceGenericDAO.getByPropertyLike("danceName", "Swing"));
                 request.setAttribute("step", genericDAO.getByMultiplePropertiesTopClause(generateEntitiesMap(swingId, levelType), numberOfSteps));
                 request.setAttribute("beats", beatsNumber);
-                request.setAttribute("stepsNumber", numberOfSteps);
+                request.setAttribute("numberOfSteps", numberOfSteps);
                 request.setAttribute("level", levelType);
                 request.setAttribute("userId", Integer.toString(userId));
 

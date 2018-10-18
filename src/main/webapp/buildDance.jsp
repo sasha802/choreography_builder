@@ -71,8 +71,8 @@
                     <c:forEach var="steps" items="${step}">
                         <tr>
                             <td>${steps.stepName}</td>
-                            <td><img class="descriptionImg" src="images/${steps.leadDescription}"/></td>
-                            <td><img class="descriptionImg" src="images/${steps.followerDescription}"/></td>
+                            <td>${steps.leadDescription}</td>
+                            <td>${steps.followerDescription}</td>
                             <td>${steps.level}</td>
                             <c:forEach var="dance" items="${dance}">
                                 <td><a href="/choreographybuilder/saveStep?stepName=${steps.stepName}&danceName=${dance.danceName}&leadDescription=${steps.leadDescription}
