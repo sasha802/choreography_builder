@@ -1,4 +1,4 @@
-#Problem Statement
+### Problem Statement
 It has been a long tradition of the first wedding dance. There is a need for a website that will help wedding couples 
 to make a decision about their dance type, music, style, and will put together a basic dance choreography to help 
 them get started. 
