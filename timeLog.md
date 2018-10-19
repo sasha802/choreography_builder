@@ -50,3 +50,4 @@
 |10/14/2018|Peppering Power Point presentation for the personal development presentation on Dynamic Programming|2 hours 40 min|
 |10/14/2018|Peppering for Checkpoint 2. Developing UML |1 hour 30 min|
 |10/16/2018|Creating option for the user to add user dinned dance step. Using Modal. Form validation | 2 hours 30 min |
+|10/18/2018|Watching week8 video and doing activity 1. |1 hour 15 min|
