@@ -131,7 +131,6 @@
                 </div>
             </div>
         </div>
-
         <jsp:include page="internalFooter.jsp"/>
         <jsp:include page="head.jsp"/>
     </body>
