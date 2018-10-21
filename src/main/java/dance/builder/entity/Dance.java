@@ -1,6 +1,8 @@
 package dance.builder.entity;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.annotation.sql.DataSourceDefinition;
@@ -16,6 +18,10 @@ public class Dance {
 
     @Column(name = "beats_per_minute")
     private int beatsPerMinute;
+
+    @ToString.Exclude
+    @OneToOne(mappedBy = "dance", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    private DanceTechnique danceTechnique;
 
 
     @Id
