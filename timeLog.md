@@ -51,3 +51,7 @@
 |10/14/2018|Peppering for Checkpoint 2. Developing UML |1 hour 30 min|
 |10/16/2018|Creating option for the user to add user dinned dance step. Using Modal. Form validation | 2 hours 30 min |
 |10/18/2018|Watching week8 video and doing activity 1. |1 hour 15 min|
+|10/19/2018|Reading week 8 material. Working on week 8 activities.| 3 hours|
+|10/20/2018|Watching week9 video and reading material. |2 hours 30 min|
+|10/20/2018|Working on week 9 activities.| 2 hours|
+|10/21/2018|Developing custom service for the project. Creating table, dao, dao unit test.|3 hours 30 min|

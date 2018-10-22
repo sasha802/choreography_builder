@@ -1212,3 +1212,186 @@ Replace weight to left foot, leadDescription=Compact chasse to side - LRL - ende
 [ERROR] 2018-10-21 15:14:43.907 [main] Database - java.sql.SQLException: Can not issue empty query.
 [ERROR] 2018-10-21 15:14:43.921 [main] Database - java.sql.SQLException: Can not issue empty query.
 [DEBUG] 2018-10-21 15:14:43.922 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[ERROR] 2018-10-21 15:16:33.294 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-21 15:16:34.467 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-21 15:16:34.513 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-21 15:16:34.513 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-10-21 15:16:34.729 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-21 15:16:34.729 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-10-21 15:16:34.790 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-21 15:16:34.809 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2018-10-21 15:16:34.820 [main] GenericDAO - 0
+[INFO ] 2018-10-21 15:16:34.820 [main] GenericDAO - list of steps [CustomSteps(id=1, stepName=Turn, danceName=Swing, leadDescription=some description, followerDescription=screenshot, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))]
+[ERROR] 2018-10-21 15:16:34.833 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-21 15:16:34.851 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-21 15:16:34.853 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))
+[INFO ] 2018-10-21 15:16:34.882 [main] GenericDAO - 0
+[INFO ] 2018-10-21 15:16:34.882 [main] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-21 15:16:34.903 [main] GenericDAO - type DanceTechnique(id=0, danceMovement=test dance movement, dancePosition=test dance position, deleted=0)
+[DEBUG] 2018-10-21 15:16:34.913 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-10-21 15:16:34.932 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-10-21 15:16:34.956 [main] GenericDAO - 3
+[INFO ] 2018-10-21 15:16:34.956 [main] GenericDAO - list of steps [Step(stepName=My New Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[ERROR] 2018-10-21 15:16:34.984 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-21 15:16:35.001 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-21 15:16:35.001 [main] GenericDAO - Searching for user with email = thomson
+[ERROR] 2018-10-21 15:16:35.013 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-21 15:16:35.014 [main] GenericDAO - Searching for user with email = jcoyne
+[ERROR] 2018-10-21 15:16:35.033 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-21 15:16:35.047 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-21 15:16:35.065 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-21 15:16:35.095 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-21 15:16:35.095 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[DEBUG] 2018-10-21 15:16:58.517 [http-nio-8080-exec-5] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-21 15:17:03.168 [http-nio-8080-exec-6] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-21 15:17:03.171 [http-nio-8080-exec-6] GenericDAO - Searching for user with danceName = Waltz
+[INFO ] 2018-10-21 15:17:03.199 [http-nio-8080-exec-6] GenericDAO - 1
+[INFO ] 2018-10-21 15:17:03.199 [http-nio-8080-exec-6] GenericDAO - list of steps [Step(stepName=Natural Turn, level=basic, followerDescription=Left foot back. Right foot side. Close left foot to right foot. Right foot forward. Left foot side. Close right foot to left foot., leadDescription=Right foot forward. Left foot side. Close right foot to left foot. Left foot back. Right foot side. Close left foot to right foot., demoLink=null, dance=Dance(danceName=Waltz, beatsPerMinute=85, id=2), id=31)]
+[DEBUG] 2018-10-21 15:17:07.323 [http-nio-8080-exec-7] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-21 15:17:07.325 [http-nio-8080-exec-7] GenericDAO - type CustomSteps(id=0, stepName=Natural Turn, danceName=Waltz, leadDescription=Right foot forward. Left foot side. Close right foot to left foot. Left foot back. Right foot side. Close left foot to right foot., followerDescription=Left foot back. Right foot side. Close left foot to right foot. Right foot forward. Left foot side. Close right foot to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))
+[DEBUG] 2018-10-21 15:17:09.146 [http-nio-8080-exec-9] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-21 15:17:09.152 [http-nio-8080-exec-9] GenericDAO - 0
+[INFO ] 2018-10-21 15:17:09.153 [http-nio-8080-exec-9] GenericDAO - list of steps [CustomSteps(id=155, stepName=Box Step, danceName=Rumba, leadDescription=boxstep.gif, followerDescription=boxstepF.png, level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=157, stepName=Hand to Hand, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=159, stepName=Natural Turn, danceName=Waltz, leadDescription=Right foot forward. Left foot side. Close right foot to left foot. Left foot back. Right foot side. Close left foot to right foot., followerDescription=Left foot back. Right foot side. Close left foot to right foot. Right foot forward. Left foot side. Close right foot to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=160, stepName=Double Reverse Spin, danceName=Waltz, leadDescription=Left foot forward. Right foot side. Close left foot to right foot without weight (toe pivot)., followerDescription=Right foot back. Close right foot to left foot (heel turn). Right foot side, level=advanced, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=161, stepName=Natural Spin Turn, danceName=Waltz, leadDescription=Right foot forward. Left foot side. Close right foot to left foot. Left foot back (pivot). Right foot forward in CBMP. Left foot side, followerDescription=Left foot back. Right foot side. Right foot side. Close left foot to right foot. Right foot forward (pivoting action).    Left foot back and slightly side, then brush right foot to left foot. Right foot diagonally forward., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=162, stepName=Natural Turn, danceName=Waltz, leadDescription=Right foot forward. Left foot side. Close right foot to left foot. Left foot back. Right foot side. Close left foot to right foot., followerDescription=Left foot back. Right foot side. Close left foot to right foot. Right foot forward. Left foot side. Close right foot to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-21 15:17:11.966 [http-nio-8080-exec-1] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-21 15:31:17.534 [http-nio-8080-exec-8] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 15:31:30.232 [http-nio-8080-exec-11] GenericDAO - Searching for user with stepName = Basic
+[INFO ] 2018-10-21 15:31:37.965 [http-nio-8080-exec-10] GenericDAO - 0
+[INFO ] 2018-10-21 15:31:37.965 [http-nio-8080-exec-10] GenericDAO - list of steps []
+[INFO ] 2018-10-21 15:32:58.728 [http-nio-8080-exec-11] GenericDAO - 0
+[INFO ] 2018-10-21 15:32:58.729 [http-nio-8080-exec-11] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[INFO ] 2018-10-21 15:33:01.167 [http-nio-8080-exec-17] GenericDAO - 0
+[INFO ] 2018-10-21 15:33:01.167 [http-nio-8080-exec-17] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[INFO ] 2018-10-21 15:34:05.757 [http-nio-8080-exec-19] GenericDAO - 0
+[INFO ] 2018-10-21 15:34:05.758 [http-nio-8080-exec-21] GenericDAO - 0
+[INFO ] 2018-10-21 15:34:05.758 [http-nio-8080-exec-21] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[INFO ] 2018-10-21 15:34:05.758 [http-nio-8080-exec-19] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[INFO ] 2018-10-21 15:35:17.924 [http-nio-8080-exec-29] GenericDAO - 0
+[INFO ] 2018-10-21 15:35:17.924 [http-nio-8080-exec-22] GenericDAO - 0
+[INFO ] 2018-10-21 15:35:17.929 [http-nio-8080-exec-29] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[INFO ] 2018-10-21 15:35:17.929 [http-nio-8080-exec-22] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[INFO ] 2018-10-21 15:35:26.935 [http-nio-8080-exec-28] GenericDAO - 0
+[INFO ] 2018-10-21 15:35:26.935 [http-nio-8080-exec-28] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[INFO ] 2018-10-21 15:35:27.486 [http-nio-8080-exec-26] GenericDAO - 0
+[INFO ] 2018-10-21 15:35:27.486 [http-nio-8080-exec-26] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[INFO ] 2018-10-21 15:37:18.301 [http-nio-8080-exec-32] GenericDAO - 0
+[INFO ] 2018-10-21 15:37:18.302 [http-nio-8080-exec-32] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-21 15:37:20.911 [http-nio-8080-exec-33] GenericDAO - Searching for user with stepName = Basic
+[INFO ] 2018-10-21 15:38:47.368 [http-nio-8080-exec-35] GenericDAO - 0
+[INFO ] 2018-10-21 15:38:47.368 [http-nio-8080-exec-35] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-21 15:44:08.483 [main] GenericDAO - Searching for user with dance = 2
+[DEBUG] 2018-10-21 15:46:03.923 [main] GenericDAO - Searching for user with id = 1
+[DEBUG] 2018-10-21 15:46:19.153 [main] GenericDAO - Searching for user with dance = 1
+[DEBUG] 2018-10-21 15:48:29.880 [main] GenericDAO - Searching for user with deleted = 0
+[DEBUG] 2018-10-21 15:49:06.036 [main] GenericDAO - Searching for user with dance = 2
+[DEBUG] 2018-10-21 16:10:03.812 [main] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-10-21 16:10:47.523 [main] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-10-21 16:16:33.766 [main] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-10-21 16:16:55.063 [http-nio-8080-exec-10] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 16:17:02.992 [http-nio-8080-exec-3] GenericDAO - Searching for user with dance_name = Waltz
+[DEBUG] 2018-10-21 16:17:41.454 [http-nio-8080-exec-8] GenericDAO - Searching for user with stepName = Basic
+[INFO ] 2018-10-21 16:17:44.362 [http-nio-8080-exec-6] GenericDAO - 0
+[INFO ] 2018-10-21 16:17:44.362 [http-nio-8080-exec-6] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[INFO ] 2018-10-21 16:17:48.062 [http-nio-8080-exec-10] GenericDAO - 0
+[INFO ] 2018-10-21 16:17:48.062 [http-nio-8080-exec-10] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-21 16:17:50.622 [http-nio-8080-exec-11] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-10-21 16:17:51.492 [http-nio-8080-exec-5] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-10-21 16:18:58.211 [http-nio-8080-exec-18] GenericDAO - Searching for user with stepName = Basic
+[INFO ] 2018-10-21 16:19:00.192 [http-nio-8080-exec-16] GenericDAO - 0
+[INFO ] 2018-10-21 16:19:00.192 [http-nio-8080-exec-16] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-21 16:19:02.498 [http-nio-8080-exec-11] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-10-21 16:19:02.877 [http-nio-8080-exec-21] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-10-21 16:19:47.848 [main] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-10-21 16:20:39.526 [http-nio-8080-exec-30] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 16:20:39.832 [http-nio-8080-exec-25] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 16:20:43.193 [http-nio-8080-exec-32] GenericDAO - Searching for user with stepName = Basic
+[INFO ] 2018-10-21 16:20:45.510 [http-nio-8080-exec-24] GenericDAO - 0
+[INFO ] 2018-10-21 16:20:45.510 [http-nio-8080-exec-24] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-21 16:20:49.774 [http-nio-8080-exec-33] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-10-21 16:20:50.270 [http-nio-8080-exec-34] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-10-21 16:21:46.542 [http-nio-8080-exec-37] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 16:21:46.542 [http-nio-8080-exec-32] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 16:21:49.321 [http-nio-8080-exec-31] GenericDAO - Searching for user with stepName = Basic
+[INFO ] 2018-10-21 16:21:51.936 [http-nio-8080-exec-35] GenericDAO - 0
+[INFO ] 2018-10-21 16:21:51.937 [http-nio-8080-exec-35] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-21 16:21:56.462 [http-nio-8080-exec-39] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-10-21 16:21:57.098 [http-nio-8080-exec-36] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-10-21 16:23:28.140 [http-nio-8080-exec-40] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-10-21 16:24:25.367 [http-nio-8080-exec-42] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 16:26:37.411 [http-nio-8080-exec-10] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 16:26:37.411 [http-nio-8080-exec-1] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 16:35:06.770 [http-nio-8080-exec-1] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 16:35:09.329 [http-nio-8080-exec-6] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 16:37:04.932 [http-nio-8080-exec-2] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 16:37:04.932 [http-nio-8080-exec-10] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 16:41:49.668 [http-nio-8080-exec-2] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 16:41:52.350 [http-nio-8080-exec-9] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 16:52:39.959 [main] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 16:53:25.299 [main] GenericDAO - Searching for user with stepName = Turn
+[DEBUG] 2018-10-21 16:57:04.641 [main] GenericDAO - Searching for user with stepName = Curl
+[DEBUG] 2018-10-21 17:05:02.654 [http-nio-8080-exec-18] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:05:04.243 [http-nio-8080-exec-11] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:05:13.942 [http-nio-8080-exec-22] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:06:01.258 [http-nio-8080-exec-14] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:06:04.797 [http-nio-8080-exec-24] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:06:59.613 [http-nio-8080-exec-28] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:08:00.478 [http-nio-8080-exec-34] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:11:41.960 [http-nio-8080-exec-10] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:11:41.960 [http-nio-8080-exec-2] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:13:57.093 [http-nio-8080-exec-13] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:13:59.107 [http-nio-8080-exec-15] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:14:47.120 [http-nio-8080-exec-18] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:14:48.811 [http-nio-8080-exec-5] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:14:50.825 [http-nio-8080-exec-9] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:14:51.410 [http-nio-8080-exec-12] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:15:11.331 [http-nio-8080-exec-25] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:15:22.576 [http-nio-8080-exec-12] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:15:22.576 [http-nio-8080-exec-24] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:15:23.654 [http-nio-8080-exec-16] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:15:24.148 [http-nio-8080-exec-27] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:15:24.476 [http-nio-8080-exec-26] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:16:13.651 [http-nio-8080-exec-23] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:17:15.529 [http-nio-8080-exec-35] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:17:39.249 [http-nio-8080-exec-36] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:18:14.633 [http-nio-8080-exec-42] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:29:16.896 [http-nio-8080-exec-49] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:31:44.512 [http-nio-8080-exec-49] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:34:02.802 [http-nio-8080-exec-63] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:34:49.192 [http-nio-8080-exec-67] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:35:37.593 [http-nio-8080-exec-73] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:37:10.837 [http-nio-8080-exec-80] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:37:38.572 [http-nio-8080-exec-85] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:43:37.475 [http-nio-8080-exec-96] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:43:38.811 [http-nio-8080-exec-95] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:44:12.891 [http-nio-8080-exec-88] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:45:17.533 [http-nio-8080-exec-93] GenericDAO - Searching for user with stepName = Basic
+[DEBUG] 2018-10-21 17:46:53.060 [http-nio-8080-exec-3] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-10-21 17:49:57.892 [http-nio-8080-exec-7] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-10-21 17:52:28.860 [http-nio-8080-exec-15] GenericDAO - Searching for user with danceName = Waltz
+[INFO ] 2018-10-21 17:53:18.567 [main] GenericDAO - 0
+[INFO ] 2018-10-21 17:53:18.567 [main] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-21 17:53:18.591 [main] GenericDAO - type DanceTechnique(id=0, danceMovement=test dance movement, dancePosition=test dance position, deleted=0)
+[DEBUG] 2018-10-21 19:09:22.453 [main] GenericDAO - type DanceTechnique(id=0, danceMovement=test dance movement, dancePosition=test dance position, deleted=0)
+[DEBUG] 2018-10-21 19:10:06.215 [http-nio-8080-exec-7] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-21 19:10:08.070 [http-nio-8080-exec-8] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-21 19:10:09.391 [http-nio-8080-exec-9] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-21 19:10:14.626 [http-nio-8080-exec-10] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-21 19:10:14.628 [http-nio-8080-exec-10] GenericDAO - Searching for user with danceName = Waltz
+[INFO ] 2018-10-21 19:10:14.651 [http-nio-8080-exec-10] GenericDAO - 1
+[INFO ] 2018-10-21 19:10:14.651 [http-nio-8080-exec-10] GenericDAO - list of steps [Step(stepName=Natural Turn, level=basic, followerDescription=Left foot back. Right foot side. Close left foot to right foot. Right foot forward. Left foot side. Close right foot to left foot., leadDescription=Right foot forward. Left foot side. Close right foot to left foot. Left foot back. Right foot side. Close left foot to right foot., demoLink=null, dance=Dance(danceName=Waltz, beatsPerMinute=85, id=2), id=31)]
+[DEBUG] 2018-10-21 19:10:17.272 [http-nio-8080-exec-3] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-21 19:10:17.274 [http-nio-8080-exec-3] GenericDAO - Searching for user with danceName = Waltz
+[INFO ] 2018-10-21 19:10:17.280 [http-nio-8080-exec-3] GenericDAO - 3
+[INFO ] 2018-10-21 19:10:17.280 [http-nio-8080-exec-3] GenericDAO - list of steps [Step(stepName=Natural Turn, level=basic, followerDescription=Left foot back. Right foot side. Close left foot to right foot. Right foot forward. Left foot side. Close right foot to left foot., leadDescription=Right foot forward. Left foot side. Close right foot to left foot. Left foot back. Right foot side. Close left foot to right foot., demoLink=null, dance=Dance(danceName=Waltz, beatsPerMinute=85, id=2), id=31), Step(stepName=Reverse Turn, level=basic, followerDescription=Right foot back. Left foot side. Close right foot to left foot. Left foot forward. Right foot side. Close left foot to right foot., leadDescription=Left foot forward. Right foot side. Close left foot to right foot. Right foot back. Left foot side. Close right foot to left foot., demoLink=null, dance=Dance(danceName=Waltz, beatsPerMinute=85, id=2), id=32), Step(stepName=Natural Spin Turn, level=basic, followerDescription=Left foot back. Right foot side. Right foot side. Close left foot to right foot. Right foot forward (pivoting action).
+    Left foot back and slightly side, then brush right foot to left foot. Right foot diagonally forward., leadDescription=Right foot forward. Left foot side. Close right foot to left foot. Left foot back (pivot). Right foot forward in CBMP. Left foot side & slightly back., demoLink=null, dance=Dance(danceName=Waltz, beatsPerMinute=85, id=2), id=33)]
+[DEBUG] 2018-10-21 19:10:20.035 [http-nio-8080-exec-4] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-21 19:10:20.036 [http-nio-8080-exec-4] GenericDAO - type CustomSteps(id=0, stepName=Reverse Turn, danceName=Waltz, leadDescription=Left foot forward. Right foot side. Close left foot to right foot. Right foot back. Left foot side. Close right foot to left foot., followerDescription=Right foot back. Left foot side. Close right foot to left foot. Left foot forward. Right foot side. Close left foot to right foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))
+[DEBUG] 2018-10-21 19:10:21.058 [http-nio-8080-exec-6] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-21 19:10:21.067 [http-nio-8080-exec-6] GenericDAO - 0
+[INFO ] 2018-10-21 19:10:21.067 [http-nio-8080-exec-6] GenericDAO - list of steps [CustomSteps(id=155, stepName=Box Step, danceName=Rumba, leadDescription=boxstep.gif, followerDescription=boxstepF.png, level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=157, stepName=Hand to Hand, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=159, stepName=Natural Turn, danceName=Waltz, leadDescription=Right foot forward. Left foot side. Close right foot to left foot. Left foot back. Right foot side. Close left foot to right foot., followerDescription=Left foot back. Right foot side. Close left foot to right foot. Right foot forward. Left foot side. Close right foot to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=160, stepName=Double Reverse Spin, danceName=Waltz, leadDescription=Left foot forward. Right foot side. Close left foot to right foot without weight (toe pivot)., followerDescription=Right foot back. Close right foot to left foot (heel turn). Right foot side, level=advanced, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=161, stepName=Natural Spin Turn, danceName=Waltz, leadDescription=Right foot forward. Left foot side. Close right foot to left foot. Left foot back (pivot). Right foot forward in CBMP. Left foot side, followerDescription=Left foot back. Right foot side. Right foot side. Close left foot to right foot. Right foot forward (pivoting action).    Left foot back and slightly side, then brush right foot to left foot. Right foot diagonally forward., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=162, stepName=Natural Turn, danceName=Waltz, leadDescription=Right foot forward. Left foot side. Close right foot to left foot. Left foot back. Right foot side. Close left foot to right foot., followerDescription=Left foot back. Right foot side. Close left foot to right foot. Right foot forward. Left foot side. Close right foot to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=163, stepName=Reverse Turn, danceName=Waltz, leadDescription=Left foot forward. Right foot side. Close left foot to right foot. Right foot back. Left foot side. Close right foot to left foot., followerDescription=Right foot back. Left foot side. Close right foot to left foot. Left foot forward. Right foot side. Close left foot to right foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-21 19:10:22.479 [http-nio-8080-exec-7] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-21 19:10:22.485 [http-nio-8080-exec-7] GenericDAO - 0
+[INFO ] 2018-10-21 19:10:22.485 [http-nio-8080-exec-7] GenericDAO - list of steps [CustomSteps(id=155, stepName=Box Step, danceName=Rumba, leadDescription=boxstep.gif, followerDescription=boxstepF.png, level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=159, stepName=Natural Turn, danceName=Waltz, leadDescription=Right foot forward. Left foot side. Close right foot to left foot. Left foot back. Right foot side. Close left foot to right foot., followerDescription=Left foot back. Right foot side. Close left foot to right foot. Right foot forward. Left foot side. Close right foot to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=160, stepName=Double Reverse Spin, danceName=Waltz, leadDescription=Left foot forward. Right foot side. Close left foot to right foot without weight (toe pivot)., followerDescription=Right foot back. Close right foot to left foot (heel turn). Right foot side, level=advanced, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=161, stepName=Natural Spin Turn, danceName=Waltz, leadDescription=Right foot forward. Left foot side. Close right foot to left foot. Left foot back (pivot). Right foot forward in CBMP. Left foot side, followerDescription=Left foot back. Right foot side. Right foot side. Close left foot to right foot. Right foot forward (pivoting action).    Left foot back and slightly side, then brush right foot to left foot. Right foot diagonally forward., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=162, stepName=Natural Turn, danceName=Waltz, leadDescription=Right foot forward. Left foot side. Close right foot to left foot. Left foot back. Right foot side. Close left foot to right foot., followerDescription=Left foot back. Right foot side. Close left foot to right foot. Right foot forward. Left foot side. Close right foot to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=163, stepName=Reverse Turn, danceName=Waltz, leadDescription=Left foot forward. Right foot side. Close left foot to right foot. Right foot back. Left foot side. Close right foot to left foot., followerDescription=Right foot back. Left foot side. Close right foot to left foot. Left foot forward. Right foot side. Close left foot to right foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-21 19:10:23.149 [http-nio-8080-exec-9] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-21 19:10:23.154 [http-nio-8080-exec-9] GenericDAO - 0
+[INFO ] 2018-10-21 19:10:23.154 [http-nio-8080-exec-9] GenericDAO - list of steps [CustomSteps(id=159, stepName=Natural Turn, danceName=Waltz, leadDescription=Right foot forward. Left foot side. Close right foot to left foot. Left foot back. Right foot side. Close left foot to right foot., followerDescription=Left foot back. Right foot side. Close left foot to right foot. Right foot forward. Left foot side. Close right foot to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=160, stepName=Double Reverse Spin, danceName=Waltz, leadDescription=Left foot forward. Right foot side. Close left foot to right foot without weight (toe pivot)., followerDescription=Right foot back. Close right foot to left foot (heel turn). Right foot side, level=advanced, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=161, stepName=Natural Spin Turn, danceName=Waltz, leadDescription=Right foot forward. Left foot side. Close right foot to left foot. Left foot back (pivot). Right foot forward in CBMP. Left foot side, followerDescription=Left foot back. Right foot side. Right foot side. Close left foot to right foot. Right foot forward (pivoting action).    Left foot back and slightly side, then brush right foot to left foot. Right foot diagonally forward., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=162, stepName=Natural Turn, danceName=Waltz, leadDescription=Right foot forward. Left foot side. Close right foot to left foot. Left foot back. Right foot side. Close left foot to right foot., followerDescription=Left foot back. Right foot side. Close left foot to right foot. Right foot forward. Left foot side. Close right foot to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=163, stepName=Reverse Turn, danceName=Waltz, leadDescription=Left foot forward. Right foot side. Close left foot to right foot. Right foot back. Left foot side. Close right foot to left foot., followerDescription=Right foot back. Left foot side. Close right foot to left foot. Left foot forward. Right foot side. Close left foot to right foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-21 19:10:24.920 [http-nio-8080-exec-1] GenericDAO - Searching for user with email = get

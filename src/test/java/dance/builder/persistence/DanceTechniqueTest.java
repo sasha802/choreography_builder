@@ -40,13 +40,20 @@ class DanceTechniqueTest {
         DanceTechnique danceTechnique = new DanceTechnique("test dance movement", "test dance position", dance);
         int id = genericDAO.insert(danceTechnique);
         assertNotEquals(0, id);
-        DanceTechnique insertedTechnique = (DanceTechnique) genericDAO.getById(id);
+        DanceTechnique insertedTechnique = genericDAO.getById(id);
         assertEquals("test dance movement", insertedTechnique.getDanceMovement());
 
     }
 
-    @Test
+    /*@Test
     void getByPropertyEqualSuccess() {
+
+        List<DanceTechnique> danceTechniques = genericDAO.getByPropertyEqual("dance", "2");
+        assertEquals(1, danceTechniques.size());
+    }*/
+
+    @Test
+    void getByMultiplePropertiesTopClauseSuccess() {
 
         Map<String, Map<String, String>> entity = new HashMap<>();
         Map<String, String> propertyOne = new HashMap<>();

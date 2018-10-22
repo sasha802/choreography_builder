@@ -3,7 +3,10 @@ package dance.builder.persistence;
 import dance.builder.entity.Step;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import services.StepProcessor;
 
+
+import javax.ws.rs.core.Response;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -76,6 +79,17 @@ class StepDAOTest {
         List<Step> step = genericDAO.getByMultiplePropertiesTopClause(entities, 3);
 
         assertEquals(3, step.size());
+
+    }
+
+    @Test
+    void getStepService() {
+
+        StepProcessor stepProcessor = new StepProcessor();
+        Response response = stepProcessor.getStepData("Curl");
+        Step step = (Step) response.getEntity();
+
+        assertEquals("Curl", step.getStepName());
 
     }
 
