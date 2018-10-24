@@ -15,6 +15,7 @@ public class ServiceConfig extends Application {
         HashSet set = new HashSet<Class<?>>();
         set.add(StepProcessor.class);
         set.add(DanceMovementProcessor.class);
+        set.add(DanceTechniqueProcessor.class);
 
         return set;
 

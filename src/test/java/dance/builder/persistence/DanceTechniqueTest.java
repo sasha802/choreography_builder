@@ -68,5 +68,10 @@ class DanceTechniqueTest {
         List<DanceTechnique> list = genericDAO.getByMultiplePropertiesTopClause(entity, 0);
         assertEquals(1, list.size());
 
+        for (int i = 0; i < list.size(); i ++) {
+            logger.info(list);
+        }
+
+
     }
 }
