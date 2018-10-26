@@ -2,14 +2,26 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #fff;
+    background-color: #685d571f;
 }
 
-#menuContainer {
-    background-color: #839fed;
+.menuContainer {
+    background-color: #313233;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
+}
+
+.menuContainer a, footer a {
+    padding-right: 50px;
+    color: #665D58;
+    font-size: 20px;
+    transition: 1s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #948177;
 }
 
 #pageContainer {
@@ -23,13 +35,25 @@ body {
     padding: 20px;
 }
 
-#menuContainer a, footer a {
-    padding-right: 50px;
-    color: #fff;
-    font-size: 20px;
+#stepsTable, #customStepTable {
+    background: #bfbfbf;
+    color: #393939;
+    min-height: 300px;
+}
+
+label {
+    padding-right: 10px;
 }
 
 h3, h2 {
+    text-align: center;
+    color: #585699;
+}
+
+h5 {
+    font-size: 20px;
+    color: #585866;
+    font-weight: 300;
     text-align: center;
 }
 
@@ -50,10 +74,14 @@ ul {
     height: 500px;
 }
 
+form {
+    margin-top: 30px;
+}
+
 
 footer {
     text-align: center;
-    background-color: #839fed;
+    background-color: #313233;
     flex-shrink: 0;
     padding: 20px;
 }
@@ -75,11 +103,25 @@ footer {
 #buildDance {
     margin: 0 auto;
     width: 500px;
-    height: 500px;
+    height: 300px;
+}
+
+#choreographyDanceName, h4 {
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 25px;
+    color: #585866;
+    font-weight: 300;
+}
+
+
+
+#addPersonalStepBtn {
+    float: right;
 }
 
 .scrollbar {
-    background-color: #F5F5F5;
+    background-color: #bebebe;
     float: left;
     height: 500px;
     margin-bottom: 25px;
@@ -95,12 +137,31 @@ footer {
 
 #style-1::-webkit-scrollbar {
     width: 6px;
-    background-color: #F5F5F5;
+    background: #bebebe;
 }
 
 .descriptionImg {
     width: 30%;
 }
+
+ #imageContainer {
+     background-repeat: no-repeat;
+     background-size: cover;
+     min-height: 250px;
+     background-position: 35% 65%;
+     filter: grayscale(1);
+ }
+
+#imageContainer:hover {
+    filter: grayscale(0);
+    transition: 5s;
+}
+
+.glyphicon {
+    font-size:20px;
+    color: #69181A;
+}
+
 
 
 

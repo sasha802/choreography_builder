@@ -11,11 +11,11 @@
                 <div class="force-overflow">
                     <table class="table" id="customStepTable">
                         <thead>
-                        <th>Step Name</th>
+                        <th>Step</th>
                         <th>Lead Description</th>
                         <th>Follower Description</th>
                         <th>Level</th>
-                        <th>Dance Type</th>
+                        <th>Dance</th>
                         <ht></ht>
                         </thead>
                         <tbody id="customStepsTbody">
@@ -28,7 +28,7 @@
                                 <td>${customStep.danceName}</td>
                                 <td>
                                     <a class="step" href="/choreographybuilder/removeCustomStep?step=${customStep.id}">
-                                    <span style="font-size:20px" class="glyphicon glyphicon-trash"></span>
+                                    <span class="glyphicon glyphicon-trash"></span>
                                     </a>
                                 </td>
                             </tr>

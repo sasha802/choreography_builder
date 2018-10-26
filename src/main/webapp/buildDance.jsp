@@ -5,12 +5,18 @@
         <jsp:include page="internalMenuPanel.jsp"/>
         <h2>Lets Build Your Dance ${userFirstName}!</h2>
 
+        <c:if test="${saved == 'saved'}">
+            <div>
+                <h5>Yor step was successful saved. <a href="/choreographybuilder/displayCustomSteps">View My Steps</a></h5>
+            </div>
+        </c:if>
+
         <div class="container">
 
             <div id="buildDance">
                 <form action="/choreographybuilder/searchStep" method="post" id="buildDanceForm">
                     <div class="form-group">
-                        <label for="beatsNumber">Enter beats per minute</label>
+                        <label for="beatsNumber">Enter beats per minute:</label>
                         <input type="text" class="form-control" id="beatsNumber" name="beatsNumber" placeholder="beats/minute"
                                value="${beats}">
                     </div>
@@ -43,49 +49,51 @@
                         </select>
                     </div>
 
-                    <c:if test="${saved == 'saved'}">
-                        <div>
-                            <h5>Yor step was successful saved. <a href="/choreographybuilder/displayCustomSteps">View My Steps</a></h5>
-
-                        </div>
-                    </c:if>
-
                     <button id="buildDanceBtn" type="submit" name="submit" value="submit" class="btn btn-success">Build Dance</button>
-                    <button data-toggle="modal" data-target="#personalStepModal" type="button" class="btn btn-primary">Add Personal Step</button>
+                    <button id="addPersonalStepBtn" data-toggle="modal" data-target="#personalStepModal" type="button" class="btn btn-primary">Add Personal Step</button>
 
                 </form>
 
 
             </div>
 
-            <div style="text-align: center">
+            <div id="choreographyDanceName">
                 <c:forEach var="dance" items="${dance}">
                     Your ${dance.danceName} Dance Choreography
                 </c:forEach>
             </div>
 
-            <div>
-                <table class="table" id="stepsTable">
 
-                    <tbody id="stepData">
-                    <c:forEach var="steps" items="${step}">
-                        <tr>
-                            <td>${steps.stepName}</td>
-                            <td>${steps.leadDescription}</td>
-                            <td>${steps.followerDescription}</td>
-                            <td>${steps.level}</td>
-                            <c:forEach var="dance" items="${dance}">
-                                <td><a href="/choreographybuilder/saveStep?stepName=${steps.stepName}&danceName=${dance.danceName}&leadDescription=${steps.leadDescription}
-                            &followerDescription=${steps.followerDescription}&level=${steps.level}&beats=${beats}&numberOfSteps=${numberOfSteps}">Save Step</a></td>
-                            </c:forEach>
-                        </tr>
-                    </c:forEach>
+            <table class="table" id="stepsTable">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Lead Description</th>
+                    <th>Follower Description</th>
+                    <th>Level</th>
+                    <th></th>
+                </tr>
+                </thead>
 
-                    </tbody>
-                </table>
-            </div>
+                <tbody id="stepData">
+                <c:forEach var="steps" items="${step}">
+                    <tr>
+                        <td>${steps.stepName}</td>
+                        <td>${steps.leadDescription}</td>
+                        <td>${steps.followerDescription}</td>
+                        <td>${steps.level}</td>
+                        <c:forEach var="dance" items="${dance}">
+                            <td><a href="/choreographybuilder/saveStep?stepName=${steps.stepName}&danceName=${dance.danceName}&leadDescription=${steps.leadDescription}
+                        &followerDescription=${steps.followerDescription}&level=${steps.level}&beats=${beats}&numberOfSteps=${numberOfSteps}">
+                                <span class="glyphicon glyphicon-save"></span></a></td>
+                        </c:forEach>
+                    </tr>
+                </c:forEach>
 
+                </tbody>
+            </table>
         </div>
+
 
         <!-- User defined steps Modal -->
         <div class="modal fade" id="personalStepModal" tabindex="-1" role="dialog" aria-label="personalStepModal" aria-hidden="true">
@@ -137,11 +145,16 @@
 </html>
 
 
-<style>
-    .descriptionImg {
-        width: 200px;
-        height: 100px;
-    }
-</style>
+<script>
+    $(document).ready(function () {
+        var table = $('#stepsTable tbody');
+
+        if ( table.children().length == 0 ) {
+
+            $('#stepsTable thead').hide();
+
+        }
+    });
+</script>
 
 
