@@ -154,7 +154,7 @@ footer {
 
 #imageContainer:hover {
     filter: grayscale(0);
-    transition: 5s;
+    transition: 2s;
 }
 
 .glyphicon {

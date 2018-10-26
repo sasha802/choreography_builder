@@ -26,9 +26,12 @@
                     </div>
                     <button type="submit" name="submit" class="btn btn-success">Submit</button>
                 </form>
-                <c:if test="${not empty user}">
-                    Welcome ${user}. You may log in now.
-                </c:if>
+                <div>
+                    <c:if test="${not empty user}">
+                        <h4>Welcome ${user}. You may <a style="font-weight: 400" href="searchStep">Login</a> now.</h4>
+                    </c:if>
+                </div>
+
             </div>
 
         </div>

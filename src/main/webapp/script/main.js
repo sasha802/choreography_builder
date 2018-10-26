@@ -1,8 +1,8 @@
-
 $(document).ready(function () {
 
     addCustomStepModalForm();
     removeEmptyTebleCustomSteps();
+   // removeEmptyDanceBuilderTable();
 
 });
 
@@ -36,4 +36,15 @@ function removeEmptyTebleCustomSteps() {
         location.reload();
     });
 
+}
+
+function removeEmptyDanceBuilderTable() {
+
+    var table = $('#stepsTable tbody');
+
+    if ( table.children().length == 0 ) {
+
+        $('#stepsTable thead').hide();
+
+    }
 }

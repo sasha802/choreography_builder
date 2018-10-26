@@ -1,6 +1,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
+<head>
+    <jsp:include page="head.jsp"/>
+</head>
     <body>
         <jsp:include page="internalMenuPanel.jsp"/>
         <h2>Lets Build Your Dance ${userFirstName}!</h2>
@@ -140,13 +143,13 @@
             </div>
         </div>
         <jsp:include page="internalFooter.jsp"/>
-        <jsp:include page="head.jsp"/>
     </body>
 </html>
 
 
 <script>
     $(document).ready(function () {
+
         var table = $('#stepsTable tbody');
 
         if ( table.children().length == 0 ) {
