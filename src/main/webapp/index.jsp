@@ -5,7 +5,18 @@
     <body>
     <jsp:include page="publicMenuPanel.jsp"/>
         <div class="container">
-            <div class="col-sm-12">
+            <div id="aboutDance" class="col-md-12">
+                <h3>Why Ballroom Dance Is Fun.</h3>
+                <p>
+                    Ballroom and Latin dance music is quite simply fabulous and it makes you want to dance.
+                    I defy anyone to listen to 'Shout It Feel It' by the Count Basie Orchestra and not want to at
+                    least tap their feet! Dancing aside there has been a resurgence in interest in jazz and swing music,
+                    Michael Buble and Jamie Cullum being two modern exponents of the genre, and this has only helped
+                    dance to once again capture the public imagination.
+                </p>
+            </div>
+            <hr style="border: solid 1px #7f8cba1c" />
+            <div id="aboutFirsDance" class="col-md-12">
                 <h3>About My First Dance</h3>
                 <p>
                     The "first dance" of a married couple is a popular element at modern European and American wedding
@@ -24,7 +35,8 @@
                     tuition companies
                 </p>
             </div>
-            <div class="col-sm-12">
+            <hr style="border: solid 1px #7f8cba1c" />
+            <div class="col-md-12">
                 <h3>Top Wedding Dance Songs</h3>
                 <ul>
                     <li>Only You by Joshua Radin</li>

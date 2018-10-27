@@ -45,9 +45,14 @@ label {
     padding-right: 10px;
 }
 
-h3, h2 {
+h3 {
     text-align: center;
-    color: #585699;
+    color: #7F7461;
+}
+
+h2 {
+    text-align: center;
+    color: #7E7F73;
 }
 
 h5 {
@@ -171,6 +176,35 @@ footer {
 .glyphicon-log-in {
     color: #685d57;
 }
+
+#aboutFirsDance, #aboutDance {
+    padding-bottom: 25px;
+}
+
+.container p, .container ul {
+    color: #7F7F7F;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+#buildDanceBtn {
+    background-color: #8E8EB1 !important;
+    color: #e2e0e0;
+}
+
+#buildDanceBtn:hover {
+    background-color: #9b9bbf !important;
+}
+
+#addPersonalStepBtn {
+    background-color: #716495 !important;
+    color: #e2e0e0;
+}
+
+#addPersonalStepBtn:hover {
+    background-color: #7e71a3 !important;
+}
+
 
 
 

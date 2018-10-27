@@ -51,8 +51,8 @@
                         </select>
                     </div>
 
-                    <button id="buildDanceBtn" type="submit" name="submit" value="submit" class="btn btn-success">Build Dance</button>
-                    <button id="addPersonalStepBtn" data-toggle="modal" data-target="#personalStepModal" type="button" class="btn btn-primary">Add Personal Step</button>
+                    <button id="buildDanceBtn" type="submit" name="submit" value="submit" class="btn">Build Dance</button>
+                    <button id="addPersonalStepBtn" data-toggle="modal" data-target="#personalStepModal" type="button" class="btn">Add Personal Step</button>
 
                 </form>
 
