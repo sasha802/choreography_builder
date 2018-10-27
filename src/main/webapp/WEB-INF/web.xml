@@ -21,6 +21,7 @@
       <url-pattern>/editUserProfile</url-pattern>
       <url-pattern>/displayCustomSteps</url-pattern>
       <url-pattern>/buildDance.jsp</url-pattern>
+      <!--<url-pattern>/danceMovement.jsp</url-pattern>-->
     </web-resource-collection>
     <auth-constraint>
       <role-name>user</role-name>

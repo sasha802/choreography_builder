@@ -105,7 +105,7 @@ footer {
 
 }
 
-#buildDance {
+#buildDance, #danceSelection {
     margin: 0 auto;
     width: 500px;
     height: 300px;
@@ -177,7 +177,7 @@ footer {
     color: #685d57;
 }
 
-#aboutFirsDance, #aboutDance {
+#aboutFirsDance, #aboutDance, #aboutDanceMovement {
     padding-bottom: 25px;
 }
 
