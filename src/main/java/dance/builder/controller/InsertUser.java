@@ -31,30 +31,29 @@ public class InsertUser extends HttpServlet {
         String lastName = request.getParameter("lastName");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
-        String submit = request.getParameter("submit");
 
-        if ( submit.equals(submit) ) {
 
-            if ( firstName.trim().length() > 0 && lastName.trim().length() > 0 && email.trim().length() > 0 && password.trim().length() > 0 ) {
+        if ( firstName.trim().length() > 0 && lastName.trim().length() > 0 && email.trim().length() > 0 && password.trim().length() > 0 ) {
 
-                User user = new User(lastName, firstName, email, password, userRole);
-                int id = genericDAO.insert(user);
+            User user = new User(lastName, firstName, email, password, userRole);
+            int id = genericDAO.insert(user);
 
-                User insertedUser = (User) genericDAO.getById(id);
+            User insertedUser = (User) genericDAO.getById(id);
 
-                request.setAttribute("user", insertedUser.getFirstName());
-                request.setAttribute("userId", insertedUser.getId());
+            request.setAttribute("user", insertedUser.getFirstName());
+            request.setAttribute("userId", insertedUser.getId());
 
-                dispatcher = request.getRequestDispatcher("/signup.jsp");
-                dispatcher.forward(request, response);
+            dispatcher = request.getRequestDispatcher("/signup.jsp");
+            dispatcher.forward(request, response);
 
-            } else {
+        } else {
 
-                dispatcher = request.getRequestDispatcher("/signup.jsp");
-                dispatcher.forward(request, response);
-
-            }
+            request.setAttribute("formValidation", false);
+            dispatcher = request.getRequestDispatcher("/signup.jsp");
+            dispatcher.forward(request, response);
 
         }
+
+
     }
 }

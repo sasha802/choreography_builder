@@ -157,9 +157,19 @@ footer {
     transition: 2s;
 }
 
-.glyphicon {
+.glyphicon-trash {
     font-size:20px;
     color: #69181A;
+
+}
+
+.glyphicon-save {
+    font-size: 20px;
+    color: #59559e;
+}
+
+.glyphicon-log-in {
+    color: #685d57;
 }
 
 

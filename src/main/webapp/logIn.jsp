@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
+    <jsp:include page="head.jsp"/>
     <body>
         <jsp:include page="publicMenuPanel.jsp"/>
         <div class="container">
-
             <div id="loginContainer">
-
                 <FORM ACTION="j_security_check" METHOD="POST">
                     <div class="form-group">
                         <label>Email:</label>
@@ -16,10 +15,7 @@
                     <button type="SUBMIT" class="btn btn-primary">Log In</button>
                 </FORM>
             </div>
-
         </div>
-
         <jsp:include page="footer.jsp"/>
-        <jsp:include page="head.jsp"/>
     </body>
 </html>

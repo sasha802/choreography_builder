@@ -82,7 +82,7 @@ public class SearchStep extends HttpServlet {
 
         } else {
 
-            request.setAttribute("invalidForm", true);
+            request.setAttribute("formValidation", false);
             request.setAttribute("user", getUser(request).get(0).getFirstName());
             dispatcher = request.getRequestDispatcher("/buildDance.jsp");
             dispatcher.include(request, response);

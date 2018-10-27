@@ -720,3 +720,340 @@ Replace weight to left foot, leadDescription=Compact chasse to side - LRL - ende
 [DEBUG] 2018-10-26 15:29:35.746 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
 [INFO ] 2018-10-26 15:29:35.773 [main] GenericDAO - 0
 [INFO ] 2018-10-26 15:29:35.773 [main] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-26 17:12:08.695 [http-nio-8080-exec-14] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 17:12:11.107 [http-nio-8080-exec-1] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-26 17:12:11.123 [http-nio-8080-exec-1] GenericDAO - 0
+[INFO ] 2018-10-26 17:12:11.123 [http-nio-8080-exec-1] GenericDAO - list of steps []
+[DEBUG] 2018-10-26 17:12:12.726 [http-nio-8080-exec-15] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 17:12:17.194 [http-nio-8080-exec-16] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 17:12:17.196 [http-nio-8080-exec-16] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-10-26 17:12:17.218 [http-nio-8080-exec-16] GenericDAO - 5
+[INFO ] 2018-10-26 17:12:17.218 [http-nio-8080-exec-16] GenericDAO - list of steps [Step(stepName=Basic, level=basic, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=16), Step(stepName=Throwout, level=basic, followerDescription=Chasse forward or 3 forward passing steps in promenade position - RLR, Right foot back away from partner, 
+Replace weight to left foot, leadDescription=Compact chasse to side - LRL - ended with left foot forward, Chasse to side - RLR, Left foot back away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=17), Step(stepName=Link, level=basic, followerDescription=Chasse forward towards man's right side, RLR. Chasse to side & slightly back in fallaway position, LRL. Right foot back in fallaway position. 
+    Replace weight to left foot in promenade position., leadDescription=Compact chasse forward, LRL. Chasse to side & slightly back in fallaway position, RLR. Left foot back in fallaway position. 
+    Replace weight to right foot in promenade position., demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=18), Step(stepName=Underarm Turn to R, level=basic, followerDescription=Chasse to side, RLR, ended forward. Chasse to side, LRL, ended in open facing position. Right foot back. Replace weight to left foot., leadDescription=Chasse to side, LRL. Chasse to side, RLR, ended in open facing position. Left foot back, away from partner. Replace weight to right foot., demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=19), Step(stepName=Underarm Turn to L., level=basic, followerDescription=Chasse to side, ended back. RLR. Chasse to side, LRL. Right foot back, away from partner. Replace weight to left foot., leadDescription=Chasse to side, LRL. Chasse to side, RLR. Left foot back, away from partner. Replace weight to right foot., demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=20)]
+[DEBUG] 2018-10-26 17:12:19.274 [http-nio-8080-exec-11] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 17:12:19.276 [http-nio-8080-exec-11] GenericDAO - type CustomSteps(id=0, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))
+[DEBUG] 2018-10-26 17:12:21.344 [http-nio-8080-exec-17] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-26 17:12:21.348 [http-nio-8080-exec-17] GenericDAO - 0
+[INFO ] 2018-10-26 17:12:21.349 [http-nio-8080-exec-17] GenericDAO - list of steps [CustomSteps(id=183, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-26 17:14:19.159 [http-nio-8080-exec-13] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 17:18:27.500 [http-nio-8080-exec-41] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 17:18:31.762 [http-nio-8080-exec-31] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-26 17:18:31.781 [http-nio-8080-exec-31] GenericDAO - 0
+[INFO ] 2018-10-26 17:18:31.781 [http-nio-8080-exec-31] GenericDAO - list of steps [CustomSteps(id=183, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-26 17:18:33.145 [http-nio-8080-exec-33] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 17:18:36.162 [http-nio-8080-exec-37] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 17:18:36.164 [http-nio-8080-exec-37] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-10-26 17:18:36.177 [http-nio-8080-exec-37] GenericDAO - 1
+[INFO ] 2018-10-26 17:18:36.178 [http-nio-8080-exec-37] GenericDAO - list of steps [Step(stepName=Basic, level=basic, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=16)]
+[DEBUG] 2018-10-26 17:20:48.606 [http-nio-8080-exec-48] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 17:20:52.133 [http-nio-8080-exec-45] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 17:20:52.136 [http-nio-8080-exec-45] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-10-26 17:20:52.164 [http-nio-8080-exec-45] GenericDAO - 1
+[INFO ] 2018-10-26 17:20:52.165 [http-nio-8080-exec-45] GenericDAO - list of steps [Step(stepName=Basic, level=basic, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=16)]
+[DEBUG] 2018-10-26 17:20:53.730 [http-nio-8080-exec-49] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 17:20:53.732 [http-nio-8080-exec-49] GenericDAO - type CustomSteps(id=0, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))
+[DEBUG] 2018-10-26 17:21:49.978 [http-nio-8080-exec-56] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 17:21:53.581 [http-nio-8080-exec-62] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 17:21:53.585 [http-nio-8080-exec-62] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-10-26 17:21:53.613 [http-nio-8080-exec-62] GenericDAO - 1
+[INFO ] 2018-10-26 17:21:53.613 [http-nio-8080-exec-62] GenericDAO - list of steps [Step(stepName=Basic, level=basic, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=16)]
+[DEBUG] 2018-10-26 17:21:55.145 [http-nio-8080-exec-63] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 17:21:55.148 [http-nio-8080-exec-63] GenericDAO - type CustomSteps(id=0, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))
+[DEBUG] 2018-10-26 17:23:24.957 [http-nio-8080-exec-72] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 17:23:30.864 [http-nio-8080-exec-73] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 17:23:30.868 [http-nio-8080-exec-73] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-10-26 17:23:30.896 [http-nio-8080-exec-73] GenericDAO - 1
+[INFO ] 2018-10-26 17:23:30.896 [http-nio-8080-exec-73] GenericDAO - list of steps [Step(stepName=Basic, level=basic, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=16)]
+[DEBUG] 2018-10-26 17:23:32.359 [http-nio-8080-exec-74] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 17:23:32.361 [http-nio-8080-exec-74] GenericDAO - type CustomSteps(id=0, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))
+[DEBUG] 2018-10-26 17:24:11.870 [http-nio-8080-exec-75] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 17:24:15.640 [http-nio-8080-exec-76] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 17:24:15.644 [http-nio-8080-exec-76] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-10-26 17:24:15.670 [http-nio-8080-exec-76] GenericDAO - 1
+[INFO ] 2018-10-26 17:24:15.670 [http-nio-8080-exec-76] GenericDAO - list of steps [Step(stepName=Basic, level=basic, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=16)]
+[DEBUG] 2018-10-26 17:24:17.497 [http-nio-8080-exec-81] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 17:24:17.500 [http-nio-8080-exec-81] GenericDAO - type CustomSteps(id=0, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))
+[DEBUG] 2018-10-26 17:24:50.298 [main] GenericDAO - Searching for user with danceName = Waltz
+[INFO ] 2018-10-26 17:24:50.602 [main] DanceMovementTest - Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it.
+[DEBUG] 2018-10-26 17:24:51.334 [http-nio-8080-exec-78] GenericDAO - Searching for user with danceName = Waltz
+[ERROR] 2018-10-26 17:24:52.012 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-26 17:24:52.091 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-26 17:24:52.113 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-26 17:24:52.114 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-10-26 17:24:52.139 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-26 17:24:52.139 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-10-26 17:24:52.164 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-26 17:24:52.189 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2018-10-26 17:24:52.211 [main] GenericDAO - 0
+[INFO ] 2018-10-26 17:24:52.211 [main] GenericDAO - list of steps [CustomSteps(id=1, stepName=Turn, danceName=Swing, leadDescription=some description, followerDescription=screenshot, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))]
+[ERROR] 2018-10-26 17:24:52.242 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-26 17:24:52.264 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-26 17:24:52.266 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))
+[INFO ] 2018-10-26 17:24:52.340 [main] GenericDAO - 0
+[INFO ] 2018-10-26 17:24:52.340 [main] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[INFO ] 2018-10-26 17:24:52.340 [main] DanceTechniqueTest - [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-26 17:24:52.357 [main] GenericDAO - type DanceTechnique(id=0, danceMovement=test dance movement, dancePosition=test dance position, deleted=0)
+[DEBUG] 2018-10-26 17:24:52.366 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-10-26 17:24:52.390 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-10-26 17:24:52.410 [main] GenericDAO - 3
+[INFO ] 2018-10-26 17:24:52.410 [main] GenericDAO - list of steps [Step(stepName=My New Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[DEBUG] 2018-10-26 17:24:52.419 [main] GenericDAO - Searching for user with stepName = Curl
+[ERROR] 2018-10-26 17:24:52.443 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-26 17:24:52.460 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-26 17:24:52.460 [main] GenericDAO - Searching for user with email = thomson
+[ERROR] 2018-10-26 17:24:52.476 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-26 17:24:52.477 [main] GenericDAO - Searching for user with email = jcoyne
+[ERROR] 2018-10-26 17:24:52.491 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-26 17:24:52.505 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-26 17:24:52.523 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-26 17:24:52.538 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-26 17:24:52.538 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[INFO ] 2018-10-26 17:24:52.571 [main] GenericDAO - 0
+[INFO ] 2018-10-26 17:24:52.571 [main] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-26 19:25:19.099 [http-nio-8080-exec-205] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:25:28.607 [http-nio-8080-exec-207] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:25:28.611 [http-nio-8080-exec-207] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:28:19.063 [http-nio-8080-exec-208] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:28:21.257 [http-nio-8080-exec-212] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:28:21.261 [http-nio-8080-exec-212] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:29:12.613 [http-nio-8080-exec-216] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:29:14.391 [http-nio-8080-exec-210] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:29:14.395 [http-nio-8080-exec-210] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:29:40.121 [http-nio-8080-exec-221] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:29:40.123 [http-nio-8080-exec-221] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-10-26 19:29:40.153 [http-nio-8080-exec-221] GenericDAO - 1
+[INFO ] 2018-10-26 19:29:40.153 [http-nio-8080-exec-221] GenericDAO - list of steps [Step(stepName=Basic, level=basic, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=16)]
+[DEBUG] 2018-10-26 19:31:39.201 [http-nio-8080-exec-223] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:31:42.659 [http-nio-8080-exec-238] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:31:42.663 [http-nio-8080-exec-238] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:33:12.404 [http-nio-8080-exec-241] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:33:14.552 [http-nio-8080-exec-238] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:33:14.556 [http-nio-8080-exec-238] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:34:30.425 [http-nio-8080-exec-250] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:34:32.483 [http-nio-8080-exec-249] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:34:32.489 [http-nio-8080-exec-249] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:35:28.901 [http-nio-8080-exec-256] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:35:32.687 [http-nio-8080-exec-255] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:35:32.691 [http-nio-8080-exec-255] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:37:44.212 [http-nio-8080-exec-265] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:37:47.126 [http-nio-8080-exec-268] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:37:47.131 [http-nio-8080-exec-268] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:39:27.451 [http-nio-8080-exec-275] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:39:32.338 [http-nio-8080-exec-281] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:39:32.342 [http-nio-8080-exec-281] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:40:31.652 [http-nio-8080-exec-287] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-26 19:40:31.677 [http-nio-8080-exec-287] GenericDAO - 0
+[INFO ] 2018-10-26 19:40:31.677 [http-nio-8080-exec-287] GenericDAO - list of steps [CustomSteps(id=183, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=184, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=185, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=186, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=187, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-26 19:40:33.448 [http-nio-8080-exec-288] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-26 19:40:33.453 [http-nio-8080-exec-288] GenericDAO - 0
+[INFO ] 2018-10-26 19:40:33.453 [http-nio-8080-exec-288] GenericDAO - list of steps [CustomSteps(id=183, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=184, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=185, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=186, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-26 19:40:34.190 [http-nio-8080-exec-289] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-26 19:40:34.196 [http-nio-8080-exec-289] GenericDAO - 0
+[INFO ] 2018-10-26 19:40:34.196 [http-nio-8080-exec-289] GenericDAO - list of steps [CustomSteps(id=183, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=184, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=185, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-26 19:40:35.554 [http-nio-8080-exec-290] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-26 19:40:35.558 [http-nio-8080-exec-290] GenericDAO - 0
+[INFO ] 2018-10-26 19:40:35.559 [http-nio-8080-exec-290] GenericDAO - list of steps [CustomSteps(id=183, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=184, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-26 19:40:36.059 [http-nio-8080-exec-284] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-26 19:40:36.064 [http-nio-8080-exec-284] GenericDAO - 0
+[INFO ] 2018-10-26 19:40:36.064 [http-nio-8080-exec-284] GenericDAO - list of steps [CustomSteps(id=183, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-26 19:40:37.014 [http-nio-8080-exec-291] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-26 19:40:37.018 [http-nio-8080-exec-291] GenericDAO - 0
+[INFO ] 2018-10-26 19:40:37.018 [http-nio-8080-exec-291] GenericDAO - list of steps []
+[DEBUG] 2018-10-26 19:40:42.495 [http-nio-8080-exec-292] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-26 19:40:42.500 [http-nio-8080-exec-292] GenericDAO - 0
+[INFO ] 2018-10-26 19:40:42.500 [http-nio-8080-exec-292] GenericDAO - list of steps []
+[DEBUG] 2018-10-26 19:40:43.585 [http-nio-8080-exec-286] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:42:44.027 [http-nio-8080-exec-284] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:42:46.170 [http-nio-8080-exec-294] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:42:46.175 [http-nio-8080-exec-294] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:44:18.325 [http-nio-8080-exec-295] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:44:18.329 [http-nio-8080-exec-295] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:44:21.719 [http-nio-8080-exec-301] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:44:25.388 [http-nio-8080-exec-296] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:44:25.392 [http-nio-8080-exec-296] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:44:28.864 [http-nio-8080-exec-298] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:44:28.867 [http-nio-8080-exec-298] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:44:34.952 [http-nio-8080-exec-297] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:44:34.955 [http-nio-8080-exec-297] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:44:40.666 [http-nio-8080-exec-300] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:44:40.670 [http-nio-8080-exec-300] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-10-26 19:44:40.701 [http-nio-8080-exec-300] GenericDAO - 1
+[INFO ] 2018-10-26 19:44:40.701 [http-nio-8080-exec-300] GenericDAO - list of steps [Step(stepName=Basic, level=basic, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=16)]
+[DEBUG] 2018-10-26 19:44:55.474 [http-nio-8080-exec-295] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:44:55.477 [http-nio-8080-exec-295] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-10-26 19:44:55.484 [http-nio-8080-exec-295] GenericDAO - 1
+[INFO ] 2018-10-26 19:44:55.484 [http-nio-8080-exec-295] GenericDAO - list of steps [Step(stepName=Basic, level=basic, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=16)]
+[DEBUG] 2018-10-26 19:44:56.912 [http-nio-8080-exec-303] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:44:56.916 [http-nio-8080-exec-303] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-10-26 19:44:56.923 [http-nio-8080-exec-303] GenericDAO - 1
+[INFO ] 2018-10-26 19:44:56.923 [http-nio-8080-exec-303] GenericDAO - list of steps [Step(stepName=Basic, level=basic, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=16)]
+[DEBUG] 2018-10-26 19:45:03.470 [http-nio-8080-exec-296] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:45:03.473 [http-nio-8080-exec-296] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-10-26 19:45:03.481 [http-nio-8080-exec-296] GenericDAO - 1
+[INFO ] 2018-10-26 19:45:03.481 [http-nio-8080-exec-296] GenericDAO - list of steps [Step(stepName=Basic, level=basic, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=16)]
+[DEBUG] 2018-10-26 19:45:58.405 [http-nio-8080-exec-301] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:46:03.410 [http-nio-8080-exec-305] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:46:03.415 [http-nio-8080-exec-305] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-10-26 19:46:03.442 [http-nio-8080-exec-305] GenericDAO - 1
+[INFO ] 2018-10-26 19:46:03.442 [http-nio-8080-exec-305] GenericDAO - list of steps [Step(stepName=Basic, level=basic, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=16)]
+[DEBUG] 2018-10-26 19:46:05.930 [http-nio-8080-exec-295] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:46:05.933 [http-nio-8080-exec-295] GenericDAO - type CustomSteps(id=0, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))
+[DEBUG] 2018-10-26 19:47:27.204 [http-nio-8080-exec-308] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:47:31.963 [http-nio-8080-exec-312] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:47:31.968 [http-nio-8080-exec-312] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:47:34.909 [http-nio-8080-exec-306] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:47:34.915 [http-nio-8080-exec-306] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-10-26 19:47:34.943 [http-nio-8080-exec-306] GenericDAO - 1
+[INFO ] 2018-10-26 19:47:34.943 [http-nio-8080-exec-306] GenericDAO - list of steps [Step(stepName=Basic, level=basic, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=16)]
+[DEBUG] 2018-10-26 19:47:36.349 [http-nio-8080-exec-307] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:47:36.352 [http-nio-8080-exec-307] GenericDAO - type CustomSteps(id=0, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))
+[DEBUG] 2018-10-26 19:47:40.028 [http-nio-8080-exec-319] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:47:41.692 [http-nio-8080-exec-314] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-26 19:47:41.700 [http-nio-8080-exec-314] GenericDAO - 0
+[INFO ] 2018-10-26 19:47:41.700 [http-nio-8080-exec-314] GenericDAO - list of steps [CustomSteps(id=188, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=189, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-26 19:47:44.049 [http-nio-8080-exec-321] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-26 19:47:44.055 [http-nio-8080-exec-321] GenericDAO - 0
+[INFO ] 2018-10-26 19:47:44.055 [http-nio-8080-exec-321] GenericDAO - list of steps [CustomSteps(id=189, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Smith, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-26 19:47:44.573 [http-nio-8080-exec-322] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-26 19:47:44.577 [http-nio-8080-exec-322] GenericDAO - 0
+[INFO ] 2018-10-26 19:47:44.577 [http-nio-8080-exec-322] GenericDAO - list of steps []
+[DEBUG] 2018-10-26 19:47:46.284 [http-nio-8080-exec-317] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:50:53.621 [http-nio-8080-exec-317] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:50:59.175 [http-nio-8080-exec-318] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:50:59.180 [http-nio-8080-exec-318] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:51:58.463 [http-nio-8080-exec-326] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:52:09.859 [http-nio-8080-exec-324] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:52:12.277 [http-nio-8080-exec-329] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:52:13.672 [http-nio-8080-exec-330] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:52:19.567 [http-nio-8080-exec-325] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 19:52:26.546 [http-nio-8080-exec-326] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-26 19:52:28.837 [http-nio-8080-exec-327] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-26 19:52:30.524 [http-nio-8080-exec-324] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-26 19:58:03.394 [http-nio-8080-exec-325] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-26 19:58:05.582 [http-nio-8080-exec-335] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-26 19:59:23.908 [http-nio-8080-exec-338] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-26 19:59:26.381 [http-nio-8080-exec-342] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-26 20:00:09.458 [http-nio-8080-exec-348] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-26 20:02:12.189 [http-nio-8080-exec-350] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-26 20:02:14.226 [http-nio-8080-exec-351] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-26 20:02:17.300 [http-nio-8080-exec-356] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-26 20:02:25.793 [http-nio-8080-exec-357] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-26 20:02:28.265 [http-nio-8080-exec-358] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-26 20:03:13.403 [http-nio-8080-exec-360] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-26 20:03:13.449 [http-nio-8080-exec-360] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-26 20:03:17.025 [http-nio-8080-exec-361] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-26 20:03:32.179 [http-nio-8080-exec-362] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-26 20:03:36.622 [http-nio-8080-exec-357] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-26 20:03:43.575 [http-nio-8080-exec-358] GenericDAO - Searching for user with email = 
+[DEBUG] 2018-10-26 20:04:56.176 [http-nio-8080-exec-8] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:04:59.200 [http-nio-8080-exec-10] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:05:13.386 [http-nio-8080-exec-3] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:07:48.404 [http-nio-8080-exec-6] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:08:53.930 [http-nio-8080-exec-13] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:08:56.088 [http-nio-8080-exec-14] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:12:13.744 [http-nio-8080-exec-28] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:12:16.906 [http-nio-8080-exec-25] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:13:45.256 [http-nio-8080-exec-31] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:13:47.596 [http-nio-8080-exec-36] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:13:49.148 [http-nio-8080-exec-41] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:13:59.037 [http-nio-8080-exec-42] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:14:23.497 [http-nio-8080-exec-44] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:14:55.426 [http-nio-8080-exec-40] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:21:06.155 [http-nio-8080-exec-50] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:21:08.048 [http-nio-8080-exec-44] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:21:14.841 [http-nio-8080-exec-51] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:22:39.046 [http-nio-8080-exec-53] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:22:40.861 [http-nio-8080-exec-58] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:22:47.296 [http-nio-8080-exec-50] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:22:57.703 [http-nio-8080-exec-55] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:23:51.933 [http-nio-8080-exec-67] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:23:53.911 [http-nio-8080-exec-69] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:23:58.680 [http-nio-8080-exec-70] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:24:03.731 [http-nio-8080-exec-65] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:26:29.280 [http-nio-8080-exec-76] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:26:31.416 [http-nio-8080-exec-79] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:26:37.366 [http-nio-8080-exec-80] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:26:56.078 [http-nio-8080-exec-81] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:27:02.032 [http-nio-8080-exec-82] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:27:07.213 [http-nio-8080-exec-83] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:27:08.630 [http-nio-8080-exec-84] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:27:13.109 [http-nio-8080-exec-85] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:27:41.102 [http-nio-8080-exec-79] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:27:43.102 [http-nio-8080-exec-88] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:28:06.492 [http-nio-8080-exec-91] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:28:26.640 [http-nio-8080-exec-94] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:28:57.267 [http-nio-8080-exec-89] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:29:00.763 [http-nio-8080-exec-97] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:31:20.997 [http-nio-8080-exec-98] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:31:23.148 [http-nio-8080-exec-95] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:31:28.097 [http-nio-8080-exec-100] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:31:43.143 [http-nio-8080-exec-101] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:31:48.966 [http-nio-8080-exec-102] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:32:07.800 [http-nio-8080-exec-103] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:32:11.185 [http-nio-8080-exec-104] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:32:13.617 [http-nio-8080-exec-105] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:32:19.702 [http-nio-8080-exec-106] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-26 20:32:19.731 [http-nio-8080-exec-106] GenericDAO - 0
+[INFO ] 2018-10-26 20:32:19.731 [http-nio-8080-exec-106] GenericDAO - list of steps []
+[DEBUG] 2018-10-26 20:32:23.538 [http-nio-8080-exec-100] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:32:27.690 [http-nio-8080-exec-107] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:32:27.693 [http-nio-8080-exec-107] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-10-26 20:32:27.712 [http-nio-8080-exec-107] GenericDAO - 1
+[INFO ] 2018-10-26 20:32:27.712 [http-nio-8080-exec-107] GenericDAO - list of steps [Step(stepName=Basic, level=basic, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=16)]
+[DEBUG] 2018-10-26 20:32:29.491 [http-nio-8080-exec-101] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:32:29.493 [http-nio-8080-exec-101] GenericDAO - type CustomSteps(id=0, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Cool, firstName=Mike, email=get, password=get, roleId=1, id=31))
+[DEBUG] 2018-10-26 20:32:31.999 [http-nio-8080-exec-108] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:32:33.416 [http-nio-8080-exec-103] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-26 20:32:33.421 [http-nio-8080-exec-103] GenericDAO - 0
+[INFO ] 2018-10-26 20:32:33.421 [http-nio-8080-exec-103] GenericDAO - list of steps [CustomSteps(id=190, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Cool, firstName=Mike, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-26 20:32:37.503 [http-nio-8080-exec-104] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-26 20:32:37.508 [http-nio-8080-exec-104] GenericDAO - 0
+[INFO ] 2018-10-26 20:32:37.508 [http-nio-8080-exec-104] GenericDAO - list of steps []
+[DEBUG] 2018-10-26 20:32:40.436 [http-nio-8080-exec-105] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:34:40.579 [http-nio-8080-exec-106] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:34:42.819 [http-nio-8080-exec-102] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:36:01.146 [http-nio-8080-exec-114] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:36:03.517 [http-nio-8080-exec-119] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:36:59.873 [http-nio-8080-exec-126] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:37:02.695 [http-nio-8080-exec-119] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:37:05.158 [http-nio-8080-exec-120] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:38:26.060 [http-nio-8080-exec-138] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:41:07.870 [http-nio-8080-exec-148] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:41:12.083 [http-nio-8080-exec-144] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:41:14.030 [http-nio-8080-exec-142] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:45:54.585 [http-nio-8080-exec-163] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:45:56.821 [http-nio-8080-exec-164] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:45:56.824 [http-nio-8080-exec-164] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:45:59.799 [http-nio-8080-exec-175] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:46:01.610 [http-nio-8080-exec-176] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:46:06.280 [http-nio-8080-exec-177] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:51:15.358 [http-nio-8080-exec-206] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:51:17.993 [http-nio-8080-exec-200] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:51:17.997 [http-nio-8080-exec-200] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:51:21.109 [http-nio-8080-exec-210] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 20:51:22.819 [http-nio-8080-exec-201] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 21:04:44.649 [http-nio-8080-exec-248] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 21:04:46.927 [http-nio-8080-exec-244] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 21:04:46.932 [http-nio-8080-exec-244] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 21:04:51.314 [http-nio-8080-exec-229] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 21:04:51.317 [http-nio-8080-exec-229] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-10-26 21:04:51.356 [http-nio-8080-exec-229] GenericDAO - 1
+[INFO ] 2018-10-26 21:04:51.356 [http-nio-8080-exec-229] GenericDAO - list of steps [Step(stepName=Basic, level=basic, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=16)]
+[DEBUG] 2018-10-26 21:04:53.149 [http-nio-8080-exec-246] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 21:04:53.152 [http-nio-8080-exec-246] GenericDAO - type CustomSteps(id=0, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Cool, firstName=Mike, email=get, password=get, roleId=1, id=31))
+[DEBUG] 2018-10-26 21:04:55.432 [http-nio-8080-exec-250] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-26 21:04:55.440 [http-nio-8080-exec-250] GenericDAO - 0
+[INFO ] 2018-10-26 21:04:55.440 [http-nio-8080-exec-250] GenericDAO - list of steps [CustomSteps(id=191, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Cool, firstName=Mike, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-26 21:04:58.377 [http-nio-8080-exec-247] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-26 21:04:58.382 [http-nio-8080-exec-247] GenericDAO - 0
+[INFO ] 2018-10-26 21:04:58.382 [http-nio-8080-exec-247] GenericDAO - list of steps []
+[DEBUG] 2018-10-26 21:05:01.574 [http-nio-8080-exec-242] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 21:05:03.825 [http-nio-8080-exec-244] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 21:05:08.327 [http-nio-8080-exec-251] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 21:05:13.725 [http-nio-8080-exec-245] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 21:05:21.060 [http-nio-8080-exec-250] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 21:05:24.626 [http-nio-8080-exec-242] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 21:05:30.274 [http-nio-8080-exec-243] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-26 21:05:36.360 [http-nio-8080-exec-244] GenericDAO - Searching for user with email = get

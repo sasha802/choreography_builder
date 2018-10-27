@@ -1,22 +1,21 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
-<head>
     <jsp:include page="head.jsp"/>
-</head>
     <body>
         <jsp:include page="internalMenuPanel.jsp"/>
         <h2>Lets Build Your Dance ${userFirstName}!</h2>
 
         <c:if test="${saved == 'saved'}">
             <div>
-                <h5>Yor step was successful saved. <a href="/choreographybuilder/displayCustomSteps">View My Steps</a></h5>
+                <h5>Your step was successful saved. <a style="color: #c12121;" href="/choreographybuilder/displayCustomSteps">View My Steps</a></h5>
             </div>
         </c:if>
 
         <div class="container">
 
             <div id="buildDance">
+                <div id="validationMsg"></div>
                 <form action="/choreographybuilder/searchStep" method="post" id="buildDanceForm">
                     <div class="form-group">
                         <label for="beatsNumber">Enter beats per minute:</label>
@@ -142,21 +141,18 @@
                 </div>
             </div>
         </div>
+
         <jsp:include page="internalFooter.jsp"/>
     </body>
 </html>
 
-
 <script>
     $(document).ready(function () {
-
-        var table = $('#stepsTable tbody');
-
-        if ( table.children().length == 0 ) {
-
-            $('#stepsTable thead').hide();
-
-        }
+        <c:if test="${formValidation == 'false'}">
+            var validationMsg = 'Please enter beats per minute.';
+            var messageId = 'validationMsg';
+            validateForm(validationMsg, messageId);
+        </c:if>
     });
 </script>
 

@@ -1,9 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
-    <head>
-        <jsp:include page="head.jsp"/>
-    </head>
+    <jsp:include page="head.jsp"/>
     <body>
     <jsp:include page="publicMenuPanel.jsp"/>
         <div class="container">

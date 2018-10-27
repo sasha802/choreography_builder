@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
-
+    <jsp:include page="head.jsp"/>
     <body>
         <jsp:include page="internalMenuPanel.jsp"/>
         <h2></h2>
@@ -44,7 +44,6 @@
         </div>
 
         <jsp:include page="internalFooter.jsp"/>
-        <jsp:include page="head.jsp"/>
     </body>
 </html>
 

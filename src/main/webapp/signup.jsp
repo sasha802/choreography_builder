@@ -1,11 +1,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
+    <jsp:include page="head.jsp"/>
     <body>
     <jsp:include page="publicMenuPanel.jsp" />
         <div class="container">
 
             <div id="signupContainer">
+                <div id="validationMsg"></div>
                 <form action="/choreographybuilder/insertUser" method="post">
                     <div class="form-group">
                         <label for="firstName">First Name:</label>
@@ -37,16 +39,17 @@
         </div>
 
     <jsp:include page="footer.jsp"/>
-    <jsp:include page="head.jsp"/>
     </body>
 </html>
 
 <script>
     $(document).ready(function () {
+        <c:if test="${formValidation == 'false'}">
 
-        <c:if test="${not empty user}">
-            $('form').hide();
+        var validationMsg = 'Please enter all the values to sing up.';
+        var messageId = 'validationMsg';
+        validateForm(validationMsg, messageId);
+
         </c:if>
-
     });
 </script>

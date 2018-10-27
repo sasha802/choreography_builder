@@ -33,23 +33,39 @@ public class EditUserProfile extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         GenericDAO genericDAO = new GenericDAO(User.class);
-
+        User userToUpdate = (User)genericDAO.getById(getId(request, genericDAO));
         String newLastName = request.getParameter("lastName");
         String newFirstName = request.getParameter("firstName");
         String newEmail = request.getParameter("email");
         String password = request.getParameter("password");
 
-        User userToUpdate = (User)genericDAO.getById(getId(request, genericDAO));
-        userToUpdate.setLastName(newLastName);
-        userToUpdate.setFirstName(newFirstName);
-        userToUpdate.setEmail(newEmail);
-        userToUpdate.setPassword(password);
-        userToUpdate.setRoleId(1);
-        genericDAO.saveOrUpdate(userToUpdate);
+        if ( newFirstName.trim().length() > 0 && newLastName.trim().length() > 0 && newEmail.trim().length() > 0
+                && password.trim().length() > 0 ) {
 
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/editProfile.jsp");
-        dispatcher.forward(request, response);
+            userToUpdate.setLastName(newLastName);
+            userToUpdate.setFirstName(newFirstName);
+            userToUpdate.setEmail(newEmail);
+            userToUpdate.setPassword(password);
+            userToUpdate.setRoleId(1);
+            genericDAO.saveOrUpdate(userToUpdate);
+
+            request.setAttribute("user", userToUpdate);
+
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/editProfile.jsp");
+            dispatcher.forward(request, response);
+
+        } else {
+
+            request.setAttribute("firstName", newFirstName);
+            request.setAttribute("lastName", newLastName);
+            request.setAttribute("email", newEmail);
+            request.setAttribute("formValidation", false);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/editProfile.jsp");
+            dispatcher.forward(request, response);
+        }
+
+
 
 
     }
