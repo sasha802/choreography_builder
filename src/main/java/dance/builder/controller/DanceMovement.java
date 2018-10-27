@@ -32,6 +32,7 @@ public class DanceMovement extends HttpServlet {
         Client client = ClientBuilder.newClient();
 
         RequestDispatcher dispatcher;
+
         try {
 
             WebTarget target = client.target(serviceUrl + danceName);
@@ -51,6 +52,10 @@ public class DanceMovement extends HttpServlet {
         } catch (IOException ioException) {
             logger.error(ioException);
         }
+
+
+
+
 
     }
 

@@ -62,6 +62,11 @@ h5 {
     text-align: center;
 }
 
+#danceMovementContainer h5 {
+    color: #214F7F;
+    font-weight: 400;
+}
+
 p {
     text-align: center;
     font-size: 17px;
@@ -105,17 +110,23 @@ footer {
 
 }
 
-#buildDance, #danceSelection {
+#buildDance {
     margin: 0 auto;
     width: 500px;
     height: 300px;
+}
+
+#danceSelection {
+    margin: 0 auto;
+    width: 500px;
+    min-height: 100px;
 }
 
 #choreographyDanceName, h4 {
     text-align: center;
     padding-bottom: 40px;
     font-size: 25px;
-    color: #585866;
+    color: #60357F;
     font-weight: 300;
 }
 
@@ -187,6 +198,7 @@ footer {
     font-size: 18px;
 }
 
+
 #buildDanceBtn {
     background-color: #8E8EB1 !important;
     color: #e2e0e0;
@@ -203,6 +215,16 @@ footer {
 
 #addPersonalStepBtn:hover {
     background-color: #7e71a3 !important;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #CBA35E !important;
+    border-color: #96722e !important;
+}
+
+.btn-warning:hover {
+    background-color: #d6ae5e !important;
 }
 
 

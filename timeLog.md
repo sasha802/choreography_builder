@@ -56,4 +56,6 @@
 |10/20/2018|Working on week 9 activities.| 2 hours|
 |10/21/2018|Developing custom service for the project. Creating table, dao, dao unit test.|3 hours 30 min|
 |10/23/2018|Peppering for personal dev presentation| 1 hour |
-|10/25/2018|Consuming and testing DanceMovement service. | 2 hours 30 min|
+|10/25/2018|Consuming and testing DanceMovement service. (unit test)| 2 hours|
+|10/26/2018|Working on the css and input validations (server and client side.) |8 hours|
+|10/27/2018|Working on the dance movement service consumption for production. Design the result display on the page. |4 hours 30min|

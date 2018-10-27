@@ -6,7 +6,7 @@
     <jsp:include page="publicMenuPanel.jsp"/>
         <div class="container">
             <div id="aboutDance" class="col-md-12">
-                <h3>Why Ballroom Dance Is Fun.</h3>
+                <h3>Why Ballroom Dance is fun.</h3>
                 <p>
                     Ballroom and Latin dance music is quite simply fabulous and it makes you want to dance.
                     I defy anyone to listen to 'Shout It Feel It' by the Count Basie Orchestra and not want to at
@@ -37,7 +37,7 @@
             </div>
             <hr style="border: solid 1px #7f8cba1c" />
             <div class="col-md-12">
-                <h3>Top Wedding Dance Songs</h3>
+                <h3>Top wedding dance songs</h3>
                 <ul>
                     <li>Only You by Joshua Radin</li>
                     <li>Love Me Like You Do by Ellie Goulding</li>

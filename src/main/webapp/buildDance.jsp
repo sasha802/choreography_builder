@@ -61,7 +61,7 @@
 
             <div id="choreographyDanceName">
                 <c:forEach var="dance" items="${dance}">
-                    Your ${dance.danceName} Dance Choreography
+                    Your ${level} level ${dance.danceName} dance choreography
                 </c:forEach>
             </div>
 

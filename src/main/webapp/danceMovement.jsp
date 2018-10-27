@@ -20,7 +20,7 @@
             </div>
             <hr style="border: solid 1px #7f8cba1c" />
 
-            <h3>Please select the dance to learn about the movement.</h3>
+            <h3 style="padding-top: 20px">Please select the dance to learn about the movement.</h3>
 
             <div id="danceSelection">
                 <form action="/choreographybuilder/danceMovement" method="POST">
@@ -33,27 +33,25 @@
                         </select>
                     </div>
 
-                    <div class="form-group">
+                    <div class="form-group" style="text-align: center">
                         <button type="submit" name="submit" class="btn btn-warning">Get Movement</button>
                     </div>
                 </form>
             </div>
 
-            <h5>${danceName} technique</h5>
-            <div class="col-sm-12">
+            <h4>${danceName} technique</h4>
+            <div class="col-sm-12" id="danceMovementContainer">
 
                 <div id="danceMovementResult" class="col-sm-6">
                     <h5>DanceMovement</h5>
-                    ${danceMovement}
+                    <p id="movementDesc" style="font-weight:400;text-align:left">${danceMovement}</p>
                 </div>
 
                 <div id="dancePositionResult" class="col-sm-6">
                     <h5>Dance Position</h5>
-                    ${dancePosition}
+                    <p id="positionDesc" style="font-weight:400;text-align:left">${dancePosition}</p>
                 </div>
                 <div class="clearfix"></div>
-
-
 
             </div>
 
@@ -62,6 +60,16 @@
     </body>
 </html>
 
+<script>
+    $(document).ready(function () {
 
+        if ( $('#movementDesc').text() == '' || $('#positionDesc').text() == '' ) {
+            $('h5').hide();
+            $('h4').hide();
+        }
+
+
+    });
+</script>
 
 
