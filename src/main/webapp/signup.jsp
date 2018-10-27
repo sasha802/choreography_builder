@@ -30,7 +30,7 @@
                 </form>
                 <div>
                     <c:if test="${not empty user}">
-                        <h4>Welcome ${user}. You may <a style="font-weight: 400" href="searchStep">Login</a> now.</h4>
+                        <h4>Welcome ${user}. You may <a style="font-weight: 300" href="searchStep">Login</a> now.</h4>
                     </c:if>
                 </div>
 
@@ -50,6 +50,10 @@
         var messageId = 'validationMsg';
         validateForm(validationMsg, messageId);
 
+        </c:if>
+
+        <c:if test="${not empty user}">
+        $('form').hide();
         </c:if>
     });
 </script>
