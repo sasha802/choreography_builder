@@ -1394,3 +1394,322 @@ Replace weight to left foot, leadDescription=Compact chasse to side - LRL - ende
 [DEBUG] 2018-10-27 16:55:18.590 [http-nio-8080-exec-56] GenericDAO - Searching for user with danceName = Waltz
 [DEBUG] 2018-10-27 16:57:23.101 [http-nio-8080-exec-75] GenericDAO - Searching for user with danceName = Waltz
 [DEBUG] 2018-10-27 16:57:33.289 [http-nio-8080-exec-81] GenericDAO - Searching for user with danceName = Rumba
+[DEBUG] 2018-10-27 17:11:24.353 [http-nio-8080-exec-90] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-27 17:11:29.376 [http-nio-8080-exec-87] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-27 17:11:39.016 [http-nio-8080-exec-82] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-27 17:11:41.852 [http-nio-8080-exec-83] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-27 17:11:43.966 [http-nio-8080-exec-84] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-27 17:11:51.168 [http-nio-8080-exec-89] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-27 17:11:51.172 [http-nio-8080-exec-89] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-10-27 17:11:51.192 [http-nio-8080-exec-89] GenericDAO - 5
+[INFO ] 2018-10-27 17:11:51.193 [http-nio-8080-exec-89] GenericDAO - list of steps [Step(stepName=Closed Tuck-In Turn Turn, level=advanced, followerDescription=Promenade position. Compact chasse in place, RLR. Compact chasse in place, LRL, ended in open facing position. Right foot back, away from partner. Replace weight to left foot., leadDescription=Compact chasse in place, LRL. Chasse to side, RLR, ended in open facing position. Left foot back, away from partner. Replace weight to right foot., demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=26), Step(stepName=American Spin Tuck-In, level=advanced, followerDescription=Forward chasse, RLR. Compact chasse turning in place, LRL, ended in open facing position. Right foot back, away from partner. Replace weight to left foot., leadDescription=Compact chasse in place, LRL. Compact chasse in place, RLR. Left foot back, away from partner. Replace weight to right foot., demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=27), Step(stepName=Shoulder Spin Tuck-In, level=advanced, followerDescription=Chasse to side, RLR, passing in front of man, moving toward his right side. Three small side steps, LRL (pivots). Right foot back, away from partner. Replace weight to left foot., leadDescription=Chasse to side, LRL. Chasse forward, RLR. Left foot back, away from partner. Replace weight to right foot., demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=28), Step(stepName=Continuous Tuck-In Turn, level=advanced, followerDescription=Chasse to side, RLR, in shadow position in front of man, moving toward his right side. Chasse to side, LRL. Chasse to side, RLR. Chasse to side, LRL., leadDescription=Chasse to side, LRL. Compact chasse in place, RLR. Chasse to side, LRL. Compact chasse in place, RLR., demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=29), Step(stepName=Lindy Basic Turning to Right, level=advanced, followerDescription=Chasse diagonally forward, RLR, ended side. Left foot back in cross-body position. Replace weight to right foot in cross-body position. Chasse diagonally forward, LRL, ended side.
+    Right foot back, away from partner in open facing position. Replace weight to left foot., leadDescription=Chasse diagonally forward, LRL, ended side. Right foot forward & across left foot in cross-body position. Replace weight to left foot in cross-body position.
+    Chasse to side, RLR, ended side & slightly back. Left foot back, away from partner in open facing position. Replace weight to right foot., demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=30)]
+[DEBUG] 2018-10-27 17:12:00.426 [http-nio-8080-exec-86] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-27 17:12:00.428 [http-nio-8080-exec-86] GenericDAO - type CustomSteps(id=0, stepName=Closed Tuck-In Turn Turn, danceName=Swing, leadDescription=Compact chasse in place, LRL. Chasse to side, RLR, ended in open facing position. Left foot back, away from partner. Replace weight to right foot., followerDescription=Promenade position. Compact chasse in place, RLR. Compact chasse in place, LRL, ended in open facing position. Right foot back, away from partner. Replace weight to left foot., level=advanced, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31))
+[DEBUG] 2018-10-27 17:12:04.217 [http-nio-8080-exec-90] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-27 17:12:04.225 [http-nio-8080-exec-90] GenericDAO - 0
+[INFO ] 2018-10-27 17:12:04.225 [http-nio-8080-exec-90] GenericDAO - list of steps [CustomSteps(id=193, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=194, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=195, stepName=Closed Tuck-In Turn Turn, danceName=Swing, leadDescription=Compact chasse in place, LRL. Chasse to side, RLR, ended in open facing position. Left foot back, away from partner. Replace weight to right foot., followerDescription=Promenade position. Compact chasse in place, RLR. Compact chasse in place, LRL, ended in open facing position. Right foot back, away from partner. Replace weight to left foot., level=advanced, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-27 17:12:06.837 [http-nio-8080-exec-91] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-27 17:12:06.844 [http-nio-8080-exec-91] GenericDAO - 0
+[INFO ] 2018-10-27 17:12:06.844 [http-nio-8080-exec-91] GenericDAO - list of steps [CustomSteps(id=193, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=195, stepName=Closed Tuck-In Turn Turn, danceName=Swing, leadDescription=Compact chasse in place, LRL. Chasse to side, RLR, ended in open facing position. Left foot back, away from partner. Replace weight to right foot., followerDescription=Promenade position. Compact chasse in place, RLR. Compact chasse in place, LRL, ended in open facing position. Right foot back, away from partner. Replace weight to left foot., level=advanced, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-27 17:12:21.738 [http-nio-8080-exec-83] GenericDAO - Searching for user with danceName = Rumba
+[DEBUG] 2018-10-27 17:12:36.463 [http-nio-8080-exec-86] GenericDAO - Searching for user with danceName = Swing
+[DEBUG] 2018-10-28 10:56:55.325 [http-nio-8080-exec-3] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-28 10:58:56.703 [http-nio-8080-exec-8] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-28 10:59:34.254 [http-nio-8080-exec-17] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-28 10:59:53.988 [http-nio-8080-exec-9] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-28 10:59:54.010 [http-nio-8080-exec-9] GenericDAO - 0
+[INFO ] 2018-10-28 10:59:54.011 [http-nio-8080-exec-9] GenericDAO - list of steps [CustomSteps(id=193, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=195, stepName=Closed Tuck-In Turn Turn, danceName=Swing, leadDescription=Compact chasse in place, LRL. Chasse to side, RLR, ended in open facing position. Left foot back, away from partner. Replace weight to right foot., followerDescription=Promenade position. Compact chasse in place, RLR. Compact chasse in place, LRL, ended in open facing position. Right foot back, away from partner. Replace weight to left foot., level=advanced, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-28 11:05:25.108 [http-nio-8080-exec-33] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-28 12:53:00.188 [http-nio-8080-exec-45] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-28 12:53:01.298 [http-nio-8080-exec-50] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-28 12:53:01.322 [http-nio-8080-exec-50] GenericDAO - 0
+[INFO ] 2018-10-28 12:53:01.322 [http-nio-8080-exec-50] GenericDAO - list of steps [CustomSteps(id=193, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=195, stepName=Closed Tuck-In Turn Turn, danceName=Swing, leadDescription=Compact chasse in place, LRL. Chasse to side, RLR, ended in open facing position. Left foot back, away from partner. Replace weight to right foot., followerDescription=Promenade position. Compact chasse in place, RLR. Compact chasse in place, LRL, ended in open facing position. Right foot back, away from partner. Replace weight to left foot., level=advanced, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-28 12:53:03.034 [http-nio-8080-exec-46] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-28 12:53:03.039 [http-nio-8080-exec-46] GenericDAO - 0
+[INFO ] 2018-10-28 12:53:03.039 [http-nio-8080-exec-46] GenericDAO - list of steps [CustomSteps(id=193, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-28 12:53:18.281 [http-nio-8080-exec-48] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-28 12:53:20.066 [http-nio-8080-exec-44] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-28 12:53:20.071 [http-nio-8080-exec-44] GenericDAO - 0
+[INFO ] 2018-10-28 12:53:20.071 [http-nio-8080-exec-44] GenericDAO - list of steps [CustomSteps(id=193, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-28 12:53:21.357 [http-nio-8080-exec-49] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-28 12:53:21.359 [http-nio-8080-exec-49] GenericDAO - 0
+[INFO ] 2018-10-28 12:53:21.359 [http-nio-8080-exec-49] GenericDAO - list of steps []
+[DEBUG] 2018-10-28 12:53:22.752 [http-nio-8080-exec-50] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-28 12:53:22.755 [http-nio-8080-exec-50] GenericDAO - 0
+[INFO ] 2018-10-28 12:53:22.755 [http-nio-8080-exec-50] GenericDAO - list of steps []
+[DEBUG] 2018-10-28 12:53:23.506 [http-nio-8080-exec-46] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-28 12:53:29.674 [http-nio-8080-exec-51] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-28 12:53:29.676 [http-nio-8080-exec-51] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-10-28 12:53:29.839 [http-nio-8080-exec-51] GenericDAO - 5
+[INFO ] 2018-10-28 12:53:29.839 [http-nio-8080-exec-51] GenericDAO - list of steps [Step(stepName=Basic, level=basic, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=16), Step(stepName=Throwout, level=basic, followerDescription=Chasse forward or 3 forward passing steps in promenade position - RLR, Right foot back away from partner, 
+Replace weight to left foot, leadDescription=Compact chasse to side - LRL - ended with left foot forward, Chasse to side - RLR, Left foot back away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=17), Step(stepName=Link, level=basic, followerDescription=Chasse forward towards man's right side, RLR. Chasse to side & slightly back in fallaway position, LRL. Right foot back in fallaway position. 
+    Replace weight to left foot in promenade position., leadDescription=Compact chasse forward, LRL. Chasse to side & slightly back in fallaway position, RLR. Left foot back in fallaway position. 
+    Replace weight to right foot in promenade position., demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=18), Step(stepName=Underarm Turn to R, level=basic, followerDescription=Chasse to side, RLR, ended forward. Chasse to side, LRL, ended in open facing position. Right foot back. Replace weight to left foot., leadDescription=Chasse to side, LRL. Chasse to side, RLR, ended in open facing position. Left foot back, away from partner. Replace weight to right foot., demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=19), Step(stepName=Underarm Turn to L., level=basic, followerDescription=Chasse to side, ended back. RLR. Chasse to side, LRL. Right foot back, away from partner. Replace weight to left foot., leadDescription=Chasse to side, LRL. Chasse to side, RLR. Left foot back, away from partner. Replace weight to right foot., demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=20)]
+[DEBUG] 2018-10-28 12:53:31.101 [http-nio-8080-exec-52] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-28 12:53:31.103 [http-nio-8080-exec-52] GenericDAO - type CustomSteps(id=0, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31))
+[DEBUG] 2018-10-28 12:53:31.984 [http-nio-8080-exec-48] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-28 12:53:31.986 [http-nio-8080-exec-48] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-10-28 12:53:31.991 [http-nio-8080-exec-48] GenericDAO - 5
+[INFO ] 2018-10-28 12:53:31.991 [http-nio-8080-exec-48] GenericDAO - list of steps [Step(stepName=Basic, level=basic, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=16), Step(stepName=Throwout, level=basic, followerDescription=Chasse forward or 3 forward passing steps in promenade position - RLR, Right foot back away from partner, 
+Replace weight to left foot, leadDescription=Compact chasse to side - LRL - ended with left foot forward, Chasse to side - RLR, Left foot back away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=17), Step(stepName=Link, level=basic, followerDescription=Chasse forward towards man's right side, RLR. Chasse to side & slightly back in fallaway position, LRL. Right foot back in fallaway position. 
+    Replace weight to left foot in promenade position., leadDescription=Compact chasse forward, LRL. Chasse to side & slightly back in fallaway position, RLR. Left foot back in fallaway position. 
+    Replace weight to right foot in promenade position., demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=18), Step(stepName=Underarm Turn to R, level=basic, followerDescription=Chasse to side, RLR, ended forward. Chasse to side, LRL, ended in open facing position. Right foot back. Replace weight to left foot., leadDescription=Chasse to side, LRL. Chasse to side, RLR, ended in open facing position. Left foot back, away from partner. Replace weight to right foot., demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=19), Step(stepName=Underarm Turn to L., level=basic, followerDescription=Chasse to side, ended back. RLR. Chasse to side, LRL. Right foot back, away from partner. Replace weight to left foot., leadDescription=Chasse to side, LRL. Chasse to side, RLR. Left foot back, away from partner. Replace weight to right foot., demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=20)]
+[DEBUG] 2018-10-28 12:53:33.047 [http-nio-8080-exec-44] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-28 12:53:33.049 [http-nio-8080-exec-44] GenericDAO - type CustomSteps(id=0, stepName=Throwout, danceName=Swing, leadDescription=Compact chasse to side - LRL - ended with left foot forward, Chasse to side - RLR, Left foot back away from partner, Replace weight to right foot, followerDescription=Chasse forward or 3 forward passing steps in promenade position - RLR, Right foot back away from partner, Replace weight to left foot, level=basic, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31))
+[DEBUG] 2018-10-28 12:53:33.896 [http-nio-8080-exec-45] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-28 12:53:33.898 [http-nio-8080-exec-45] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-10-28 12:53:33.903 [http-nio-8080-exec-45] GenericDAO - 5
+[INFO ] 2018-10-28 12:53:33.903 [http-nio-8080-exec-45] GenericDAO - list of steps [Step(stepName=Basic, level=basic, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=16), Step(stepName=Throwout, level=basic, followerDescription=Chasse forward or 3 forward passing steps in promenade position - RLR, Right foot back away from partner, 
+Replace weight to left foot, leadDescription=Compact chasse to side - LRL - ended with left foot forward, Chasse to side - RLR, Left foot back away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=17), Step(stepName=Link, level=basic, followerDescription=Chasse forward towards man's right side, RLR. Chasse to side & slightly back in fallaway position, LRL. Right foot back in fallaway position. 
+    Replace weight to left foot in promenade position., leadDescription=Compact chasse forward, LRL. Chasse to side & slightly back in fallaway position, RLR. Left foot back in fallaway position. 
+    Replace weight to right foot in promenade position., demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=18), Step(stepName=Underarm Turn to R, level=basic, followerDescription=Chasse to side, RLR, ended forward. Chasse to side, LRL, ended in open facing position. Right foot back. Replace weight to left foot., leadDescription=Chasse to side, LRL. Chasse to side, RLR, ended in open facing position. Left foot back, away from partner. Replace weight to right foot., demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=19), Step(stepName=Underarm Turn to L., level=basic, followerDescription=Chasse to side, ended back. RLR. Chasse to side, LRL. Right foot back, away from partner. Replace weight to left foot., leadDescription=Chasse to side, LRL. Chasse to side, RLR. Left foot back, away from partner. Replace weight to right foot., demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=20)]
+[DEBUG] 2018-10-28 12:53:35.004 [http-nio-8080-exec-50] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-28 12:53:35.006 [http-nio-8080-exec-50] GenericDAO - type CustomSteps(id=0, stepName=Underarm Turn to R, danceName=Swing, leadDescription=Chasse to side, LRL. Chasse to side, RLR, ended in open facing position. Left foot back, away from partner. Replace weight to right foot., followerDescription=Chasse to side, RLR, ended forward. Chasse to side, LRL, ended in open facing position. Right foot back. Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31))
+[DEBUG] 2018-10-28 12:53:36.129 [http-nio-8080-exec-46] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-28 12:53:36.133 [http-nio-8080-exec-46] GenericDAO - 0
+[INFO ] 2018-10-28 12:53:36.133 [http-nio-8080-exec-46] GenericDAO - list of steps [CustomSteps(id=196, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=197, stepName=Throwout, danceName=Swing, leadDescription=Compact chasse to side - LRL - ended with left foot forward, Chasse to side - RLR, Left foot back away from partner, Replace weight to right foot, followerDescription=Chasse forward or 3 forward passing steps in promenade position - RLR, Right foot back away from partner, Replace weight to left foot, level=basic, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=198, stepName=Underarm Turn to R, danceName=Swing, leadDescription=Chasse to side, LRL. Chasse to side, RLR, ended in open facing position. Left foot back, away from partner. Replace weight to right foot., followerDescription=Chasse to side, RLR, ended forward. Chasse to side, LRL, ended in open facing position. Right foot back. Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-28 12:53:37.551 [http-nio-8080-exec-51] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-28 12:53:37.555 [http-nio-8080-exec-51] GenericDAO - 0
+[INFO ] 2018-10-28 12:53:37.556 [http-nio-8080-exec-51] GenericDAO - list of steps [CustomSteps(id=196, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=197, stepName=Throwout, danceName=Swing, leadDescription=Compact chasse to side - LRL - ended with left foot forward, Chasse to side - RLR, Left foot back away from partner, Replace weight to right foot, followerDescription=Chasse forward or 3 forward passing steps in promenade position - RLR, Right foot back away from partner, Replace weight to left foot, level=basic, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-28 13:01:47.740 [main] GenericDAO - Searching for user with danceName = Waltz
+[INFO ] 2018-10-28 13:01:48.058 [main] DanceMovementTest - Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it.
+[DEBUG] 2018-10-28 13:01:48.837 [http-nio-8080-exec-44] GenericDAO - Searching for user with danceName = Waltz
+[ERROR] 2018-10-28 13:01:49.614 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:01:49.689 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:01:49.707 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:01:49.708 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-10-28 13:01:49.760 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:01:49.761 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-10-28 13:01:49.803 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:01:49.820 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2018-10-28 13:01:49.853 [main] GenericDAO - 0
+[INFO ] 2018-10-28 13:01:49.853 [main] GenericDAO - list of steps [CustomSteps(id=1, stepName=Turn, danceName=Swing, leadDescription=some description, followerDescription=screenshot, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))]
+[ERROR] 2018-10-28 13:01:49.903 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:01:49.947 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:01:49.949 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))
+[INFO ] 2018-10-28 13:01:50.054 [main] GenericDAO - 0
+[INFO ] 2018-10-28 13:01:50.054 [main] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[INFO ] 2018-10-28 13:01:50.054 [main] DanceTechniqueTest - [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-28 13:01:50.070 [main] GenericDAO - type DanceTechnique(id=0, danceMovement=test dance movement, dancePosition=test dance position, deleted=0)
+[DEBUG] 2018-10-28 13:01:50.079 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-10-28 13:01:50.094 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-10-28 13:01:50.109 [main] GenericDAO - 3
+[INFO ] 2018-10-28 13:01:50.109 [main] GenericDAO - list of steps [Step(stepName=My New Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[DEBUG] 2018-10-28 13:01:50.120 [main] GenericDAO - Searching for user with stepName = Curl
+[ERROR] 2018-10-28 13:01:50.143 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:01:50.160 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:01:50.160 [main] GenericDAO - Searching for user with email = thomson
+[ERROR] 2018-10-28 13:01:50.175 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:01:50.175 [main] GenericDAO - Searching for user with email = jcoyne
+[ERROR] 2018-10-28 13:01:50.189 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:01:50.228 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:01:50.270 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:01:50.303 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:01:50.303 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[INFO ] 2018-10-28 13:01:50.351 [main] GenericDAO - 0
+[INFO ] 2018-10-28 13:01:50.351 [main] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-28 13:02:13.605 [main] GenericDAO - Searching for user with danceName = Waltz
+[INFO ] 2018-10-28 13:02:13.775 [main] DanceMovementTest - Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it.
+[DEBUG] 2018-10-28 13:02:14.069 [http-nio-8080-exec-45] GenericDAO - Searching for user with danceName = Waltz
+[ERROR] 2018-10-28 13:02:14.260 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:02:14.299 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:02:14.326 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:02:14.327 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-10-28 13:02:14.352 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:02:14.352 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-10-28 13:02:14.375 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:02:14.392 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2018-10-28 13:02:14.399 [main] GenericDAO - 0
+[INFO ] 2018-10-28 13:02:14.399 [main] GenericDAO - list of steps [CustomSteps(id=1, stepName=Turn, danceName=Swing, leadDescription=some description, followerDescription=screenshot, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))]
+[ERROR] 2018-10-28 13:02:14.417 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:02:14.434 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:02:14.436 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))
+[INFO ] 2018-10-28 13:02:14.468 [main] GenericDAO - 0
+[INFO ] 2018-10-28 13:02:14.469 [main] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[INFO ] 2018-10-28 13:02:14.469 [main] DanceTechniqueTest - [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-28 13:02:14.484 [main] GenericDAO - type DanceTechnique(id=0, danceMovement=test dance movement, dancePosition=test dance position, deleted=0)
+[DEBUG] 2018-10-28 13:02:14.493 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-10-28 13:02:14.508 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-10-28 13:02:14.525 [main] GenericDAO - 3
+[INFO ] 2018-10-28 13:02:14.525 [main] GenericDAO - list of steps [Step(stepName=My New Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[DEBUG] 2018-10-28 13:02:14.536 [main] GenericDAO - Searching for user with stepName = Curl
+[ERROR] 2018-10-28 13:02:14.558 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:02:14.574 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:02:14.574 [main] GenericDAO - Searching for user with email = thomson
+[ERROR] 2018-10-28 13:02:14.607 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:02:14.607 [main] GenericDAO - Searching for user with email = jcoyne
+[ERROR] 2018-10-28 13:02:14.622 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:02:14.638 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:02:14.655 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:02:14.671 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:02:14.671 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[INFO ] 2018-10-28 13:02:14.696 [main] GenericDAO - 0
+[INFO ] 2018-10-28 13:02:14.696 [main] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-28 13:04:34.781 [main] GenericDAO - Searching for user with danceName = Waltz
+[INFO ] 2018-10-28 13:04:34.995 [main] DanceMovementTest - Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it.
+[DEBUG] 2018-10-28 13:04:35.314 [http-nio-8080-exec-47] GenericDAO - Searching for user with danceName = Waltz
+[ERROR] 2018-10-28 13:04:35.539 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:04:35.586 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:04:35.612 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:04:35.612 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-10-28 13:04:35.636 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:04:35.636 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-10-28 13:04:35.660 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:04:35.685 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2018-10-28 13:04:35.693 [main] GenericDAO - 0
+[INFO ] 2018-10-28 13:04:35.694 [main] GenericDAO - list of steps [CustomSteps(id=1, stepName=Turn, danceName=Swing, leadDescription=some description, followerDescription=screenshot, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))]
+[ERROR] 2018-10-28 13:04:35.711 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:04:35.737 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:04:35.745 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))
+[INFO ] 2018-10-28 13:04:35.825 [main] GenericDAO - 0
+[INFO ] 2018-10-28 13:04:35.825 [main] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[INFO ] 2018-10-28 13:04:35.825 [main] DanceTechniqueTest - [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-28 13:04:35.851 [main] GenericDAO - type DanceTechnique(id=0, danceMovement=test dance movement, dancePosition=test dance position, deleted=0)
+[DEBUG] 2018-10-28 13:04:35.856 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-10-28 13:04:35.872 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-10-28 13:04:35.893 [main] GenericDAO - 3
+[INFO ] 2018-10-28 13:04:35.894 [main] GenericDAO - list of steps [Step(stepName=My New Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[DEBUG] 2018-10-28 13:04:35.905 [main] GenericDAO - Searching for user with stepName = Curl
+[ERROR] 2018-10-28 13:04:35.928 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:04:35.951 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:04:35.952 [main] GenericDAO - Searching for user with email = thomson
+[ERROR] 2018-10-28 13:04:35.976 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:04:35.976 [main] GenericDAO - Searching for user with email = jcoyne
+[ERROR] 2018-10-28 13:04:35.995 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:04:36.009 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:04:36.034 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:04:36.052 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:04:36.052 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[INFO ] 2018-10-28 13:04:36.097 [main] GenericDAO - 0
+[INFO ] 2018-10-28 13:04:36.097 [main] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-28 13:05:53.025 [http-nio-8080-exec-51] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-10-28 13:06:06.825 [main] GenericDAO - Searching for user with danceName = Waltz
+[INFO ] 2018-10-28 13:06:07.013 [main] DanceMovementTest - Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it.
+[DEBUG] 2018-10-28 13:06:07.324 [http-nio-8080-exec-43] GenericDAO - Searching for user with danceName = Waltz
+[ERROR] 2018-10-28 13:06:07.556 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:06:07.594 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:06:07.621 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:06:07.621 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-10-28 13:06:07.644 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:06:07.644 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-10-28 13:06:07.662 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:06:07.679 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2018-10-28 13:06:07.687 [main] GenericDAO - 0
+[INFO ] 2018-10-28 13:06:07.688 [main] GenericDAO - list of steps [CustomSteps(id=1, stepName=Turn, danceName=Swing, leadDescription=some description, followerDescription=screenshot, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))]
+[ERROR] 2018-10-28 13:06:07.701 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:06:07.720 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:06:07.722 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))
+[INFO ] 2018-10-28 13:06:07.781 [main] GenericDAO - 0
+[INFO ] 2018-10-28 13:06:07.781 [main] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[INFO ] 2018-10-28 13:06:07.781 [main] DanceTechniqueTest - [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-28 13:06:07.795 [main] GenericDAO - type DanceTechnique(id=0, danceMovement=test dance movement, dancePosition=test dance position, deleted=0)
+[DEBUG] 2018-10-28 13:06:07.801 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-10-28 13:06:07.825 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-10-28 13:06:07.845 [main] GenericDAO - 3
+[INFO ] 2018-10-28 13:06:07.846 [main] GenericDAO - list of steps [Step(stepName=My New Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[DEBUG] 2018-10-28 13:06:07.856 [main] GenericDAO - Searching for user with stepName = Curl
+[ERROR] 2018-10-28 13:06:07.881 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:06:07.898 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:06:07.898 [main] GenericDAO - Searching for user with email = thomson
+[ERROR] 2018-10-28 13:06:07.912 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:06:07.913 [main] GenericDAO - Searching for user with email = jcoyne
+[ERROR] 2018-10-28 13:06:07.930 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:06:07.943 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:06:07.965 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:06:07.980 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:06:07.981 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[INFO ] 2018-10-28 13:06:08.007 [main] GenericDAO - 0
+[INFO ] 2018-10-28 13:06:08.008 [main] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-28 13:06:20.173 [main] GenericDAO - Searching for user with danceName = Waltz
+[INFO ] 2018-10-28 13:06:20.370 [main] DanceMovementTest - Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it.
+[DEBUG] 2018-10-28 13:06:20.862 [http-nio-8080-exec-44] GenericDAO - Searching for user with danceName = Waltz
+[ERROR] 2018-10-28 13:06:21.078 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:06:21.120 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:06:21.143 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:06:21.143 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-10-28 13:06:21.168 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:06:21.169 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-10-28 13:06:21.185 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:06:21.205 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2018-10-28 13:06:21.212 [main] GenericDAO - 0
+[INFO ] 2018-10-28 13:06:21.212 [main] GenericDAO - list of steps [CustomSteps(id=1, stepName=Turn, danceName=Swing, leadDescription=some description, followerDescription=screenshot, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))]
+[ERROR] 2018-10-28 13:06:21.227 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:06:21.243 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:06:21.244 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))
+[INFO ] 2018-10-28 13:06:21.289 [main] GenericDAO - 0
+[INFO ] 2018-10-28 13:06:21.289 [main] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[INFO ] 2018-10-28 13:06:21.289 [main] DanceTechniqueTest - [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-28 13:06:21.304 [main] GenericDAO - type DanceTechnique(id=0, danceMovement=test dance movement, dancePosition=test dance position, deleted=0)
+[DEBUG] 2018-10-28 13:06:21.320 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-10-28 13:06:21.337 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-10-28 13:06:21.354 [main] GenericDAO - 3
+[INFO ] 2018-10-28 13:06:21.354 [main] GenericDAO - list of steps [Step(stepName=My New Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[DEBUG] 2018-10-28 13:06:21.364 [main] GenericDAO - Searching for user with stepName = Curl
+[ERROR] 2018-10-28 13:06:21.391 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:06:21.407 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:06:21.408 [main] GenericDAO - Searching for user with email = thomson
+[ERROR] 2018-10-28 13:06:21.423 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:06:21.423 [main] GenericDAO - Searching for user with email = jcoyne
+[ERROR] 2018-10-28 13:06:21.438 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:06:21.452 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:06:21.468 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:06:21.502 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:06:21.502 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[INFO ] 2018-10-28 13:06:21.522 [main] GenericDAO - 0
+[INFO ] 2018-10-28 13:06:21.522 [main] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-28 13:08:27.027 [http-nio-8080-exec-47] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-28 13:08:27.231 [http-nio-8080-exec-47] GenericDAO - 0
+[INFO ] 2018-10-28 13:08:27.231 [http-nio-8080-exec-47] GenericDAO - list of steps [CustomSteps(id=196, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31)), CustomSteps(id=197, stepName=Throwout, danceName=Swing, leadDescription=Compact chasse to side - LRL - ended with left foot forward, Chasse to side - RLR, Left foot back away from partner, Replace weight to right foot, followerDescription=Chasse forward or 3 forward passing steps in promenade position - RLR, Right foot back away from partner, Replace weight to left foot, level=basic, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-28 13:08:29.623 [http-nio-8080-exec-54] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-28 13:08:29.628 [http-nio-8080-exec-54] GenericDAO - 0
+[INFO ] 2018-10-28 13:08:29.628 [http-nio-8080-exec-54] GenericDAO - list of steps [CustomSteps(id=196, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-28 13:08:38.294 [http-nio-8080-exec-50] GenericDAO - Searching for user with danceName = Swing
+[DEBUG] 2018-10-28 13:08:48.883 [http-nio-8080-exec-52] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-28 13:08:48.889 [http-nio-8080-exec-52] GenericDAO - 0
+[INFO ] 2018-10-28 13:08:48.889 [http-nio-8080-exec-52] GenericDAO - list of steps [CustomSteps(id=196, stepName=Basic, danceName=Swing, leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., level=basic, deleted=0, user=User(lastName=Cool, firstName=Nick, email=get, password=get, roleId=1, id=31))]
+[DEBUG] 2018-10-28 13:08:50.916 [http-nio-8080-exec-46] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-28 13:08:50.920 [http-nio-8080-exec-46] GenericDAO - 0
+[INFO ] 2018-10-28 13:08:50.920 [http-nio-8080-exec-46] GenericDAO - list of steps []
+[DEBUG] 2018-10-28 13:08:55.632 [http-nio-8080-exec-56] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-28 13:12:00.743 [main] GenericDAO - Searching for user with danceName = Waltz
+[INFO ] 2018-10-28 13:12:01.030 [main] DanceMovementTest - Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it.
+[ERROR] 2018-10-28 13:12:01.539 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:12:01.598 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:12:01.624 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:12:01.624 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-10-28 13:12:01.645 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:12:01.645 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-10-28 13:12:01.664 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:12:01.682 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2018-10-28 13:12:01.691 [main] GenericDAO - 0
+[INFO ] 2018-10-28 13:12:01.692 [main] GenericDAO - list of steps [CustomSteps(id=1, stepName=Turn, danceName=Swing, leadDescription=some description, followerDescription=screenshot, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))]
+[ERROR] 2018-10-28 13:12:01.703 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:12:01.722 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:12:01.724 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))
+[INFO ] 2018-10-28 13:12:01.770 [main] GenericDAO - 0
+[INFO ] 2018-10-28 13:12:01.770 [main] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[INFO ] 2018-10-28 13:12:01.770 [main] DanceTechniqueTest - [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-28 13:12:01.801 [main] GenericDAO - type DanceTechnique(id=0, danceMovement=test dance movement, dancePosition=test dance position, deleted=0)
+[DEBUG] 2018-10-28 13:12:01.807 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-10-28 13:12:01.822 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-10-28 13:12:01.851 [main] GenericDAO - 3
+[INFO ] 2018-10-28 13:12:01.851 [main] GenericDAO - list of steps [Step(stepName=My New Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[DEBUG] 2018-10-28 13:12:01.864 [main] GenericDAO - Searching for user with stepName = Curl
+[ERROR] 2018-10-28 13:12:01.912 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:12:01.937 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:12:01.937 [main] GenericDAO - Searching for user with email = thomson
+[ERROR] 2018-10-28 13:12:01.957 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:12:01.958 [main] GenericDAO - Searching for user with email = jcoyne
+[ERROR] 2018-10-28 13:12:01.974 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:12:01.991 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:12:02.008 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-10-28 13:12:02.024 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-10-28 13:12:02.024 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[INFO ] 2018-10-28 13:12:02.052 [main] GenericDAO - 0
+[INFO ] 2018-10-28 13:12:02.052 [main] GenericDAO - list of steps [DanceTechnique(id=1, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)]
+[DEBUG] 2018-10-28 13:14:07.869 [http-nio-8080-exec-2] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-28 13:14:11.207 [http-nio-8080-exec-6] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-10-28 13:14:18.172 [http-nio-8080-exec-1] GenericDAO - Searching for user with danceName = Rumba
+[DEBUG] 2018-10-28 13:14:47.987 [http-nio-8080-exec-4] GenericDAO - Searching for user with danceName = Waltz
