@@ -1,0 +1,47 @@
+#menuIcon {
+    display: none;
+    color: #665D58;
+    float: right;
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+#menuLinks {
+    display: none;
+    background-color: #2b2c2d;
+}
+
+#menuLinks > ul {
+    float: right;
+    text-align: left;
+    padding-right: 20px;
+}
+
+#menuLinks > ul a {
+    color: #685d57;
+    font-size: 18px;
+}
+
+#menuLinks li {
+    line-height: 2;
+}
+
+@media (max-width: 720px) {
+
+
+    .menuContainer {
+        display: none;
+    }
+
+    #menuIcon {
+        display: block;
+        background-color: #313233;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        text-align: right;
+    }
+
+    #imageContainer {
+        filter: grayscale(0);
+    }
+}

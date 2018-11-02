@@ -1713,3 +1713,51 @@ Replace weight to left foot, leadDescription=Compact chasse to side - LRL - ende
 [DEBUG] 2018-10-28 13:14:11.207 [http-nio-8080-exec-6] GenericDAO - Searching for user with danceName = Waltz
 [DEBUG] 2018-10-28 13:14:18.172 [http-nio-8080-exec-1] GenericDAO - Searching for user with danceName = Rumba
 [DEBUG] 2018-10-28 13:14:47.987 [http-nio-8080-exec-4] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-10-30 21:57:52.778 [http-nio-8080-exec-7] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-30 21:58:01.381 [http-nio-8080-exec-1] GenericDAO - Searching for user with danceName = Swing
+[DEBUG] 2018-10-30 21:58:05.887 [http-nio-8080-exec-2] GenericDAO - Searching for user with email = get
+[INFO ] 2018-10-30 21:58:05.904 [http-nio-8080-exec-2] GenericDAO - 0
+[INFO ] 2018-10-30 21:58:05.905 [http-nio-8080-exec-2] GenericDAO - list of steps []
+[DEBUG] 2018-10-30 21:58:07.259 [http-nio-8080-exec-3] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-30 21:58:12.332 [http-nio-8080-exec-5] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-30 21:58:12.334 [http-nio-8080-exec-5] GenericDAO - Searching for user with danceName = Swing
+[INFO ] 2018-10-30 21:58:12.356 [http-nio-8080-exec-5] GenericDAO - 1
+[INFO ] 2018-10-30 21:58:12.356 [http-nio-8080-exec-5] GenericDAO - list of steps [Step(stepName=Basic, level=basic, followerDescription=Chasse to side - RLR, Chasse to side - LRL, Right foot back away from partner, Replace weight to left foot., leadDescription=Chasse to side - LRL, Chasse to side - RLR, Left foot back, away from partner, Replace weight to right foot, demoLink=null, dance=Dance(danceName=Swing, beatsPerMinute=150, id=3), id=16)]
+[DEBUG] 2018-10-30 21:58:15.945 [http-nio-8080-exec-7] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-30 21:58:15.947 [http-nio-8080-exec-7] GenericDAO - Searching for user with danceName = Rumba
+[INFO ] 2018-10-30 21:58:15.953 [http-nio-8080-exec-7] GenericDAO - 1
+[INFO ] 2018-10-30 21:58:15.954 [http-nio-8080-exec-7] GenericDAO - list of steps [Step(stepName=Basic Movements, level=basic, followerDescription=Right foot back. Close left foot to right foot (heel turn). 
+    Right foot side & slightly back. Left foot back in CBMP, partner outside, as first step of following figure., leadDescription=Right foot back. Replace weight to left foot. Right foot side. Left foot forward. Replace weight to right foot. Left foot side & slightly back., demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=46)]
+[DEBUG] 2018-10-30 21:58:18.657 [http-nio-8080-exec-6] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-30 21:58:18.659 [http-nio-8080-exec-6] GenericDAO - Searching for user with danceName = Rumba
+[INFO ] 2018-10-30 21:58:18.663 [http-nio-8080-exec-6] GenericDAO - 1
+[INFO ] 2018-10-30 21:58:18.663 [http-nio-8080-exec-6] GenericDAO - list of steps []
+[DEBUG] 2018-10-30 21:58:20.940 [http-nio-8080-exec-8] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-30 21:58:20.942 [http-nio-8080-exec-8] GenericDAO - Searching for user with danceName = Rumba
+[INFO ] 2018-10-30 21:58:20.947 [http-nio-8080-exec-8] GenericDAO - 1
+[INFO ] 2018-10-30 21:58:20.947 [http-nio-8080-exec-8] GenericDAO - list of steps [Step(stepName=Basic Movements, level=basic, followerDescription=Right foot back. Close left foot to right foot (heel turn). 
+    Right foot side & slightly back. Left foot back in CBMP, partner outside, as first step of following figure., leadDescription=Right foot back. Replace weight to left foot. Right foot side. Left foot forward. Replace weight to right foot. Left foot side & slightly back., demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=46)]
+[DEBUG] 2018-10-30 21:58:23.383 [http-nio-8080-exec-9] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-30 21:58:23.385 [http-nio-8080-exec-9] GenericDAO - Searching for user with danceName = Rumba
+[INFO ] 2018-10-30 21:58:23.391 [http-nio-8080-exec-9] GenericDAO - 5
+[INFO ] 2018-10-30 21:58:23.391 [http-nio-8080-exec-9] GenericDAO - list of steps [Step(stepName=Basic Movements, level=basic, followerDescription=Right foot back. Close left foot to right foot (heel turn). 
+    Right foot side & slightly back. Left foot back in CBMP, partner outside, as first step of following figure., leadDescription=Right foot back. Replace weight to left foot. Right foot side. Left foot forward. Replace weight to right foot. Left foot side & slightly back., demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=46), Step(stepName=New York, level=basic, followerDescription=Right foot forward in right side-by-side position. Replace weight to left foot. Right foot side in open promenade position. 
+    Left foot forward in left side-by-side position. Replace weight to right foot. Left foot side in open promenade position., leadDescription=Left foot forward in left side-by-side position. Replace weight to right foot. Left foot side in open promenade position. 
+    Right foot forward in right side-by-side position. Replace weight to left foot. Right foot side in open promenade position., demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=47), Step(stepName=Underarm Turns to R & L, level=basic, followerDescription=Right foot forward, in line with left foot, ended back. Replace weight to left foot. Right foot side. Left foot forward, in line with right foot, ended back.
+    Replace weight to right foot. Left foot side., leadDescription=Left foot forward. Replace weight to right foot. Left foot side. Right foot back. Replace weight to left foot. Right foot side., demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=48), Step(stepName=Shoulder to Shoulder, level=basic, followerDescription=Right foot back. Replace weight to left foot, towards man's left side. Right foot side & slightly back. Left foot back. 
+    Replace weight to right foot, towards man's right side. Left foot side & slightly back., leadDescription=Left foot forward towards lady's left side. Replace weight to right foot. Left foot side & slightly forward. Right foot forward towards lady's right side.
+     Replace weight to left foot. Right foot side & slightly forward., demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=49)]
+[DEBUG] 2018-10-30 21:58:25.328 [http-nio-8080-exec-1] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-30 21:58:25.330 [http-nio-8080-exec-1] GenericDAO - Searching for user with danceName = Rumba
+[INFO ] 2018-10-30 21:58:25.334 [http-nio-8080-exec-1] GenericDAO - 5
+[INFO ] 2018-10-30 21:58:25.334 [http-nio-8080-exec-1] GenericDAO - list of steps []
+[DEBUG] 2018-10-30 21:58:28.782 [http-nio-8080-exec-10] GenericDAO - Searching for user with email = get
+[DEBUG] 2018-10-30 21:58:28.784 [http-nio-8080-exec-10] GenericDAO - Searching for user with danceName = Rumba
+[INFO ] 2018-10-30 21:58:28.789 [http-nio-8080-exec-10] GenericDAO - 5
+[INFO ] 2018-10-30 21:58:28.789 [http-nio-8080-exec-10] GenericDAO - list of steps [Step(stepName=Basic Movements, level=basic, followerDescription=Right foot back. Close left foot to right foot (heel turn). 
+    Right foot side & slightly back. Left foot back in CBMP, partner outside, as first step of following figure., leadDescription=Right foot back. Replace weight to left foot. Right foot side. Left foot forward. Replace weight to right foot. Left foot side & slightly back., demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=46), Step(stepName=New York, level=basic, followerDescription=Right foot forward in right side-by-side position. Replace weight to left foot. Right foot side in open promenade position. 
+    Left foot forward in left side-by-side position. Replace weight to right foot. Left foot side in open promenade position., leadDescription=Left foot forward in left side-by-side position. Replace weight to right foot. Left foot side in open promenade position. 
+    Right foot forward in right side-by-side position. Replace weight to left foot. Right foot side in open promenade position., demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=47), Step(stepName=Underarm Turns to R & L, level=basic, followerDescription=Right foot forward, in line with left foot, ended back. Replace weight to left foot. Right foot side. Left foot forward, in line with right foot, ended back.
+    Replace weight to right foot. Left foot side., leadDescription=Left foot forward. Replace weight to right foot. Left foot side. Right foot back. Replace weight to left foot. Right foot side., demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=48), Step(stepName=Shoulder to Shoulder, level=basic, followerDescription=Right foot back. Replace weight to left foot, towards man's left side. Right foot side & slightly back. Left foot back. 
+    Replace weight to right foot, towards man's right side. Left foot side & slightly back., leadDescription=Left foot forward towards lady's left side. Replace weight to right foot. Left foot side & slightly forward. Right foot forward towards lady's right side.
+     Replace weight to left foot. Right foot side & slightly forward., demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=49)]
