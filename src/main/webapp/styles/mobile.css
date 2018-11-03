@@ -6,28 +6,46 @@
     font-size: 25px;
 }
 
-#menuLinks {
+#mobileMenuLinks {
     display: none;
     background-color: #2b2c2d;
 }
 
-#menuLinks > ul {
+#mobileMenuLinks > ul {
     float: right;
     text-align: left;
     padding-right: 20px;
 }
 
-#menuLinks > ul a {
+#mobileMenuLinks a {
     color: #685d57;
     font-size: 18px;
 }
 
-#menuLinks li {
+#mobileMenuLinks li {
     line-height: 2;
 }
 
-@media (max-width: 720px) {
+#footerContainer ul {
+    display: inline-flex;
+}
 
+#mobileMenuLinks a:hover, #menuIcon:hover {
+    text-decoration: none;
+    color: #948177;
+}
+
+
+@media (max-width: 1050px) {
+
+    .container {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    #editProfileContainer, #buildDance, #danceSelection, #loginContainer, #signupContainer {
+        width: 100%;
+    }
 
     .menuContainer {
         display: none;
@@ -43,5 +61,9 @@
 
     #imageContainer {
         filter: grayscale(0);
+    }
+
+    #footerContainer ul {
+        display: inline-block;
     }
 }

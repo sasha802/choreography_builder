@@ -3,6 +3,7 @@ $(document).ready(function () {
     addCustomStepModalForm();
     removeEmptyTebleCustomSteps();
     removeEmptyStepTable();
+    toggleMenu();
 
 });
 
@@ -52,3 +53,16 @@ function validateForm(validationMsg, messageId) {
     $('#' + messageId).append(html);
 }
 
+
+function toggleMenu() {
+
+    $('#menuIcon').click(function () {
+        $('#mobileMenuLinks').slideToggle('fast');
+    });
+
+    $(window).resize(function () {
+        if ($(this).width > 720) {
+            $('#mobileMenuLinks').hide();
+        }
+    });
+}

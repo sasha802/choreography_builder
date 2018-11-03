@@ -1,5 +1,4 @@
 
-<link rel="stylesheet" href="styles/mobile.css" type="text/css">
 
 <div class="menuContainer">
     <a href="index.jsp">About First Dance</a>
@@ -11,8 +10,7 @@
     <span class="glyphicon glyphicon-menu-hamburger"></span>
 </div>
 
-
-<div id="menuLinks">
+<div id="mobileMenuLinks">
     <ul>
         <li><a href="index.jsp">About First Dance</a></li>
         <li><a href="signup.jsp">Sign Up</a></li>
@@ -26,18 +24,3 @@
     <style>#imageContainer{background-image: url("images/danceBanner.jpg")}</style>
 </div>
 
-
-<script>
-    $(document).ready(function () {
-
-         $('#menuIcon').click(function () {
-             $('#menuLinks').slideToggle('fast');
-         });
-
-         $(window).resize(function () {
-             if ($(this).width > 720) {
-                 $('#menuLinks').hide();
-             }
-         });
-    });
-</script>

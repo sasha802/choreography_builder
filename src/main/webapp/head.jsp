@@ -10,5 +10,7 @@
 
     <script src="script/main.js"></script>
     <link rel="stylesheet" href="styles/main.css" type="text/css">
+    <link rel="stylesheet" href="styles/mobile.css" type="text/css">
+
 </head>
 

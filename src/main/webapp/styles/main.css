@@ -227,17 +227,6 @@ footer {
     background-color: #d6ae5e !important;
 }
 
-/**
-  * Mobile friendly display
- */
-
-@media (max-width: 540px) {
-    #buildDance, #danceSelection, #loginContainer, #signupContainer {
-        width: 100%;
-    }
-}
-
-
 
 
 

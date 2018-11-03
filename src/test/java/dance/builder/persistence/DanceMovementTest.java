@@ -1,6 +1,7 @@
-package dance.builder.entity;
+package dance.builder.persistence;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import dance.builder.entity.DanceMovement;
 import dance.builder.persistence.GenericDAO;
 import dance.movement.MovementResults;
 import org.apache.logging.log4j.LogManager;
