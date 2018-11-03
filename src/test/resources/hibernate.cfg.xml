@@ -20,7 +20,6 @@
         <mapping class="dance.builder.entity.Step" />
         <mapping class="dance.builder.entity.User" />
         <mapping class="dance.builder.entity.CustomSteps" />
-        <mapping class="dance.builder.entity.DanceTechnique" />
         <mapping class="dance.builder.entity.DanceMovement" />
 
     </session-factory>

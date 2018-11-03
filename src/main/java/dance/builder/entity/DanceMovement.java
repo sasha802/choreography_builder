@@ -7,6 +7,7 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity(name = "DanceMovement")
 @Table(name = "dance_movement")
@@ -35,5 +36,30 @@ public class DanceMovement {
     @Column(name = "deleted")
     private int deleted;
 
+    public DanceMovement() {
 
+    }
+
+    public DanceMovement( String danceName, String danceMovement, String dancePosition) {
+        this.danceName = danceName;
+        this.danceMovement = danceMovement;
+        this.dancePosition = dancePosition;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        DanceMovement that = (DanceMovement) o;
+        return id == that.id &&
+                deleted == that.deleted &&
+                Objects.equals(danceName, that.danceName) &&
+                Objects.equals(danceMovement, that.danceMovement) &&
+                Objects.equals(dancePosition, that.dancePosition);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, danceName, danceMovement, dancePosition, deleted);
+    }
 }
