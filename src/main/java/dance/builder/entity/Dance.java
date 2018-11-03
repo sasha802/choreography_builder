@@ -1,11 +1,7 @@
 package dance.builder.entity;
 
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
 import org.hibernate.annotations.GenericGenerator;
-
-import javax.annotation.sql.DataSourceDefinition;
 import javax.persistence.*;
 
 @Entity(name = "Dance")
