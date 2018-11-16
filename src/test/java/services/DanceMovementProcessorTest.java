@@ -44,7 +44,7 @@ class DanceMovementTest {
         Client client = ClientBuilder.newClient();
 
         try {
-            WebTarget target = client.target("http://localhost:8080/choreographybuilder/service/danceMovement/" + danceName);
+            WebTarget target = client.target("http://localhost:8080/choreographybuilder/service/danceMovements/" + danceName);
             String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
 
             ObjectMapper mapper = new ObjectMapper();

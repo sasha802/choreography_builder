@@ -28,7 +28,7 @@ public class DanceMovement extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String danceName = request.getParameter("danceName");
-        String serviceUrl = "http://localhost:8080/choreographybuilder/service/danceMovement/";
+        String serviceUrl = "http://localhost:8080/choreographybuilder/service/danceMovements/";
         Client client = ClientBuilder.newClient();
 
         RequestDispatcher dispatcher;

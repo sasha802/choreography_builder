@@ -10,7 +10,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 
 
-@Path("/danceMovement")
+@Path("/danceMovements")
 public class DanceMovementProcessor {
 
     @GET
