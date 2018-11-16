@@ -59,3 +59,10 @@
 |10/25/2018|Consuming and testing DanceMovement service. (unit test)| 2 hours|
 |10/26/2018|Working on the css and input validations (server and client side.) |8 hours|
 |10/27/2018|Working on the dance movement service consumption for production. Design the result display on the page. |4 hours 30min|
+|10/31/2018|Set up group project repository, wrote problem statement, technologies used, created AWS instance, found JSPs to use. | 2 hours|
+|11/03/2018|Group Project. Importing csv to the created database. Creating settleup entity. Unit test get by id. | 3 hours|
+|11/04/2018|Group Project. Adding unit test to get city name bases on the number of bedrooms, activity, and monthly rent.|1 hours| 
+|11/8/2018|Group Project. Working on getting SettleUpFormData service to dynamically populate activities in the form.| 2.30 hours|
+|11/10/2018|Reading materials and watching videos of the week 11. Working on the multithreading exercise.| 4 hours 30min |
+|11/14/2018|Group Project. Working on displaying json, xml results, debugging | 3 hours|
+|11/15/2018|Group Project. Working on the javadoc, user data validation server, client side|2 hours|
