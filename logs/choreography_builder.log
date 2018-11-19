@@ -2681,3 +2681,139 @@ Replace weight to left foot, leadDescription=Compact chasse to side - LRL - ende
 [INFO ] 2018-11-15 22:03:57.950 [http-nio-8080-exec-8] GenericDAO - 0
 [INFO ] 2018-11-15 22:03:57.950 [http-nio-8080-exec-8] GenericDAO - list of steps []
 [DEBUG] 2018-11-15 22:03:59.700 [http-nio-8080-exec-1] GenericDAO - Searching for user with email = get
+[ERROR] 2018-11-18 18:41:19.628 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:41:21.567 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:41:21.593 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:41:21.593 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-11-18 18:41:21.923 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:41:21.923 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-11-18 18:41:21.944 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:41:21.961 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2018-11-18 18:41:21.971 [main] GenericDAO - 0
+[INFO ] 2018-11-18 18:41:21.971 [main] GenericDAO - list of steps [CustomSteps(id=1, stepName=Turn, danceName=Swing, leadDescription=some description, followerDescription=screenshot, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))]
+[ERROR] 2018-11-18 18:41:21.989 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:41:22.009 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:41:22.011 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))
+[DEBUG] 2018-11-18 18:41:22.055 [main] GenericDAO - Searching for user with danceName = Waltz
+[INFO ] 2018-11-18 18:41:22.060 [main] DanceMovementTest - Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it.
+[INFO ] 2018-11-18 18:41:22.063 [main] DanceMovementTest - DanceMovement(id=1, danceName=Waltz, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)
+[DEBUG] 2018-11-18 18:41:22.064 [main] GenericDAO - type DanceMovement(id=0, danceName=Cha-Cha-Cha, danceMovement=dance technique, dancePosition=dance position, deleted=0)
+[DEBUG] 2018-11-18 18:41:22.074 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-11-18 18:41:22.102 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-11-18 18:41:22.116 [main] GenericDAO - 3
+[INFO ] 2018-11-18 18:41:22.116 [main] GenericDAO - list of steps [Step(stepName=My New Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[DEBUG] 2018-11-18 18:41:22.123 [main] GenericDAO - Searching for user with stepName = Curl
+[ERROR] 2018-11-18 18:41:22.250 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:41:22.267 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:41:22.267 [main] GenericDAO - Searching for user with email = thomson
+[ERROR] 2018-11-18 18:41:22.283 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:41:22.283 [main] GenericDAO - Searching for user with email = jcoyne
+[ERROR] 2018-11-18 18:41:22.299 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:41:22.313 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:41:22.339 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:41:22.361 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:41:22.361 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[DEBUG] 2018-11-18 18:41:22.368 [main] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-11-18 18:42:07.723 [http-nio-8080-exec-1] GenericDAO - Searching for user with email = get
+[ERROR] 2018-11-18 18:42:21.224 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:42:23.307 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:42:23.341 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:42:23.342 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-11-18 18:42:23.606 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:42:23.606 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-11-18 18:42:23.623 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:42:23.637 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2018-11-18 18:42:23.646 [main] GenericDAO - 0
+[INFO ] 2018-11-18 18:42:23.647 [main] GenericDAO - list of steps [CustomSteps(id=1, stepName=Turn, danceName=Swing, leadDescription=some description, followerDescription=screenshot, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))]
+[ERROR] 2018-11-18 18:42:23.660 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:42:23.678 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:42:23.680 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))
+[DEBUG] 2018-11-18 18:42:23.724 [main] GenericDAO - Searching for user with danceName = Waltz
+[INFO ] 2018-11-18 18:42:23.729 [main] DanceMovementTest - Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it.
+[INFO ] 2018-11-18 18:42:23.735 [main] DanceMovementTest - DanceMovement(id=1, danceName=Waltz, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)
+[DEBUG] 2018-11-18 18:42:23.735 [main] GenericDAO - type DanceMovement(id=0, danceName=Cha-Cha-Cha, danceMovement=dance technique, dancePosition=dance position, deleted=0)
+[DEBUG] 2018-11-18 18:42:23.744 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-11-18 18:42:23.800 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-11-18 18:42:23.845 [main] GenericDAO - 3
+[INFO ] 2018-11-18 18:42:23.845 [main] GenericDAO - list of steps [Step(stepName=My New Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[DEBUG] 2018-11-18 18:42:23.855 [main] GenericDAO - Searching for user with stepName = Curl
+[ERROR] 2018-11-18 18:42:24.001 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:42:24.044 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:42:24.045 [main] GenericDAO - Searching for user with email = thomson
+[ERROR] 2018-11-18 18:42:24.061 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:42:24.061 [main] GenericDAO - Searching for user with email = jcoyne
+[ERROR] 2018-11-18 18:42:24.105 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:42:24.119 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:42:24.138 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:42:24.191 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:42:24.191 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[DEBUG] 2018-11-18 18:42:24.199 [main] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-11-18 18:42:24.891 [http-nio-8080-exec-3] GenericDAO - Searching for user with danceName = Waltz
+[ERROR] 2018-11-18 18:48:36.418 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:48:38.572 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:48:38.596 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:48:38.596 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-11-18 18:48:38.904 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:48:38.904 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-11-18 18:48:38.922 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:48:38.938 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2018-11-18 18:48:38.951 [main] GenericDAO - 0
+[INFO ] 2018-11-18 18:48:38.951 [main] GenericDAO - list of steps [CustomSteps(id=1, stepName=Turn, danceName=Swing, leadDescription=some description, followerDescription=screenshot, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))]
+[ERROR] 2018-11-18 18:48:38.965 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:48:38.985 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:48:38.986 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))
+[DEBUG] 2018-11-18 18:48:39.039 [main] GenericDAO - Searching for user with danceName = Waltz
+[INFO ] 2018-11-18 18:48:39.043 [main] DanceMovementTest - Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it.
+[INFO ] 2018-11-18 18:48:39.046 [main] DanceMovementTest - DanceMovement(id=1, danceName=Waltz, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)
+[DEBUG] 2018-11-18 18:48:39.046 [main] GenericDAO - type DanceMovement(id=0, danceName=Cha-Cha-Cha, danceMovement=dance technique, dancePosition=dance position, deleted=0)
+[DEBUG] 2018-11-18 18:48:39.065 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-11-18 18:48:39.082 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-11-18 18:48:39.097 [main] GenericDAO - 3
+[INFO ] 2018-11-18 18:48:39.097 [main] GenericDAO - list of steps [Step(stepName=My New Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[DEBUG] 2018-11-18 18:48:39.105 [main] GenericDAO - Searching for user with stepName = Curl
+[ERROR] 2018-11-18 18:48:39.242 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:48:39.262 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:48:39.262 [main] GenericDAO - Searching for user with email = thomson
+[ERROR] 2018-11-18 18:48:39.278 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:48:39.278 [main] GenericDAO - Searching for user with email = jcoyne
+[ERROR] 2018-11-18 18:48:39.293 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:48:39.310 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:48:39.331 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:48:39.349 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:48:39.349 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[DEBUG] 2018-11-18 18:48:39.357 [main] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-11-18 18:48:42.455 [http-nio-8080-exec-5] GenericDAO - Searching for user with danceName = Waltz
+[ERROR] 2018-11-18 18:54:10.791 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:54:12.763 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:54:12.792 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:54:12.792 [main] GenericDAO - Searching for user with level = basic
+[ERROR] 2018-11-18 18:54:13.067 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:54:13.068 [main] GenericDAO - Searching for user with stepName = Turn
+[ERROR] 2018-11-18 18:54:13.085 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:54:13.102 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2018-11-18 18:54:13.111 [main] GenericDAO - 0
+[INFO ] 2018-11-18 18:54:13.112 [main] GenericDAO - list of steps [CustomSteps(id=1, stepName=Turn, danceName=Swing, leadDescription=some description, followerDescription=screenshot, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))]
+[ERROR] 2018-11-18 18:54:13.124 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:54:13.142 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:54:13.144 [main] GenericDAO - type CustomSteps(id=0, stepName=Box, danceName=Rumba, leadDescription=test, followerDescription=test, level=basic, deleted=0, user=User(lastName=Thomson, firstName=Mike, email=thomson, password=115, roleId=2, id=2))
+[DEBUG] 2018-11-18 18:54:13.193 [main] GenericDAO - Searching for user with danceName = Waltz
+[INFO ] 2018-11-18 18:54:13.197 [main] DanceMovementTest - Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it.
+[INFO ] 2018-11-18 18:54:13.200 [main] DanceMovementTest - DanceMovement(id=1, danceName=Waltz, danceMovement=Footwork: Forward walking steps are normally taken with the heel first in contact with the floor, with the toe lowering as the body moves over it., dancePosition=Slow Waltz is danced using a normal ballroom-style closed position dance hold., deleted=0)
+[DEBUG] 2018-11-18 18:54:13.201 [main] GenericDAO - type DanceMovement(id=0, danceName=Cha-Cha-Cha, danceMovement=dance technique, dancePosition=dance position, deleted=0)
+[DEBUG] 2018-11-18 18:54:13.225 [main] GenericDAO - Searching for user with level = basic
+[DEBUG] 2018-11-18 18:54:13.237 [main] GenericDAO - Searching for user with level = basic
+[INFO ] 2018-11-18 18:54:13.254 [main] GenericDAO - 3
+[INFO ] 2018-11-18 18:54:13.255 [main] GenericDAO - list of steps [Step(stepName=My New Step, level=basic, followerDescription=boxstepF.png, leadDescription=boxstep.gif, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=1), Step(stepName=Underarm Rurn, level=basic, followerDescription=underarmTurn.png, leadDescription=underarmTurn.png, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=2), Step(stepName=Hand to Hand, level=basic, followerDescription=test, leadDescription=test, demoLink=null, dance=Dance(danceName=Rumba, beatsPerMinute=95, id=1), id=3)]
+[DEBUG] 2018-11-18 18:54:13.263 [main] GenericDAO - Searching for user with stepName = Curl
+[ERROR] 2018-11-18 18:54:13.386 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:54:13.402 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:54:13.402 [main] GenericDAO - Searching for user with email = thomson
+[ERROR] 2018-11-18 18:54:13.418 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:54:13.419 [main] GenericDAO - Searching for user with email = jcoyne
+[ERROR] 2018-11-18 18:54:13.433 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:54:13.448 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:54:13.465 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2018-11-18 18:54:13.481 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2018-11-18 18:54:13.481 [main] GenericDAO - type User(lastName=Fred, firstName=Flintstone, email=fflintstone, password=123, roleId=2, id=0)
+[DEBUG] 2018-11-18 18:54:13.488 [main] GenericDAO - Searching for user with danceName = Waltz
+[DEBUG] 2018-11-18 18:54:15.899 [http-nio-8080-exec-20] GenericDAO - Searching for user with danceName = Waltz

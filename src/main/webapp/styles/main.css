@@ -163,8 +163,8 @@ footer {
  #imageContainer {
      background-repeat: no-repeat;
      background-size: cover;
-     min-height: 250px;
-     background-position: 35% 65%;
+     min-height: 400px;
+     background-position: center center;
      filter: grayscale(1);
  }
 

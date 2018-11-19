@@ -66,3 +66,5 @@
 |11/10/2018|Reading materials and watching videos of the week 11. Working on the multithreading exercise.| 4 hours 30min |
 |11/14/2018|Group Project. Working on displaying json, xml results, debugging | 3 hours|
 |11/15/2018|Group Project. Working on the javadoc, user data validation server, client side|2 hours|
+|11/17/18|Exception handling on activities.|1 hour|
+|11/18/2018|Working on the group project unit test for exceptions. User display cleanup |3 hours|
