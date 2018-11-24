@@ -68,4 +68,4 @@
 |11/15/2018|Group Project. Working on the javadoc, user data validation server, client side|2 hours|
 |11/17/18|Exception handling on activities.|1 hour|
 |11/18/2018|Working on the group project unit test for exceptions. User display cleanup |3 hours|
-|11/20/2018|Final preparation for the group project presentation. Writing javadoc | 2 hours |
+|11/20/2018|Final preparation for the group project presentation. Writing javadoc | 1 hours |
