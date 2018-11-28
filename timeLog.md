@@ -69,3 +69,4 @@
 |11/17/18|Exception handling on activities.|1 hour|
 |11/18/2018|Working on the group project unit test for exceptions. User display cleanup |3 hours|
 |11/20/2018|Final preparation for the group project presentation. Writing javadoc | 1 hours |
+|11/27/2018|Working on the form validation and database population. | 2 hours |
