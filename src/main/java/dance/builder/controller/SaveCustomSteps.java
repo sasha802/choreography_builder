@@ -62,23 +62,29 @@ public class SaveCustomSteps extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String stepName = request.getParameter("stepName");
-        String danceName = request.getParameter("danceName");
+        String stepName = request.getParameter("stepName").trim();
+        String danceName = request.getParameter("danceName").trim();
         String lDescription = request.getParameter("lDescription");
         String fDescription = request.getParameter("fDescription");
-        String level = request.getParameter("level");
+        String level = request.getParameter("level").trim();
 
-        request.setAttribute("saved", "saved");
+        if ( stepName.length() > 0 && danceName.length() > 0 && level.length() > 0 ) {
 
-        List<String> stepInfo = new ArrayList<>();
-        stepInfo.add(stepName);
-        stepInfo.add(danceName);
-        stepInfo.add(lDescription);
-        stepInfo.add(fDescription);
-        stepInfo.add(level);
+            List<String> stepInfo = new ArrayList<>();
+            stepInfo.add(stepName);
+            stepInfo.add(danceName);
+            stepInfo.add(lDescription);
+            stepInfo.add(fDescription);
+            stepInfo.add(level);
 
-        saveStep(request, stepInfo);
+            saveStep(request, stepInfo);
 
+            request.setAttribute("saved", "saved");
+
+
+        } else {
+            request.setAttribute("form", "empty");
+        }
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/buildDance.jsp");
         dispatcher.forward(request, response);

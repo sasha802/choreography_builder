@@ -143,17 +143,26 @@
         </div>
 
         <jsp:include page="internalFooter.jsp"/>
+
+
+        <script>
+
+            <c:if test="${formValidation == 'false'}">
+                var validationMsg = 'Please enter beats per minute.';
+                var messageId = 'validationMsg';
+                validateForm(validationMsg, messageId);
+            </c:if>
+
+            <c:if test="${form == 'empty'}">
+                var validationMsg = 'Please enter step name, dance name, and level.';
+                var messageId = 'validationMsg';
+                validateForm(validationMsg, messageId);
+            </c:if>
+
+        </script>
     </body>
 </html>
 
-<script>
-    $(document).ready(function () {
-        <c:if test="${formValidation == 'false'}">
-            var validationMsg = 'Please enter beats per minute.';
-            var messageId = 'validationMsg';
-            validateForm(validationMsg, messageId);
-        </c:if>
-    });
-</script>
+
 
 

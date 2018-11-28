@@ -1,7 +1,6 @@
 package dance.builder.controller;
 
 
-import dance.builder.entity.CustomSteps;
 import dance.builder.entity.Dance;
 import dance.builder.entity.Step;
 import dance.builder.entity.User;
@@ -52,30 +51,24 @@ public class SearchStep extends HttpServlet {
 
                 request.setAttribute("dance", danceGenericDAO.getByPropertyLike("danceName","Waltz"));
                 request.setAttribute("step", genericDAO.getByMultiplePropertiesTopClause(generateEntitiesMap(waltzId, levelType), numberOfSteps));
-                request.setAttribute("beats", beatsNumber);
-                request.setAttribute("numberOfSteps", numberOfSteps);
-                request.setAttribute("level", levelType);
-                request.setAttribute("userId", Integer.toString(userId));
 
             } else if ( beatsPerMinute >= 91 && beatsPerMinute <= 119 ) {
 
                 request.setAttribute("dance", danceGenericDAO.getByPropertyLike("danceName", "Rumba"));
                 request.setAttribute("step", genericDAO.getByMultiplePropertiesTopClause(generateEntitiesMap(rumbaId, levelType), numberOfSteps));
-                request.setAttribute("beats", beatsNumber);
-                request.setAttribute("numberOfSteps", numberOfSteps);
-                request.setAttribute("level", levelType);
-                request.setAttribute("userId", Integer.toString(userId));
+
 
             } else if ( beatsPerMinute >= 120 && beatsPerMinute <= 250 ) {
 
                 request.setAttribute("dance", danceGenericDAO.getByPropertyLike("danceName", "Swing"));
                 request.setAttribute("step", genericDAO.getByMultiplePropertiesTopClause(generateEntitiesMap(swingId, levelType), numberOfSteps));
-                request.setAttribute("beats", beatsNumber);
-                request.setAttribute("numberOfSteps", numberOfSteps);
-                request.setAttribute("level", levelType);
-                request.setAttribute("userId", Integer.toString(userId));
 
             }
+
+            request.setAttribute("beats", beatsNumber);
+            request.setAttribute("numberOfSteps", numberOfSteps);
+            request.setAttribute("level", levelType);
+            request.setAttribute("userId", Integer.toString(userId));
 
             dispatcher = request.getRequestDispatcher("/buildDance.jsp");
             dispatcher.forward(request, response);
