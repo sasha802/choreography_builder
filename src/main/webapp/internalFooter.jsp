@@ -2,7 +2,9 @@
 <footer>
     <div id="footerContainer">
         <ul>
+<%--
             <li><a href="findStudio.jsp">Find My Dance Studio</a></li>
+--%>
             <li><a href="/choreographybuilder/editUserProfile">Edit My Profile</a></li>
             <li><a href="searchStep">Build My Dance</a></li>
             <li><a href="/choreographybuilder/displayCustomSteps">View Selected Steps</a></li>

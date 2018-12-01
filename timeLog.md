@@ -69,4 +69,7 @@
 |11/17/18|Exception handling on activities.|1 hour|
 |11/18/2018|Working on the group project unit test for exceptions. User display cleanup |3 hours|
 |11/20/2018|Final preparation for the group project presentation. Writing javadoc | 1 hours |
+|11/24/2018|Reading week 13 documentation. | 1 hour 45 min |
 |11/27/2018|Working on the form validation and database population. | 2 hours |
+|11/28/2018|Watching week 13 videos. Working on the week 13 assignment.| 1 hour 30 min|
+|11/30/2018|Working on the week 13 assignment. Recording project presentation video | 2 hours |
