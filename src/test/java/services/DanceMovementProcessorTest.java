@@ -16,8 +16,10 @@ import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
-
+import java.util.Properties;
 
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -42,9 +44,12 @@ class DanceMovementTest {
 
         String danceName = "Waltz";
         Client client = ClientBuilder.newClient();
+        String serviceUrl = loadProperties();
 
         try {
-            WebTarget target = client.target("http://localhost:8080/choreographybuilder/service/danceMovements/" + danceName);
+
+            WebTarget target = client.target(serviceUrl + danceName);
+
             String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
 
             ObjectMapper mapper = new ObjectMapper();
@@ -63,6 +68,28 @@ class DanceMovementTest {
         } catch (IOException ioException) {
             logger.error(ioException);
         }
+
+    }
+
+
+    private String loadProperties() {
+
+        String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
+        String servicePath = rootPath + "service.properties";
+
+        Properties properties = new Properties();
+
+        try {
+
+            properties.load(new FileInputStream(servicePath));
+
+        } catch (FileNotFoundException fileNotFoundException) {
+            logger.error("Fail to find file " + fileNotFoundException);
+        } catch (IOException ioException) {
+            logger.error("Input Output Exception " + ioException);
+        }
+
+        return properties.getProperty("url");
 
     }
 }
