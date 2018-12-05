@@ -1,22 +1,12 @@
 package dance.builder.persistence;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import dance.builder.entity.Dance;
 import dance.builder.entity.DanceMovement;
 import dance.builder.persistence.GenericDAO;
-import dance.movement.MovementResults;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import services.DanceMovementProcessor;
 
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.WebTarget;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-import java.io.IOException;
 import java.util.List;
 
 
@@ -26,7 +16,7 @@ class DanceMovementTest {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
-    GenericDAO<DanceMovement> genericDAODanceMovement;
+    private GenericDAO<DanceMovement> genericDAODanceMovement;
 
     @BeforeEach
     void setUp() {

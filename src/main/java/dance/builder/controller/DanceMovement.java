@@ -28,10 +28,9 @@ public class DanceMovement extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException {
 
         String danceName = request.getParameter("danceName");
-       // String serviceUrl = "http://localhost:8080/choreographybuilder/service/danceMovements/";
         String serviceUrl = loadProperties();
         Client client = ClientBuilder.newClient();
 

@@ -1,11 +1,8 @@
 package dance.builder.persistence;
 
 import dance.builder.entity.CustomSteps;
-import dance.builder.entity.Step;
 import dance.builder.entity.User;
 import dance.builder.test.util.Database;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -14,20 +11,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
-
 
 class CustomStepsDAOTest {
 
-    GenericDAO genericDAO;
-    User user;
+    private GenericDAO genericDAO;
 
     @BeforeEach
     void setUp() {
 
         genericDAO = new GenericDAO(CustomSteps.class);
-        user = new User();
+        User user = new User();
         Database database = Database.getInstance();
         database.runSQL("customStepsCleandb.sql");
 

@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class UserDAOTest {
 
 
-    GenericDAO genericDAO;
+    private GenericDAO genericDAO;
 
     /**
      * Create the user dao.

@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class StepDAOTest {
 
-    GenericDAO genericDAO;
+    private GenericDAO genericDAO;
 
     @BeforeEach
     void setUp() {
