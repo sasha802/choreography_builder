@@ -9,6 +9,9 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.util.Objects;
 
+/**
+ * Class that represents Custom Steps entity
+ */
 @Entity(name = "CustomSteps")
 @Table(name = "user_custom_steps")
 @Data
@@ -43,10 +46,22 @@ public class CustomSteps {
     private User user;
 
 
+    /**
+     * no argument constrictor
+     */
     public CustomSteps() {
 
     }
 
+    /**
+     * Constructor
+     * @param stepName
+     * @param danceName
+     * @param leadDescription
+     * @param followerDescription
+     * @param level
+     * @param user
+     */
     public CustomSteps(String stepName, String danceName, String leadDescription, String followerDescription, String level, User user) {
 
         this.stepName = stepName;

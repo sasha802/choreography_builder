@@ -18,13 +18,19 @@ import java.io.IOException;
         urlPatterns = {"/updateUser"}
 )
 public class UpdateUser extends HttpServlet {
-    @Override
 
+    /**
+     * Get user info out of database and send it to the jsp
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         GenericDAO genericDAO = new GenericDAO(User.class);
         request.setAttribute("user", genericDAO.getAll());
-
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/editProfile.jsp");
         dispatcher.forward(request, response);

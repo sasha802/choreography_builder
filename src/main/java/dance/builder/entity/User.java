@@ -9,6 +9,9 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
+/**
+ * Class that represents User entity
+ */
 @Entity(name = "User")
 @Table(name = "users")
 @Data
@@ -35,10 +38,21 @@ public class User {
     private int id;
 
 
+    /**
+     * No argument constructor
+     */
     public User() {
 
     }
 
+    /**
+     * Constructor
+     * @param lastName
+     * @param firstName
+     * @param email
+     * @param password
+     * @param roleId
+     */
     public User(String lastName, String firstName, String email, String password, int roleId) {
         this.lastName = lastName;
         this.firstName = firstName;

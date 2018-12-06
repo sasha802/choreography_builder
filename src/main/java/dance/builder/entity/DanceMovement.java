@@ -9,6 +9,9 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.util.Objects;
 
+/**
+ * Class that represents Dance Movement entity
+ */
 @Entity(name = "DanceMovement")
 @Table(name = "dance_movement")
 @Data
@@ -36,10 +39,19 @@ public class DanceMovement {
     @Column(name = "deleted")
     private int deleted;
 
+    /**
+     * No argument constructor
+     */
     public DanceMovement() {
 
     }
 
+    /**
+     * Constructor
+     * @param danceName
+     * @param danceMovement
+     * @param dancePosition
+     */
     public DanceMovement( String danceName, String danceMovement, String dancePosition) {
         this.danceName = danceName;
         this.danceMovement = danceMovement;

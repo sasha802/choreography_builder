@@ -9,6 +9,9 @@ import javax.persistence.*;
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * Class that represents Step entity
+ */
 @Entity(name = "Step")
 @Table(name = "step")
 @Data

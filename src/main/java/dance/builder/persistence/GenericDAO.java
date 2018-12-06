@@ -139,6 +139,12 @@ public class GenericDAO<T> {
     }
 
 
+    /**
+     * get data using multiple properties and optional limit number
+     * @param entities
+     * @param limit
+     * @return
+     */
     public List<T> getByMultiplePropertiesTopClause(Map<String, Map<String, String>> entities, int limit) {
 
         Session session = getSession();
@@ -185,8 +191,10 @@ public class GenericDAO<T> {
     }
 
 
-
-
+    /**
+     * Get session
+     * @return
+     */
     private Session getSession() {
 
         return SessionFactoryProvider.getSessionFactory().openSession();
