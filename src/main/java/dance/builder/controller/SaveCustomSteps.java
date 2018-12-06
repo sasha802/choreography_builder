@@ -17,12 +17,23 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Servlet to save user entered step
+ */
 @WebServlet(
         urlPatterns = {"/saveStep"}
 )
 public class SaveCustomSteps extends HttpServlet {
-    @Override
 
+    /**
+     * Method to get step information that user would like to save for the personal record
+     * Pass the step info to the jsp for populate the form
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         GenericDAO genericDAO = new GenericDAO(CustomSteps.class);
@@ -46,7 +57,6 @@ public class SaveCustomSteps extends HttpServlet {
 
         saveStep(request, stepInfo);
 
-
         request.setAttribute("customSteps", genericDAO.getAll());
         request.setAttribute("beats", beatsNumber);
         request.setAttribute("level", level);
@@ -60,6 +70,14 @@ public class SaveCustomSteps extends HttpServlet {
     }
 
 
+    /**
+     * Get step information from the user form to store it as a custom step for user record
+     * Perform some input validation display success or failed message
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String stepName = request.getParameter("stepName").trim();
@@ -91,6 +109,12 @@ public class SaveCustomSteps extends HttpServlet {
 
     }
 
+
+    /**
+     * Method to save step record ot the database
+     * @param request
+     * @param stepInfo
+     */
     private void saveStep(HttpServletRequest request, List<String> stepInfo) {
 
         User user = getUser(request).get(0);
@@ -102,6 +126,11 @@ public class SaveCustomSteps extends HttpServlet {
     }
 
 
+    /**
+     * Method to get user info from the database
+     * @param request
+     * @return user As user information
+     */
     private List<User> getUser(HttpServletRequest request) {
 
         String username = request.getUserPrincipal().getName();

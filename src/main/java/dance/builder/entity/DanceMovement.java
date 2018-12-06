@@ -46,20 +46,4 @@ public class DanceMovement {
         this.dancePosition = dancePosition;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        DanceMovement that = (DanceMovement) o;
-        return id == that.id &&
-                deleted == that.deleted &&
-                Objects.equals(danceName, that.danceName) &&
-                Objects.equals(danceMovement, that.danceMovement) &&
-                Objects.equals(dancePosition, that.dancePosition);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, danceName, danceMovement, dancePosition, deleted);
-    }
 }

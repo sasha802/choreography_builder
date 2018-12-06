@@ -48,23 +48,6 @@ public class User {
     }
 
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return roleId == user.roleId &&
-                id == user.id &&
-                Objects.equals(lastName, user.lastName) &&
-                Objects.equals(firstName, user.firstName) &&
-                Objects.equals(email, user.email) &&
-                Objects.equals(password, user.password);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(lastName, firstName, email, password, roleId, id);
-    }
 
 
 }

@@ -2,6 +2,7 @@ package dance.builder.entity;
 
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.GenericGenerator;
 
 
@@ -36,7 +37,7 @@ public class CustomSteps {
     @Column(name = "deleted")
     private int deleted;
 
-
+    @EqualsAndHashCode.Exclude
     @ManyToOne
     @JoinColumn(name = "users_id", foreignKey = @ForeignKey(name = "user_custom_steps_pk"))
     private User user;
@@ -56,21 +57,4 @@ public class CustomSteps {
         this.user = user;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        CustomSteps that = (CustomSteps) o;
-        return id == that.id &&
-                Objects.equals(stepName, that.stepName) &&
-                Objects.equals(danceName, that.danceName) &&
-                Objects.equals(leadDescription, that.leadDescription) &&
-                Objects.equals(followerDescription, that.followerDescription) &&
-                Objects.equals(level, that.level);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, stepName, danceName, leadDescription, followerDescription, level);
-    }
 }

@@ -175,15 +175,7 @@ public class GenericDAO<T> {
 
         query.select(root).where(predicates.toArray(new Predicate[]{}));
 
-        if (limit == 0) {
-
-            result = session.createQuery(query).getResultList();
-
-        } else {
-
-            result = session.createQuery(query).setMaxResults(limit).getResultList();
-        }
-
+        result = limit == 0 ? session.createQuery(query).getResultList() : session.createQuery(query).setMaxResults(limit).getResultList();
 
         logger.info(limit);
         logger.info("list of steps " + result);

@@ -17,12 +17,24 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Servlet to perform search of the user requested steps based on the beat per minute
+ */
 @WebServlet(
         urlPatterns = {"/searchStep"}
 )
 public class SearchStep extends HttpServlet {
-    @Override
 
+    /**
+     * Method to get info from the form
+     * perform validation
+     * Pass search results to the jsp or, error msg
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
@@ -84,6 +96,14 @@ public class SearchStep extends HttpServlet {
 
     }
 
+
+    /**
+     * Method to get user name form the database and pass it to the jsp for the welcome msg
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         RequestDispatcher dispatcher;
@@ -95,6 +115,11 @@ public class SearchStep extends HttpServlet {
     }
 
 
+    /**
+     * Method to get user data based on email
+     * @param request
+     * @return user As data about the user
+     */
     private List<User> getUser(HttpServletRequest request) {
 
         String username = request.getUserPrincipal().getName();
@@ -105,6 +130,12 @@ public class SearchStep extends HttpServlet {
     }
 
 
+    /**
+     * Method to get map with entities
+     * @param danceId
+     * @param levelType
+     * @return
+     */
     private Map<String, Map<String, String>> generateEntitiesMap(String danceId, String levelType) {
 
         Map<String, Map<String, String>> entities = new HashMap<>();

@@ -13,13 +13,25 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-
+/**
+ * Servlet to create new user record in the database
+ */
 @WebServlet(
         urlPatterns = {"/insertUser"}
 )
 public class InsertUser extends HttpServlet {
-    @Override
 
+    /**
+     * Method to get user info from jsp page.
+     * To validate user input
+     * To insert new user record into database and display confirmation massage upon success or, error msg
+     * Send updates to the jsp page
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         RequestDispatcher dispatcher;
@@ -43,16 +55,12 @@ public class InsertUser extends HttpServlet {
             request.setAttribute("user", insertedUser.getFirstName());
             request.setAttribute("userId", insertedUser.getId());
 
-            dispatcher = request.getRequestDispatcher("/signup.jsp");
-            dispatcher.forward(request, response);
-
         } else {
-
             request.setAttribute("formValidation", false);
-            dispatcher = request.getRequestDispatcher("/signup.jsp");
-            dispatcher.forward(request, response);
-
         }
+
+        dispatcher = request.getRequestDispatcher("/signup.jsp");
+        dispatcher.forward(request, response);
 
 
     }

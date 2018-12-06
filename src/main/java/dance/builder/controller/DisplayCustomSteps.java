@@ -17,10 +17,23 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
+/**
+ * Servlet to get steps from the database that user saved previously
+ */
 @WebServlet(
         urlPatterns = {"/displayCustomSteps"}
 )
 public class DisplayCustomSteps extends HttpServlet {
+
+    /**
+     * Method to get users steps that had been saved previously
+     * To pass data to the jsp page for the display
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

@@ -21,12 +21,23 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+/**
+ * Servlet to get dance name from the user
+ * And generate data results that includes dance techniques description
+ */
 @WebServlet(
         urlPatterns = {"/danceMovement"}
 )
 public class DanceMovement extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
+
+    /**
+     * Method to get json format dace technical description base on the user search
+     * @param request
+     * @param response
+     * @throws ServletException
+     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException {
 
@@ -60,6 +71,10 @@ public class DanceMovement extends HttpServlet {
     }
 
 
+    /**
+     * Method to load properties file to get service url address
+     * @return server url path form the properties file
+     */
     private String loadProperties() {
 
         String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();

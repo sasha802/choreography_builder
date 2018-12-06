@@ -2,6 +2,7 @@ package dance.builder.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -33,6 +34,7 @@ public class Step {
     @Column(name = "demo_link")
     private String demoLink;
 
+    @EqualsAndHashCode.Exclude
     @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "dance_type_id", foreignKey = @ForeignKey(name = "step_pk"))
@@ -48,23 +50,4 @@ public class Step {
 
     }
 
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Step step = (Step) o;
-        return dance.getId() == step.dance.getId() &&
-                id == step.id &&
-                Objects.equals(stepName, step.stepName) &&
-                Objects.equals(level, step.level) &&
-                Objects.equals(followerDescription, step.followerDescription) &&
-                Objects.equals(leadDescription, step.leadDescription) &&
-                Objects.equals(demoLink, step.demoLink);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(stepName, level, followerDescription, leadDescription, demoLink, dance.getId(), id);
-    }
 }

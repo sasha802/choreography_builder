@@ -12,12 +12,23 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Servlet to get user information to update in the database
+ * Pass updated data to the jsp for the display
+ */
 @WebServlet(
         urlPatterns = {"/editUserProfile"}
 )
 public class EditUserProfile extends HttpServlet {
-    @Override
 
+    /**
+     * Method to get user name and pass it to the jsp for the display
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         GenericDAO genericDAO = new GenericDAO(User.class);
@@ -30,6 +41,14 @@ public class EditUserProfile extends HttpServlet {
     }
 
 
+    /**
+     * Method to get user info from the jsp and update it in the database
+     * Method will validate user input
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         GenericDAO genericDAO = new GenericDAO(User.class);
@@ -64,12 +83,15 @@ public class EditUserProfile extends HttpServlet {
             RequestDispatcher dispatcher = request.getRequestDispatcher("/editProfile.jsp");
             dispatcher.forward(request, response);
         }
-
-
-
-
     }
 
+
+    /**
+     * Method to get user id base on the username (email)
+     * @param request
+     * @param genericDAO
+     * @return
+     */
     private int getId(HttpServletRequest request, GenericDAO genericDAO) {
 
         String username = request.getUserPrincipal().getName();
