@@ -10,7 +10,7 @@ class GetUser {
 
     private HttpServletRequest request;
 
-    // --Commented out by Inspection (12/9/18, 8:19 PM):public GetUser() {}
+    public GetUser() {}
 
     public GetUser(HttpServletRequest request) {
         this.request = request;

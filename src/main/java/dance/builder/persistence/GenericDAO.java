@@ -15,7 +15,7 @@ import java.util.Map;
 public class GenericDAO<T> {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
-    private Class<T> type;
+    private final Class<T> type;
     private Class<T> entity;
 
     public GenericDAO(Class<T> type) {
