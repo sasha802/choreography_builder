@@ -28,26 +28,31 @@ class StepDAOTest {
         assertEquals(15, steps.size());
     }
 
-    @Test
-    void getStepsByLevelSuccess() {
-        List<Step> steps = genericDAO.getByPropertyLike("level", "basic");
-        assertEquals(5, steps.size());
-    }
 
     @Test
     void getByIdSuccess() {
 
-        Step retrievedStep = (Step) genericDAO.getById(9);
+        int stepId = 9;
+        Step genericStep = (Step) genericDAO.getById(stepId);
+        genericStep.setId(stepId);
+        Step retrievedStep = (Step) genericDAO.getById(stepId);
+
         assertNotNull(retrievedStep);
-        assertEquals("Curl", retrievedStep.getStepName());
+        assertEquals(genericStep, retrievedStep);
 
     }
 
     @Test
     void getByPropertyEqualSuccess() {
+
         List<Step> steps = genericDAO.getByPropertyEqual("level", "basic");
+        Step step = (Step) genericDAO.getById(steps.get(0).getId());
+
+        assertEquals(step.getStepName(), steps.get(0).getStepName());
+        assertEquals(step.getId(), steps.get(0).getId());
+        assertEquals(step.getFollowerDescription(), steps.get(0).getFollowerDescription());
+        assertEquals(step.getLeadDescription(), steps.get(0).getLeadDescription());
         assertEquals(5, steps.size());
-        assertEquals(1, steps.get(0).getId());
 
     }
 
@@ -85,11 +90,14 @@ class StepDAOTest {
     @Test
     void getStepService() {
 
+        String stepName = "Curl";
         StepProcessor stepProcessor = new StepProcessor();
-        Response response = stepProcessor.getStepData("Curl");
+        Response response = stepProcessor.getStepData(stepName);
         Step step = (Step) response.getEntity();
 
-        assertEquals("Curl", step.getStepName());
+        List<Step> getStepName = genericDAO.getByPropertyEqual("stepName", stepName);
+
+        assertEquals(getStepName.get(0).getStepName(), step.getStepName());
 
     }
 

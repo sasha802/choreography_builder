@@ -20,7 +20,6 @@ class CustomStepsDAOTest {
     void setUp() {
 
         genericDAO = new GenericDAO(CustomSteps.class);
-        User user = new User();
         Database database = Database.getInstance();
         database.runSQL("customStepsCleandb.sql");
 
@@ -41,14 +40,14 @@ class CustomStepsDAOTest {
         CustomSteps newCustomStep = new CustomSteps("Box", "Rumba", "test", "test", "basic", user);
 
         int id = genericDAO.insert(newCustomStep);
-        assertNotEquals(id, 0);
         CustomSteps customSteps = (CustomSteps) genericDAO.getById(id);
-        assertEquals("Box", customSteps.getStepName());
-        assertEquals("Rumba", customSteps.getDanceName());
-        assertEquals("test", customSteps.getLeadDescription());
-        assertEquals("test", customSteps.getFollowerDescription());
-        assertEquals("basic", customSteps.getLevel());
-        assertEquals(3, customSteps.getId());
+
+        assertNotEquals(id, 0);
+        assertEquals(newCustomStep, customSteps);
+        assertEquals(newCustomStep.getId(), customSteps.getId());
+        assertEquals(newCustomStep.getDanceName(), customSteps.getDanceName());
+        assertEquals(newCustomStep.getFollowerDescription(), customSteps.getFollowerDescription());
+        assertEquals(newCustomStep.getLeadDescription(), customSteps.getLeadDescription());
 
 
     }
@@ -85,9 +84,11 @@ class CustomStepsDAOTest {
 
     @Test
     void getByPropertyEqualSuccess() {
+
         List<CustomSteps> customSteps = genericDAO.getByPropertyEqual("level", "basic");
+        CustomSteps stepToUpdate = (CustomSteps) genericDAO.getById(1);
         assertEquals(1, customSteps.size());
-        assertEquals(1, customSteps.get(0).getId());
+        assertEquals(stepToUpdate.getId(), customSteps.get(0).getId());
     }
 
 

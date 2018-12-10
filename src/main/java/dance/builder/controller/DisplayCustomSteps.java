@@ -5,7 +5,6 @@ import dance.builder.entity.CustomSteps;
 import dance.builder.entity.User;
 import dance.builder.persistence.GenericDAO;
 
-import javax.persistence.criteria.CriteriaBuilder;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

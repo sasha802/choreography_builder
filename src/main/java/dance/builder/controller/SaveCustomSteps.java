@@ -13,9 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Servlet to save user entered step
@@ -37,7 +35,6 @@ public class SaveCustomSteps extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         GenericDAO genericDAO = new GenericDAO(CustomSteps.class);
-
 
         String stepName = request.getParameter("stepName").trim();
         String danceName = request.getParameter("danceName").trim();
@@ -96,9 +93,7 @@ public class SaveCustomSteps extends HttpServlet {
             stepInfo.add(level);
 
             saveStep(request, stepInfo);
-
             request.setAttribute("saved", "saved");
-
 
         } else {
             request.setAttribute("form", "empty");
@@ -117,28 +112,13 @@ public class SaveCustomSteps extends HttpServlet {
      */
     private void saveStep(HttpServletRequest request, List<String> stepInfo) {
 
-        User user = getUser(request).get(0);
+        GetUser getUser = new GetUser(request);
+        User user = getUser.getUserData().get(0);
         GenericDAO genericDAO = new GenericDAO(User.class);
 
         CustomSteps customSteps = new CustomSteps(stepInfo.get(0), stepInfo.get(1), stepInfo.get(2), stepInfo.get(3), stepInfo.get(4), user);
         genericDAO.insert(customSteps);
 
     }
-
-
-    /**
-     * Method to get user info from the database
-     * @param request
-     * @return user As user information
-     */
-    private List<User> getUser(HttpServletRequest request) {
-
-        String username = request.getUserPrincipal().getName();
-        GenericDAO genericDAOUser = new GenericDAO(User.class);
-        List<User> user = genericDAOUser.getByPropertyEqual("email", username);
-        return user;
-
-    }
-
 
 }

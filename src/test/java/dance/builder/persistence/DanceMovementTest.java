@@ -41,12 +41,13 @@ class DanceMovementTest {
 
         String dancePosition = "Slow Waltz is danced using a normal ballroom-style closed position dance hold.";
 
+        List<DanceMovement> danceMovementPosition = genericDAODanceMovement.getByPropertyLike("dancePosition", dancePosition);
+        List<DanceMovement> danceMovementTechnique = genericDAODanceMovement.getByPropertyLike("danceMovement", danceTechnique);
         DanceMovement danceMovement = genericDAODanceMovement.getById(1);
         logger.info(danceMovement);
-        assertEquals(1, danceMovement.getId());
-        assertEquals("Waltz", danceMovement.getDanceName());
-        assertEquals(danceTechnique, danceMovement.getDanceMovement());
-        assertEquals(dancePosition, danceMovement.getDancePosition());
+
+        assertEquals(danceMovementPosition.get(0).getDancePosition(), danceMovement.getDancePosition());
+        assertEquals(danceMovementTechnique.get(0).getDanceMovement(), danceMovement.getDanceMovement());
 
     }
 

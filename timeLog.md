@@ -73,3 +73,7 @@
 |11/27/2018|Working on the form validation and database population. | 2 hours |
 |11/28/2018|Watching week 13 videos. Working on the week 13 assignment.| 1 hour 30 min|
 |11/30/2018|Working on the week 13 assignment. Recording project presentation video | 2 hours |
+|12/04/2018|Working on the javadoc.|1 hour|
+|12/05/2018|Writing feedback for Paul's presentation | 10min |
+|12/06/2018|Reviewing DanceUpByStas project. Writing feedback | 2 hours |
+|12/09/2018|Working on the received feedback about individual project.| 2 hours 45 min |

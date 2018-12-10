@@ -42,7 +42,7 @@ class UserDAOTest {
 
         User retrievedUser = (User)genericDAO.getById(2);
         assertNotNull(retrievedUser);
-        assertEquals("Mike", retrievedUser.getFirstName());
+        assertEquals(2, retrievedUser.getId());
 
     }
 
@@ -56,7 +56,7 @@ class UserDAOTest {
         int id = genericDAO.insert(newUser);
         assertNotEquals(0,id);
         User insertedUser = (User) genericDAO.getById(id);
-        assertEquals("Fred", insertedUser.getLastName());
+        assertEquals(newUser, insertedUser);
 
     }
 

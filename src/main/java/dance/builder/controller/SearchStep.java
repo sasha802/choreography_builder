@@ -1,9 +1,7 @@
 package dance.builder.controller;
 
-
 import dance.builder.entity.Dance;
 import dance.builder.entity.Step;
-import dance.builder.entity.User;
 import dance.builder.persistence.GenericDAO;
 
 import javax.servlet.RequestDispatcher;
@@ -14,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -37,8 +34,9 @@ public class SearchStep extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        GetUser getUser = new GetUser(request);
 
-        int userId = getUser(request).get(0).getId();
+        int userId = getUser.getUserData().get(0).getId();
 
         GenericDAO<Dance> danceGenericDAO = new GenericDAO<>(Dance.class);
         GenericDAO genericDAO = new GenericDAO(Step.class);
@@ -52,7 +50,7 @@ public class SearchStep extends HttpServlet {
         String beatsNumber = request.getParameter("beatsNumber").trim();
         String levelType = request.getParameter("level");
         String numberOfStepsUserInput = request.getParameter("numberOfSteps");
-        Integer numberOfSteps = Integer.valueOf(numberOfStepsUserInput);
+        int numberOfSteps = Integer.parseInt(numberOfStepsUserInput);
 
 
         if ( beatsNumber.length() != 0 ) {
@@ -88,7 +86,7 @@ public class SearchStep extends HttpServlet {
         } else {
 
             request.setAttribute("formValidation", false);
-            request.setAttribute("user", getUser(request).get(0).getFirstName());
+            request.setAttribute("user", getUser.getUserData().get(0).getFirstName());
             dispatcher = request.getRequestDispatcher("/buildDance.jsp");
             dispatcher.include(request, response);
 
@@ -107,25 +105,11 @@ public class SearchStep extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         RequestDispatcher dispatcher;
+        GetUser getUser = new GetUser(request);
 
-        request.setAttribute("userFirstName", getUser(request).get(0).getFirstName());
+        request.setAttribute("userFirstName", getUser.getUserData().get(0).getFirstName());
         dispatcher = request.getRequestDispatcher("/buildDance.jsp");
         dispatcher.include(request, response);
-
-    }
-
-
-    /**
-     * Method to get user data based on email
-     * @param request
-     * @return user As data about the user
-     */
-    private List<User> getUser(HttpServletRequest request) {
-
-        String username = request.getUserPrincipal().getName();
-        GenericDAO genericDAOUser = new GenericDAO(User.class);
-        List<User> user = genericDAOUser.getByPropertyEqual("email", username);
-        return user;
 
     }
 

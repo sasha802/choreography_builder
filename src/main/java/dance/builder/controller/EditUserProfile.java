@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
 /**
  * Servlet to get user information to update in the database
@@ -32,7 +31,8 @@ public class EditUserProfile extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         GenericDAO genericDAO = new GenericDAO(User.class);
-        User user = (User) genericDAO.getById(getId(request, genericDAO));
+        GetUser getUser = new GetUser(request);
+        User user = (User) genericDAO.getById(getUser.getUserData().get(0).getId());
 
         request.setAttribute("user", user);
 
@@ -52,7 +52,8 @@ public class EditUserProfile extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         GenericDAO genericDAO = new GenericDAO(User.class);
-        User userToUpdate = (User)genericDAO.getById(getId(request, genericDAO));
+        GetUser getUser = new GetUser(request);
+        User userToUpdate = (User)genericDAO.getById(getUser.getUserData().get(0).getId());
         String newLastName = request.getParameter("lastName");
         String newFirstName = request.getParameter("firstName");
         String newEmail = request.getParameter("email");
@@ -85,19 +86,4 @@ public class EditUserProfile extends HttpServlet {
         }
     }
 
-
-    /**
-     * Method to get user id base on the username (email)
-     * @param request
-     * @param genericDAO
-     * @return
-     */
-    private int getId(HttpServletRequest request, GenericDAO genericDAO) {
-
-        String username = request.getUserPrincipal().getName();
-        List<User> user = genericDAO.getByPropertyEqual("email", username);
-        int userId = user.get(0).getId();
-        return userId;
-
-    }
 }
