@@ -32,4 +32,14 @@
   <security-role>
     <role-name>user</role-name>
   </security-role>
+
+  <!-- error pages -->
+  <error-page>
+    <error-code>404</error-code>
+    <location>/errorPages/error404.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/errorPages/error500.jsp</location>
+  </error-page>
 </web-app>
