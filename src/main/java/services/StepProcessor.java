@@ -20,7 +20,6 @@ public class StepProcessor {
         GenericDAO<Step> genericDAO = new GenericDAO<>(Step.class);
         Step step = genericDAO.getByPropertyEqual("stepName", stepName).get(0);
 
-
         return Response.status(200).entity(step).build();
 
     }

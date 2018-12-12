@@ -11,14 +11,23 @@ them get started.
 * Database (MySQL and Hibernate)
     * Store users 
     * Store wedding dance information
+    * Store steps information
+    * Store dance technique information
+    * CRUD implementation
 * ORM Framework 
     * Hibernate
 * Web Services or APIs
-    * Google Maps to find local dance studios, API gmail 
+    * Dance technique and movements service
 * CSS
     * Bootstrap
+* JavaScript/JQuery    
 * Hosting 
     * AWS
 * Independent Research Topic
     * Dynamic Programming
+
+
+### Video Presentation
+
+* [Choreography builder](https://youtu.be/1iPKmX-CKCU)
 

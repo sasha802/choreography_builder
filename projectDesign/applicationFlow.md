@@ -36,6 +36,6 @@ Edit Profile Page
 5.	Dao updates the user information according to the criteria.
 6.	Servlet sends confirmation that info has been updated. 
 
-Find Local Dance Studio Page
-1.	HTML Page to display Google Map with local dance studios.
+Dance technique and movements service
+1.	Service to provide the technical details about the specific dance
 

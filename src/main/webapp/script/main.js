@@ -4,6 +4,7 @@ $(document).ready(function () {
     removeEmptyTebleCustomSteps();
     removeEmptyStepTable();
     toggleMenu();
+    hideEmptyMovementDescription();
 
 });
 
@@ -65,4 +66,13 @@ function toggleMenu() {
             $('#mobileMenuLinks').hide();
         }
     });
+}
+
+
+function hideEmptyMovementDescription() {
+
+    if ( $('#movementDesc').text() == '' || $('#positionDesc').text() == '' ) {
+        $('h5').hide();
+        $('h4').hide();
+    }
 }

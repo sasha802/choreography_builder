@@ -42,12 +42,12 @@
 </html>
 
 <script>
-    $(document).ready(function () {
-        <c:if test="${formValidation == 'false'}">
-            var validationMsg = 'Please enter all the values including password.';
-            var messageId = 'validationMsg';
-            validateForm(validationMsg, messageId);
-        </c:if>
-    });
+$(document).ready(function () {
+    <c:if test="${formValidation == 'false'}">
+        var validationMsg = 'Please enter all the values including password.';
+        var messageId = 'validationMsg';
+        validateForm(validationMsg, messageId);
+    </c:if>
+});
 
 </script>

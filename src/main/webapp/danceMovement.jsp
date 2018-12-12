@@ -43,7 +43,7 @@
             <div class="col-sm-12" id="danceMovementContainer">
 
                 <div id="danceMovementResult" class="col-sm-6">
-                    <h5>DanceMovement</h5>
+                    <h5>Dance Movement</h5>
                     <p id="movementDesc" style="font-weight:400;text-align:left">${danceMovement}</p>
                 </div>
 
@@ -60,16 +60,6 @@
     </body>
 </html>
 
-<script>
-    $(document).ready(function () {
 
-        if ( $('#movementDesc').text() == '' || $('#positionDesc').text() == '' ) {
-            $('h5').hide();
-            $('h4').hide();
-        }
-
-
-    });
-</script>
 
 

@@ -28,10 +28,10 @@ public class DisplayCustomSteps extends HttpServlet {
     /**
      * Method to get users steps that had been saved previously
      * To pass data to the jsp page for the display
-     * @param request
-     * @param response
-     * @throws ServletException
-     * @throws IOException
+     * @param request Servlet request
+     * @param response Servlet response
+     * @throws ServletException Throws Servlet Exception error
+     * @throws IOException Throws IO Exception error
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

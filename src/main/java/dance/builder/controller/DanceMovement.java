@@ -34,9 +34,9 @@ public class DanceMovement extends HttpServlet {
 
     /**
      * Method to get json format dace technical description base on the user search
-     * @param request
-     * @param response
-     * @throws ServletException
+     * @param request Servlet request
+     * @param response Servlet response
+     * @throws ServletException Throws Servlet Exception error
      */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException {
