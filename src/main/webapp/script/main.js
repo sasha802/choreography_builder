@@ -72,7 +72,7 @@ function toggleMenu() {
 function hideEmptyMovementDescription() {
 
     if ( $('#movementDesc').text() == '' || $('#positionDesc').text() == '' ) {
-        $('h5').hide();
-        $('h4').hide();
+        $('#danceMovementContainer h5').hide();
+        $('#danceName h4').hide();
     }
 }

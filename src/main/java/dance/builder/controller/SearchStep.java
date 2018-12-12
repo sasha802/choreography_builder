@@ -47,6 +47,7 @@ public class SearchStep extends HttpServlet {
         String waltzId = "2";
         String swingId = "3";
 
+        String userName = request.getParameter("userName");
         String beatsNumber = request.getParameter("beatsNumber").trim();
         String levelType = request.getParameter("level");
         String numberOfStepsUserInput = request.getParameter("numberOfSteps");
@@ -79,6 +80,7 @@ public class SearchStep extends HttpServlet {
             request.setAttribute("numberOfSteps", numberOfSteps);
             request.setAttribute("level", levelType);
             request.setAttribute("userId", Integer.toString(userId));
+            request.setAttribute("userFirstName", userName);
 
             dispatcher = request.getRequestDispatcher("/buildDance.jsp");
             dispatcher.forward(request, response);
@@ -87,6 +89,7 @@ public class SearchStep extends HttpServlet {
 
             request.setAttribute("formValidation", false);
             request.setAttribute("user", getUser.getUserData().get(0).getFirstName());
+            request.setAttribute("userFirstName", userName);
             dispatcher = request.getRequestDispatcher("/buildDance.jsp");
             dispatcher.include(request, response);
 

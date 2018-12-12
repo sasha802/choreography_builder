@@ -38,8 +38,9 @@
                     </div>
                 </form>
             </div>
-
-            <h4>${danceName} technique</h4>
+            <div id="danceName">
+                <h4>${danceName} technique</h4>
+            </div>
             <div class="col-sm-12" id="danceMovementContainer">
 
                 <div id="danceMovementResult" class="col-sm-6">

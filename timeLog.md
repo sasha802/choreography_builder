@@ -77,3 +77,4 @@
 |12/05/2018|Writing feedback for Paul's presentation | 10min |
 |12/06/2018|Reviewing DanceUpByStas project. Writing feedback | 2 hours |
 |12/09/2018|Working on the received feedback about individual project.| 2 hours 45 min |
+|12/11/2018|Working on the feedback, preparing for the presentation. Creating 404, 500 error pages| 3 hours 30 min|

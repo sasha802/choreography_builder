@@ -3,6 +3,9 @@ It has been a long tradition of the first wedding dance. There is a need for a w
 to make a decision about their dance type, music, style, and will put together a basic dance choreography to help 
 them get started. 
 
+
+[AWS Choreography builder](http://18.224.198.249:8080/choreographybuilder/)
+
 **Project Technologies/Techniques**
     
 * Security/Authentication 
@@ -29,5 +32,5 @@ them get started.
 
 ### Video Presentation
 
-* [Choreography builder](https://youtu.be/1iPKmX-CKCU)
+* [Choreography builder video](https://youtu.be/1iPKmX-CKCU)
 

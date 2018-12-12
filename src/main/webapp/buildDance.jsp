@@ -7,7 +7,7 @@
         <h2>Lets Build Your Dance ${userFirstName}!</h2>
 
         <c:if test="${saved == 'saved'}">
-            <div>
+            <div id="savedStepsLink">
                 <h5>Your step was successful saved. <a style="color: #c12121;" href="/choreographybuilder/displayCustomSteps">View My Steps</a></h5>
             </div>
         </c:if>
@@ -50,6 +50,8 @@
                             <option <c:if test="${numberOfSteps == 5}">selected</c:if> value="5">Five</option>
                         </select>
                     </div>
+
+                    <input type="hidden" name="userName" value="${userFirstName}" />
 
                     <button id="buildDanceBtn" type="submit" name="submit" value="submit" class="btn">Build Dance</button>
                     <button id="addPersonalStepBtn" data-toggle="modal" data-target="#personalStepModal" type="button" class="btn">Add Personal Step</button>
