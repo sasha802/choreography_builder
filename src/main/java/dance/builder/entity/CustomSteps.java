@@ -7,7 +7,6 @@ import org.hibernate.annotations.GenericGenerator;
 
 
 import javax.persistence.*;
-import java.util.Objects;
 
 /**
  * Class that represents Custom Steps entity

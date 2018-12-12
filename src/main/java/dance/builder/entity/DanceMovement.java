@@ -3,11 +3,8 @@ package dance.builder.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
 import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
-import java.util.Objects;
 
 /**
  * Class that represents Dance Movement entity

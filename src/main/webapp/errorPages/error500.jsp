@@ -4,7 +4,7 @@
 <html>
 <jsp:include page="../head.jsp"/>
 <head>
-    <title>Page not found</title>
+    <title>Error</title>
 </head>
 <body style="background-color: #2b2c2d">
 <div class="container">

@@ -69,7 +69,7 @@ public class GenericDAO<T> {
 
         logger.debug("type " + entity);
 
-        int id = 0;
+        int id;
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
         id = (int)session.save(entity);

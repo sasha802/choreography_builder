@@ -91,7 +91,7 @@ public class Database {
      */
     public void runSQL(String sqlFile) {
 
-        Statement stmt = null;
+        Statement stmt;
         ClassLoader classloader = Thread.currentThread().getContextClassLoader();
         InputStream inputStream = classloader.getResourceAsStream(sqlFile);
         try (BufferedReader br = new BufferedReader(new InputStreamReader(inputStream))) {
