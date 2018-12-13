@@ -8,6 +8,7 @@ import java.util.List;
 
 /**
  * Class to pull username from database.
+ * @author oponomarova
  */
 class GetUser {
 
@@ -18,6 +19,7 @@ class GetUser {
     public GetUser(HttpServletRequest request) {
         this.request = request;
     }
+
 
     /**
      * Get user data based on requested property name

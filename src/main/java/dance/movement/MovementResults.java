@@ -3,6 +3,10 @@ package dance.movement;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.annotation.Generated;
 
+/**
+ * Class movement results entity
+ * @author oponomarova
+ */
 @Generated("com.robohorse.robopojogenerator")
 public class MovementResults{
 

@@ -3,11 +3,11 @@ package dance.builder.entity;
 
 import lombok.Data;
 import org.hibernate.annotations.GenericGenerator;
-
 import javax.persistence.*;
 
 /**
  * Class that represents User entity
+ * @author oponomarova
  */
 @Entity(name = "User")
 @Table(name = "users")
@@ -42,6 +42,7 @@ public class User {
 
     }
 
+
     /**
      * Constructor
      * @param lastName String last name
@@ -57,5 +58,4 @@ public class User {
         this.password = password;
         this.roleId = roleId;
     }
-
 }

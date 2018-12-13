@@ -8,6 +8,7 @@ import javax.persistence.*;
 
 /**
  * Class that represents Dance Movement entity
+ * @author oponomarova
  */
 @Entity(name = "DanceMovement")
 @Table(name = "dance_movement")
@@ -36,12 +37,14 @@ public class DanceMovement {
     @Column(name = "deleted")
     private int deleted;
 
+
     /**
      * No argument constructor
      */
     public DanceMovement() {
 
     }
+
 
     /**
      * Constructor
@@ -54,5 +57,4 @@ public class DanceMovement {
         this.danceMovement = danceMovement;
         this.dancePosition = dancePosition;
     }
-
 }

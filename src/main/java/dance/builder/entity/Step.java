@@ -4,13 +4,12 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.GenericGenerator;
-
 import javax.persistence.*;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * Class that represents Step entity
+ * @author oponomarova
  */
 @Entity(name = "Step")
 @Table(name = "step")
@@ -48,6 +47,7 @@ public class Step {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
+
 
     public Step() {
 

@@ -19,11 +19,13 @@ import java.util.Map;
 
 /**
  * Servlet to get steps from the database that user saved previously
+ * @author oponomarova
  */
 @WebServlet(
         urlPatterns = {"/displayCustomSteps"}
 )
 public class DisplayCustomSteps extends HttpServlet {
+
 
     /**
      * Method to get users steps that had been saved previously

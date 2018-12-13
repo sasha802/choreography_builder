@@ -16,11 +16,13 @@ import java.util.Map;
 
 /**
  * Servlet to perform search of the user requested steps based on the beat per minute
+ * @author oponomarova
  */
 @WebServlet(
         urlPatterns = {"/searchStep"}
 )
 public class SearchStep extends HttpServlet {
+
 
     /**
      * Method to get info from the form
@@ -92,9 +94,7 @@ public class SearchStep extends HttpServlet {
             request.setAttribute("userFirstName", userName);
             dispatcher = request.getRequestDispatcher("/buildDance.jsp");
             dispatcher.include(request, response);
-
         }
-
     }
 
 
@@ -113,7 +113,6 @@ public class SearchStep extends HttpServlet {
         request.setAttribute("userFirstName", getUser.getUserData().get(0).getFirstName());
         dispatcher = request.getRequestDispatcher("/buildDance.jsp");
         dispatcher.include(request, response);
-
     }
 
 
@@ -135,6 +134,5 @@ public class SearchStep extends HttpServlet {
         entities.put("", propertiesTwo);
 
         return entities;
-
     }
 }

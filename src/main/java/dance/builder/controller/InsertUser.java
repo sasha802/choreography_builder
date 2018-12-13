@@ -15,11 +15,13 @@ import java.io.IOException;
 
 /**
  * Servlet to create new user record in the database
+ * @author oponomarova
  */
 @WebServlet(
         urlPatterns = {"/insertUser"}
 )
 public class InsertUser extends HttpServlet {
+
 
     /**
      * Method to get user info from jsp page.

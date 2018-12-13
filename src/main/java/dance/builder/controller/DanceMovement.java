@@ -24,6 +24,7 @@ import java.util.Properties;
 /**
  * Servlet to get dance name from the user
  * And generate data results that includes dance techniques description
+ * @author oponomarova
  */
 @WebServlet(
         urlPatterns = {"/danceMovement"}
@@ -31,6 +32,7 @@ import java.util.Properties;
 public class DanceMovement extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
+
 
     /**
      * Method to get json format dace technical description base on the user search
@@ -66,8 +68,6 @@ public class DanceMovement extends HttpServlet {
         } catch (IOException ioException) {
             logger.error(ioException);
         }
-
-
     }
 
 
@@ -93,7 +93,6 @@ public class DanceMovement extends HttpServlet {
         }
 
         return properties.getProperty("url");
-
     }
 
 }

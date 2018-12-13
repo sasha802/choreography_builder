@@ -14,11 +14,13 @@ import java.io.IOException;
 
 /**
  * Servlet to delete user selected step from the user interface
+ * @author oponomarova
  */
 @WebServlet(
         urlPatterns = {"/removeCustomStep"}
 )
 public class removeCustomStep extends HttpServlet {
+
 
     /**
      * Method to get step id from the user
@@ -45,7 +47,6 @@ public class removeCustomStep extends HttpServlet {
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/displayCustomSteps");
         dispatcher.forward(request, response);
-
     }
 }
 

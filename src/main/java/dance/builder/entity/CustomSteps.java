@@ -4,12 +4,11 @@ package dance.builder.entity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.GenericGenerator;
-
-
 import javax.persistence.*;
 
 /**
  * Class that represents Custom Steps entity
+ * @author oponomarova
  */
 @Entity(name = "CustomSteps")
 @Table(name = "user_custom_steps")
@@ -52,6 +51,7 @@ public class CustomSteps {
 
     }
 
+
     /**
      * Constructor
      * @param stepName String step name
@@ -70,5 +70,4 @@ public class CustomSteps {
         this.level = level;
         this.user = user;
     }
-
 }

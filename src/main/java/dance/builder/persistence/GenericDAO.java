@@ -11,12 +11,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-
+/**
+ * Class to manipulate data in the database
+ * @param <T> Type
+ * @author oponomarova
+ */
 public class GenericDAO<T> {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     private final Class<T> type;
     private Class<T> entity;
+
 
     public GenericDAO(Class<T> type) {
 
@@ -24,6 +29,13 @@ public class GenericDAO<T> {
 
     }
 
+
+    /**
+     * Get entity based on the id value
+     * @param id int Entity id
+     * @param <T> Type
+     * @return entity id
+     */
     public <T>T getById(int id) {
 
         Session session = getSession();
@@ -33,6 +45,7 @@ public class GenericDAO<T> {
         return entity;
 
     }
+
 
     /**
      * Delete a entity
@@ -47,6 +60,10 @@ public class GenericDAO<T> {
     }
 
 
+    /**
+     * Retrieve all the data from the table
+     * @return List of data
+     */
     public List<T> getAll() {
 
         Session session = getSession();
@@ -58,8 +75,8 @@ public class GenericDAO<T> {
 
         session.close();
         return list;
-
     }
+
 
     /**
      * update user
@@ -79,6 +96,7 @@ public class GenericDAO<T> {
         return id;
     }
 
+
     /**
      * update user
      * @param entity  User to be inserted or updated
@@ -90,6 +108,7 @@ public class GenericDAO<T> {
         transaction.commit();
         session.close();
     }
+
 
     /**
      * Get user by property (exact match)
@@ -113,6 +132,7 @@ public class GenericDAO<T> {
         session.close();
         return entity;
     }
+
 
     /**
      * Get user by property (like)
@@ -184,7 +204,6 @@ public class GenericDAO<T> {
         logger.info("list of steps " + result);
 
         return result;
-
     }
 
 

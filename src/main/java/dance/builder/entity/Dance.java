@@ -6,6 +6,7 @@ import javax.persistence.*;
 
 /**
  * Class that represents Dance entity
+ * @author oponomarova
  */
 @Entity(name = "Dance")
 @Table(name = "dance_type")
@@ -18,11 +19,11 @@ public class Dance {
     @Column(name = "beats_per_minute")
     private int beatsPerMinute;
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
+
 
     /**
      * No argument constructor
@@ -30,6 +31,7 @@ public class Dance {
     public Dance() {
 
     }
+
 
     /**
      * Constructor

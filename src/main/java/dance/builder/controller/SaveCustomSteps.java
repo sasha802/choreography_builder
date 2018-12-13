@@ -17,11 +17,13 @@ import java.util.List;
 
 /**
  * Servlet to save user entered step
+ * @author oponomarova
  */
 @WebServlet(
         urlPatterns = {"/saveStep"}
 )
 public class SaveCustomSteps extends HttpServlet {
+
 
     /**
      * Method to get step information that user would like to save for the personal record
@@ -63,7 +65,6 @@ public class SaveCustomSteps extends HttpServlet {
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/buildDance.jsp");
         dispatcher.forward(request, response);
-
     }
 
 
@@ -101,7 +102,6 @@ public class SaveCustomSteps extends HttpServlet {
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/buildDance.jsp");
         dispatcher.forward(request, response);
-
     }
 
 
@@ -118,7 +118,5 @@ public class SaveCustomSteps extends HttpServlet {
 
         CustomSteps customSteps = new CustomSteps(stepInfo.get(0), stepInfo.get(1), stepInfo.get(2), stepInfo.get(3), stepInfo.get(4), user);
         genericDAO.insert(customSteps);
-
     }
-
 }

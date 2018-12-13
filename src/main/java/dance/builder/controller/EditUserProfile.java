@@ -14,11 +14,13 @@ import java.io.IOException;
 /**
  * Servlet to get user information to update in the database
  * Pass updated data to the jsp for the display
+ * @author oponomarova
  */
 @WebServlet(
         urlPatterns = {"/editUserProfile"}
 )
 public class EditUserProfile extends HttpServlet {
+
 
     /**
      * Method to get user name and pass it to the jsp for the display

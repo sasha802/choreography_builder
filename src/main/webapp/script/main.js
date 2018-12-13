@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     addCustomStepModalForm();
-    removeEmptyTebleCustomSteps();
+    removeEmptyTableCustomSteps();
     removeEmptyStepTable();
     toggleMenu();
     hideEmptyMovementDescription();
@@ -19,7 +19,7 @@ function addCustomStepModalForm() {
 }
 
 
-function removeEmptyTebleCustomSteps() {
+function removeEmptyTableCustomSteps() {
 
     var tbody = $('#customStepTable tbody');
 
