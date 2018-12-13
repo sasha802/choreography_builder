@@ -45,9 +45,9 @@ public class DanceMovement {
 
     /**
      * Constructor
-     * @param danceName
-     * @param danceMovement
-     * @param dancePosition
+     * @param danceName String dance name
+     * @param danceMovement String dance movement description
+     * @param dancePosition String dance position description
      */
     public DanceMovement( String danceName, String danceMovement, String dancePosition) {
         this.danceName = danceName;

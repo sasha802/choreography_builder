@@ -22,10 +22,10 @@ public class EditUserProfile extends HttpServlet {
 
     /**
      * Method to get user name and pass it to the jsp for the display
-     * @param request
-     * @param response
-     * @throws ServletException
-     * @throws IOException
+     * @param request HttpServletRequest request
+     * @param response HttpServletResponse response
+     * @throws ServletException throws ServletException
+     * @throws IOException throws IOException
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -44,10 +44,10 @@ public class EditUserProfile extends HttpServlet {
     /**
      * Method to get user info from the jsp and update it in the database
      * Method will validate user input
-     * @param request
-     * @param response
-     * @throws ServletException
-     * @throws IOException
+     * @param request HttpServletRequest request
+     * @param response HttpServletResponse response
+     * @throws ServletException throws ServletException
+     * @throws IOException throws IOException
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

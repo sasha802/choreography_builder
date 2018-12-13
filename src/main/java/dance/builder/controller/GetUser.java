@@ -6,6 +6,9 @@ import dance.builder.persistence.GenericDAO;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
+/**
+ * Class to pull username from database.
+ */
 class GetUser {
 
     private HttpServletRequest request;
@@ -16,6 +19,10 @@ class GetUser {
         this.request = request;
     }
 
+    /**
+     * Get user data based on requested property name
+     * @return username.
+     */
     public List<User> getUserData() {
 
         String username = request.getUserPrincipal().getName();

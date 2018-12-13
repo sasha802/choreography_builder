@@ -44,11 +44,11 @@ public class User {
 
     /**
      * Constructor
-     * @param lastName
-     * @param firstName
-     * @param email
-     * @param password
-     * @param roleId
+     * @param lastName String last name
+     * @param firstName String first name
+     * @param email String email
+     * @param password String password
+     * @param roleId int role id
      */
     public User(String lastName, String firstName, String email, String password, int roleId) {
         this.lastName = lastName;
@@ -57,8 +57,5 @@ public class User {
         this.password = password;
         this.roleId = roleId;
     }
-
-
-
 
 }

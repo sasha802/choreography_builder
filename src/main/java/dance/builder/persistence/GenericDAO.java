@@ -64,6 +64,7 @@ public class GenericDAO<T> {
     /**
      * update user
      * @param entity  User to be inserted or updated
+     * @return id int Entity id
      */
     public int insert(T entity) {
 
@@ -141,9 +142,9 @@ public class GenericDAO<T> {
 
     /**
      * get data using multiple properties and optional limit number
-     * @param entities
-     * @param limit
-     * @return
+     * @param entities Map of entities
+     * @param limit set limint on the number of rows in the query
+     * @return List of values selected using multiple properties
      */
     public List<T> getByMultiplePropertiesTopClause(Map<String, Map<String, String>> entities, int limit) {
 
@@ -169,15 +170,11 @@ public class GenericDAO<T> {
 
                     predicates.add(builder.equal(root.get(secondEntry.getKey()), secondEntry.getValue()));
                     break;
-
                 }
-
                 predicates.add(builder.equal(root.get(entity).get(secondEntry.getKey()), secondEntry.getValue()));
-
             }
 
         }
-
 
         query.select(root).where(predicates.toArray(new Predicate[]{}));
 
@@ -193,7 +190,7 @@ public class GenericDAO<T> {
 
     /**
      * Get session
-     * @return
+     * @return Session (start session)
      */
     private Session getSession() {
 

@@ -26,11 +26,11 @@ public class SaveCustomSteps extends HttpServlet {
     /**
      * Method to get step information that user would like to save for the personal record
      * Pass the step info to the jsp for populate the form
-     * @param request
-     * @param response
-     * @throws ServletException
-     * @throws IOException
-     */
+     * @param request HttpServletRequest request
+     * @param response HttpServletResponse response
+     * @throws ServletException throws ServletException
+     * @throws IOException throws IOException
+     **/
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -70,10 +70,10 @@ public class SaveCustomSteps extends HttpServlet {
     /**
      * Get step information from the user form to store it as a custom step for user record
      * Perform some input validation display success or failed message
-     * @param request
-     * @param response
-     * @throws ServletException
-     * @throws IOException
+     * @param request HttpServletRequest request
+     * @param response HttpServletResponse response
+     * @throws ServletException throws ServletException
+     * @throws IOException throws IOException
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -107,8 +107,8 @@ public class SaveCustomSteps extends HttpServlet {
 
     /**
      * Method to save step record ot the database
-     * @param request
-     * @param stepInfo
+     * @param request HttpServletRequest request
+     * @param stepInfo List of with step information (name, dance name, lead description, follower description)
      */
     private void saveStep(HttpServletRequest request, List<String> stepInfo) {
 

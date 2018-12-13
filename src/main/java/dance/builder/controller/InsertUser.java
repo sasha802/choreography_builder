@@ -26,10 +26,10 @@ public class InsertUser extends HttpServlet {
      * To validate user input
      * To insert new user record into database and display confirmation massage upon success or, error msg
      * Send updates to the jsp page
-     * @param request
-     * @param response
-     * @throws ServletException
-     * @throws IOException
+     * @param request HttpServletRequest request
+     * @param response HttpServletResponse response
+     * @throws ServletException throws ServletException
+     * @throws IOException throws IOException
      */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -61,7 +61,6 @@ public class InsertUser extends HttpServlet {
 
         dispatcher = request.getRequestDispatcher("/signup.jsp");
         dispatcher.forward(request, response);
-
 
     }
 }

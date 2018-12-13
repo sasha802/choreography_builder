@@ -24,10 +24,10 @@ public class removeCustomStep extends HttpServlet {
      * Method to get step id from the user
      * To perform database operation to remove selected step from the user interface
      * Method uses soft deleted
-     * @param request
-     * @param response
-     * @throws ServletException
-     * @throws IOException
+     * @param request HttpServletRequest request
+     * @param response HttpServletResponse response
+     * @throws ServletException throws ServletException
+     * @throws IOException throws IOException
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

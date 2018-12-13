@@ -33,8 +33,8 @@ public class Dance {
 
     /**
      * Constructor
-     * @param danceName
-     * @param beatsPerMinute
+     * @param danceName String dance name
+     * @param beatsPerMinute int number of the beats per minute
      */
     public Dance(String danceName, int beatsPerMinute) {
         this.danceName = danceName;

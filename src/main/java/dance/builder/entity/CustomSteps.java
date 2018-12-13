@@ -54,12 +54,12 @@ public class CustomSteps {
 
     /**
      * Constructor
-     * @param stepName
-     * @param danceName
-     * @param leadDescription
-     * @param followerDescription
-     * @param level
-     * @param user
+     * @param stepName String step name
+     * @param danceName String dance name
+     * @param leadDescription String lead description
+     * @param followerDescription String follower description
+     * @param level String dance level type
+     * @param user User user
      */
     public CustomSteps(String stepName, String danceName, String leadDescription, String followerDescription, String level, User user) {
 
