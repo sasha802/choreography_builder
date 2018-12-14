@@ -12,10 +12,19 @@ import java.util.List;
 import java.util.Map;
 
 
+/**
+ * To test Custom Steps data operation
+ * @author oponomarova
+ */
 class CustomStepsDAOTest {
 
     private GenericDAO genericDAO;
 
+
+    /**
+     * Create instance of the GenericDAO type CustomStep
+     * Perform database cleanup.
+     */
     @BeforeEach
     void setUp() {
 
@@ -27,7 +36,7 @@ class CustomStepsDAOTest {
 
 
     /**
-     * Method to test for getting all the steps.ss
+     * Method to test for getting all the steps
      */
     @Test
     void getAllCustomStepsSuccess() {
@@ -35,6 +44,10 @@ class CustomStepsDAOTest {
         assertEquals(2, users.size());
     }
 
+
+    /**
+     * Method to test step insertion
+     */
     @Test
     void insertSuccess() {
 
@@ -56,6 +69,10 @@ class CustomStepsDAOTest {
 
     }
 
+
+    /**
+     * Method to test if step will be updated
+     */
     @Test
     void updateSuccess() {
 
@@ -68,6 +85,9 @@ class CustomStepsDAOTest {
     }
 
 
+    /**
+     * Method to test soft deleting of the step
+     */
     @Test
     void removeCustomStepSuccess() {
 
@@ -79,6 +99,10 @@ class CustomStepsDAOTest {
         assertEquals(stepToUpdate, retrievedCustomStep);
     }
 
+
+    /**
+     * Method to test hard deleting of the step
+     */
     @Test
     void deleteSuccess() {
 
@@ -86,6 +110,10 @@ class CustomStepsDAOTest {
         assertNull(genericDAO.getById(1));
     }
 
+
+    /**
+     * Method to test selection of the specific step base on the equal condition
+     */
     @Test
     void getByPropertyEqualSuccess() {
 
@@ -96,12 +124,19 @@ class CustomStepsDAOTest {
     }
 
 
+    /**
+     * Method to test selection of the specific step base on the like condition
+     */
     @Test
     void getByPropertyLikeSuccess() {
         List<CustomSteps> customSteps = genericDAO.getByPropertyLike("stepName", "Turn");
         assertEquals(1, customSteps.size());
     }
 
+
+    /**
+     * Method to test selection of the specific step base on the multiple condition
+     */
     @Test
     void getByMultiplePropertiesTopClauseSuccess() {
 
@@ -118,9 +153,5 @@ class CustomStepsDAOTest {
         List<CustomSteps> customSteps = genericDAO.getByMultiplePropertiesTopClause(entity, 0);
         assertEquals(1, customSteps.size());
     }
-
-
-
-
 }
 

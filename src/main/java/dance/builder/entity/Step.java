@@ -48,7 +48,9 @@ public class Step {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
-
+    /**
+     * No argument constructor
+     */
     public Step() {
 
     }

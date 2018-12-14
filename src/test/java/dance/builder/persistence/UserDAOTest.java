@@ -9,13 +9,20 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
+/**
+ * Class to test data manipulation of the User entity
+ * @author oleksandraponomarova
+ */
 class UserDAOTest {
 
 
     private GenericDAO genericDAO;
 
+
     /**
      * Create the user dao.
+     * Clean up database
      */
     @BeforeEach
     void setUp() {
@@ -24,6 +31,7 @@ class UserDAOTest {
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
     }
+
 
     /**
      * Verifies gets all users successfully.
@@ -34,6 +42,7 @@ class UserDAOTest {
         assertEquals(2, users.size());
     }
 
+
     /**
      * Verifies gets all users by id
      */
@@ -43,8 +52,8 @@ class UserDAOTest {
         User retrievedUser = (User)genericDAO.getById(2);
         assertNotNull(retrievedUser);
         assertEquals(2, retrievedUser.getId());
-
     }
+
 
     /**
      * Verify successful insert of a user
@@ -57,8 +66,8 @@ class UserDAOTest {
         assertNotEquals(0,id);
         User insertedUser = (User) genericDAO.getById(id);
         assertEquals(newUser, insertedUser);
-
     }
+
 
     /**
      * Verify successful delete of user
@@ -71,6 +80,9 @@ class UserDAOTest {
     }
 
 
+    /**
+     * Verify successful update of user
+     */
     @Test
     void updateSuccess() {
         String newLastName = "Mikels";
@@ -80,6 +92,7 @@ class UserDAOTest {
         User retrievedUser = (User) genericDAO.getById(2);
         assertEquals(userToUpdate, retrievedUser);
     }
+
 
     /**
      * Verify successful get by property (equal match)
@@ -92,6 +105,7 @@ class UserDAOTest {
         assertEquals(2, users.get(0).getId());
     }
 
+
     /**
      * Verify successful get by property (like match)
      */
@@ -100,6 +114,4 @@ class UserDAOTest {
         List<User> users = genericDAO.getByPropertyLike("email", "jcoyne");
         assertEquals(1, users.size());
     }
-
-
 }

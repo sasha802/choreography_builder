@@ -13,15 +13,28 @@ import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
+/**
+ * Class to test data manipulation of the Step entity
+ * @author oponomarova
+ */
 class StepDAOTest {
 
     private GenericDAO genericDAO;
 
+
+    /**
+     * Create GenericDAO instance type Step
+     */
     @BeforeEach
     void setUp() {
         genericDAO = new GenericDAO(Step.class);
     }
 
+
+    /**
+     * Test for getting number of existing steps in the database
+     */
     @Test
     void getAllStepsSuccess() {
         List<Step> steps = genericDAO.getAll();
@@ -29,6 +42,9 @@ class StepDAOTest {
     }
 
 
+    /**
+     * Test for getting step by id
+     */
     @Test
     void getByIdSuccess() {
 
@@ -42,6 +58,10 @@ class StepDAOTest {
 
     }
 
+
+    /**
+     * Getting step information using equals clause
+     */
     @Test
     void getByPropertyEqualSuccess() {
 
@@ -56,6 +76,10 @@ class StepDAOTest {
 
     }
 
+
+    /**
+     * Testing the ability to update the step infos
+     */
     @Test
     void updateSuccess() {
 
@@ -67,6 +91,11 @@ class StepDAOTest {
         assertEquals(stepToUpdate, retrievedCustomStep);
     }
 
+
+    /**
+     * Testing getting steps based on the multiple condition (properties)
+     * Testing for limit clause (Optional)
+     */
     @Test
     void getByMultiplePropertiesTopClauseSuccess() {
 
@@ -87,6 +116,10 @@ class StepDAOTest {
 
     }
 
+
+    /**
+     * Testing Step service for the weekly lab assignment
+     */
     @Test
     void getStepService() {
 
