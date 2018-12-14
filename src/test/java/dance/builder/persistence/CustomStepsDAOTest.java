@@ -25,6 +25,10 @@ class CustomStepsDAOTest {
 
     }
 
+
+    /**
+     * Method to test for getting all the steps.ss
+     */
     @Test
     void getAllCustomStepsSuccess() {
         List<CustomSteps> users = genericDAO.getAll();
