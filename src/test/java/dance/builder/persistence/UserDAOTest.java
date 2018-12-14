@@ -100,9 +100,16 @@ class UserDAOTest {
     @Test
     void getByPropertyEqualSuccess() {
 
+         User user = new User("Thomson", "Mike", "thomson", "115", 2);
         List<User> users = genericDAO.getByPropertyEqual("email", "thomson");
         assertEquals(1, users.size());
         assertEquals(2, users.get(0).getId());
+        assertEquals(user.getLastName(), users.get(0).getLastName());
+        assertEquals(user.getFirstName(), users.get(0).getFirstName());
+        assertEquals(user.getEmail(), users.get(0).getEmail());
+        assertEquals(user.getPassword(), users.get(0).getPassword());
+        assertEquals(user.getRoleId(), users.get(0).getRoleId());
+
     }
 
 
