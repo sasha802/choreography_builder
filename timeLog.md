@@ -78,3 +78,5 @@
 |12/06/2018|Reviewing DanceUpByStas project. Writing feedback | 2 hours |
 |12/09/2018|Working on the received feedback about individual project.| 2 hours 45 min |
 |12/11/2018|Working on the feedback, preparing for the presentation. Creating 404, 500 error pages| 3 hours 30 min|
+|12/13/2018|Working on the javadoc| 2 hours |
+|12/14/2018|Checking the project, javadoc| 1 hour |
