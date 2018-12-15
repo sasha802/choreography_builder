@@ -14,8 +14,17 @@ class GetUser {
 
     private HttpServletRequest request;
 
+
+    /**
+     * No argument constructor
+     */
     public GetUser() {}
 
+
+    /**
+     * Class constructor
+     * @param request HttpServletRequest request
+     */
     public GetUser(HttpServletRequest request) {
         this.request = request;
     }
@@ -31,5 +40,4 @@ class GetUser {
         GenericDAO genericDAOUser = new GenericDAO(User.class);
         return (List<User>) genericDAOUser.getByPropertyEqual("email", username);
     }
-
 }

@@ -48,7 +48,6 @@ class DanceMovementTest {
 
     /**
      * To test getting dance movement and dance position based on the dance name
-     * Using database.
      */
     @Test
     void getDanceTechniqueSuccess() {

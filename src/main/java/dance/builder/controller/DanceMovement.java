@@ -94,5 +94,4 @@ public class DanceMovement extends HttpServlet {
 
         return properties.getProperty("url");
     }
-
 }

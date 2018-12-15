@@ -31,7 +31,6 @@ class CustomStepsDAOTest {
         genericDAO = new GenericDAO(CustomSteps.class);
         Database database = Database.getInstance();
         database.runSQL("customStepsCleandb.sql");
-
     }
 
 
@@ -40,6 +39,7 @@ class CustomStepsDAOTest {
      */
     @Test
     void getAllCustomStepsSuccess() {
+
         List<CustomSteps> users = genericDAO.getAll();
         assertEquals(2, users.size());
     }
@@ -65,8 +65,6 @@ class CustomStepsDAOTest {
         assertEquals(newCustomStep.getDanceName(), customSteps.getDanceName());
         assertEquals(newCustomStep.getFollowerDescription(), customSteps.getFollowerDescription());
         assertEquals(newCustomStep.getLeadDescription(), customSteps.getLeadDescription());
-
-
     }
 
 
